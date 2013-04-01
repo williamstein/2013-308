@@ -2,11 +2,13 @@
 
 Description: Math 308 is an introductory linear algebra course, which assumes that students know Calculus.
 
-Instructor: William Stein, Professor of Mathematics, Office Padelford 423, Office Hours: 12:30-2 MWF, Webpage: http://wstein.org
+Instructor: William Stein, Professor of Mathematics, Office Padelford 423, Office Hours: 12:30-2 MWF, Webpage: [wstein.org](http://wstein.org)
 
 Prerequisite: Math 126 (Calculus 3)
 
 Text: Linear algebra: A modern introduction, By David Poole
+
+Course Website: [https://github.com/williamstein/2013-308/](https://github.com/williamstein/2013-308/)
 
 
 ## Homework and Exams
