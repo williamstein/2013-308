@@ -1,0 +1,35 @@
+{
+	"session_uuid": "110984a3-b24d-4994-8ad9-62b4a949615a",
+	"title": "Lecture 1: Systems of Equations and Matrices",
+	"description": "What are these two objects?<br>",
+	"content": [
+		{
+			"id": "5dc021e8-7ec7-434d-8f05-53a231d185db",
+			"note": "<div>Systems of linear equations</div><div><br></div><div>Example:</div><div><br></div><div>$\\begin{eqnarray}3x+3y&amp;=5\\\\4x-3y&amp;=8\\end{eqnarray}$</div><div><br></div><div>You know how to solve this sort of thing since high school. &nbsp;Do it RIGHT NOW.</div><div><br></div><div>Example of a bigger system of equations (just make something up):</div><div><br></div><div>$\\begin{eqnarray}3x_0-17x_1 + 2x_2&amp;=5\\\\4x_0-3x_1+18x_2&amp;=8\\end{eqnarray}$</div><div><br></div>"
+		},
+		{
+			"id": "ebfde160-a112-49c8-8782-047b2ac229ed",
+			"note": "QUESTIONS:<div><br></div><div>- How big of a system can a computer reasonably solve in \"a minute\"?</div><div>- How can you ask a computer to do this sort of problem?</div><div>- How can you get a sense of what to expect? &nbsp;When I use a computer to solve problems like this, I know a lot about what should happen from the get go. &nbsp;I know all kinds of internal consistency checks. &nbsp;These come from careful hand calculations and good understanding of theory. &nbsp; What sort of theory does it makes sense to ask about?</div><div>- How do computers actually solve such systems?&nbsp;</div><div>- What about allowing the coefficients to be other sorts of numbers? &nbsp;(E.g., complex numbers, elements of a finite field?)&nbsp;</div><div><br></div>"
+		},
+		{
+			"id": "968f562d-8944-4d61-8189-8c5b1b908cd3",
+			"note": "Some Theoretical Questions:<div><br></div><div>&nbsp;- Given a system of equations, is there a nice way to classify what the solutions look like? &nbsp; (E.g., no solutions, infinitely many, what does a picture of the set of all solutions look like?)</div><div>&nbsp;- Given a random system of $n$ equations in $m$ unknowns, what should you expect the solutions to look like? &nbsp;(The answer depends on the relation between $n$ and $m$.)</div><div>&nbsp;&nbsp;</div>"
+		},
+		{
+			"id": "ed36dccd-dd48-4387-8276-e133b40084af",
+			"note": "<div>Matrices: an incredibly useful tool for thinking about all of the above questions.</div><div><br></div><div>A matrix is a rectangular array of numbers:</div><div><br></div><div>$\\left(\\begin{matrix} 3 &amp; 3 \\\\ 4 &amp; -3\\end{matrix}\\right)$</div><div><br></div><div>Matrices can (often) be added and multiplied, assuming the number of rows and columns are compatible. &nbsp;</div><div><br></div><div>Addition: add the entries component-wise (the number of rows and columns must be the same)</div><div><br></div><div>Multiplication: more complicated, but designed so that we get a way to think of a system of linear equations as a SINGLE equation involving matrices.</div>"
+		},
+		{
+			"id": "b343ea29-7477-405b-b8d9-0128e3210eaf",
+			"note": "<div><br></div>Rewrite the the systems of linear equations from above as matrix equations... thus motivating the idea of matrix multiplication.&nbsp;<br><br>Extend idea of matrix multiplication to matrix with more than one column.&nbsp;<div><br></div><div><div>Write down a couple of general \"matrix equations\" at random, but don't say anything about how/what the solutions are. &nbsp;Just ask questions, e.g., how many solutions? &nbsp;What do they look like?</div></div><div><br></div>"
+		},
+		{
+			"id": "5fe3054d-50b7-46c6-b7f9-119696272bb8",
+			"note": "<div>You solve problems in algebra by doing transformations to the equation that don't change the set of solutions. &nbsp; How does this work in linear algebra?</div><div><br></div><div>Observe that the following do not change the set of solutions of a linear system:</div><div><br></div><div>&nbsp;- rescale an equation &nbsp; -- no surprise, just like in elementary algebra</div><div>&nbsp;- swap equations &nbsp; &nbsp; &nbsp; &nbsp; -- duh, order is irrelevant</div><div>&nbsp;- add one equation to another &nbsp;-- this requires convincing! &nbsp;all the solutions before are still solutions after, and you can go in both directions!</div><div><br></div><div><br></div><div>In terms of matrices, these correspond to:</div><div><br></div><div>&nbsp; &nbsp;- rescale a row</div><div>&nbsp; &nbsp;- swap two rows</div><div>&nbsp; &nbsp;- add a row to another</div><div><br></div><div><br></div><div>THE IDEA -- one can apply the above operations to transform any matrix into a unique form called \"reduced row echelon form\", from which all questions about the set of solutions to a system of linear equations can be easily answered. &nbsp;</div><div><br></div><div><br></div><div><br></div>"
+		},
+		{
+			"id": "4347aa92-1af0-4ee5-831f-9b89f5e139df",
+			"note": "<div><br></div><div><br></div>"
+		}
+	]
+}
