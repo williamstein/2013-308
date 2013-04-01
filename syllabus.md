@@ -1,19 +1,23 @@
 # Math 308 (Spring 2013, UW) Syllabus
 
+Description: Math 308 is an introductory linear algebra course, which assumes that students know Calculus.
+
 Instructor: William Stein, Professor of Mathematics, Office Padelford 423, Office Hours: 12:30-2 MWF, Webpage: http://wstein.org
 
-Prerequisite: Math 126 (calculus 3)
+Prerequisite: Math 126 (Calculus 3)
 
-Text: Linear algebra: a modern introduction, By David Poole
+Text: Linear algebra: A modern introduction, By David Poole
 
-Math 308 is an introductory linear algebra course and it is assumed that students have a higher level of mathematical maturity.
 
-## Syllabus for (about) 26 lectures
+## Homework and Exams
+- Homework: assigned weekly and will use WebAssign, which is online.  I will not accept any late homework, but will drop the lowest 2 homework grades. (Note: I'm using WebAssign because I would like to create a competing product that is better, so please let me know every idea you have about how to improve on it!)
+- Midterm and final exam: three in-class exams, which will consist of problems similar to those assigned as homework
+- Grade: Homework - 15%, Midterm 1 - 25%, Midterm 2 - 25%, and Final - 35%
 
+## Lecture Plan
 (I reserve the right to adjust this during the quarter.)
 
 ### Part 1: Matrices and Systems of Linear Equations (9 lectures)
-
 * Gaussian Elimination (3 lectures)
 * Matrix operations (2 lectures)
 * Linear independence (1 lecture)
