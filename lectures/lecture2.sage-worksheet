@@ -1,0 +1,49 @@
+{
+	"session_uuid": "a0ff8902-6014-4af4-836d-cc8c9d5b5a38",
+	"title": "Lectures 2 &amp; 3: Matrices and Reduced Row Echelon Form",
+	"description": "based on Section 3.0, 3.1 from Poole",
+	"content": [
+		{
+			"id": "ddd21848-13a5-443c-ac43-9c093ac37c9b"
+		},
+		{
+			"id": "d78b5e6e-936a-46a2-bac7-ce0878fcf085",
+			"note": "<div><br></div><div>First, recall the dictionary relating matrices to systems of linear equations:</div><div><br></div><div>$a_{1,1}x_1 + a_{1,2} x_2 = b_1$</div><div><div>$a_{2,1}x_1 + a_{2,2} x_2 = b_2$</div></div><div><br></div><div>corresponds to</div><div><br></div><div>$\\left(\\begin{matrix} a_{1,1} &amp; a_{1,2} \\\\ a_{2,1} &amp; a_{2,2} \\end{matrix}\\right) \\cdot \\left(\\begin{matrix} x_1\\\\ x_2 \\end{matrix}\\right) = &nbsp;\\left(\\begin{matrix} b_1\\\\ b_2 \\end{matrix}\\right)$<br></div><div><br></div><div>This naturally generalizes to $n$ equations in $m$ unknowns.</div><div><br></div><div><br></div>"
+		},
+		{
+			"id": "ed82ea6e-3a3f-45ce-8aa1-73d5226c8deb",
+			"note": "MATRIX = rectangular array of numbers. &nbsp;<div><br></div><div>ENTRIES = The numbers in the matrix&nbsp;</div><div><br></div><div>DIAGONAL entries = entries down the diagonal (illustrate on board)</div><div><br></div><div>SCALAR matrix = all non-diagonal entries are 0</div><div><br></div><div>IDENTITY matrix = scalar matrix with 1's down diagonal</div><div><br></div><div>two matrices EQUAL if have same entries in the same places. &nbsp;</div><div><br></div><div>Matrix addition (we did). &nbsp;Matrix multiplication (we did). &nbsp;Scalar multiplication: &nbsp;if $c$ is a number, then $cA$ is the matrix whose entries got from those of $A$ by multiplying them all by $c$.</div><div><br></div><div>POWERS: &nbsp; $A^k=A \\cdots A$ where there are $k$ of the $A$'s. &nbsp; &nbsp;We have $A^r A^s = A^{r+s}$ and $(A^r)^s = A^{rs}$.</div><div><br></div><div>NOTE: What about $A^{\\pi}$? &nbsp;&nbsp;<span style=\"font-size: 11pt;\">Sometimes one can also define $A^\\alpha$ for $\\alpha$ a real number, using the standard trick of writing $A^{\\alpha} = \\exp(\\alpha \\log(A))$ and using the formal power series for $\\log$ and $\\exp$ to make sense of this.&nbsp;</span></div><div><div><br></div><div>To explain definitions it is often useful to write $A=(a_{i,j})$ to mean that that $i,j$ entry of $A$ is $a_{i,j}$.</div><div><br></div><div>TRANSPOSE: The TRANSPOSE of $A$ is the matrix whose $i,j$ entry is $a_{j,i}$. &nbsp; We write $A^t$ for the transpose of $A$.</div><div><br></div><div>SYMMETRIC: A matrix is called symmetric if $A^t = A$.</div><div><br></div><div><br></div><div><div><div><br></div><div><br></div></div></div></div>",
+			"input": "%html\n<img src=\"http://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Carl_Friedrich_Gauss.jpg/187px-Carl_Friedrich_Gauss.jpg\" class=\"img-rounded\">\n<br>\nGauss",
+			"output": [
+				{
+					"html": "<img src=\"http://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Carl_Friedrich_Gauss.jpg/187px-Carl_Friedrich_Gauss.jpg\" class=\"img-rounded\">\n<br>\nGauss"
+				},
+				{
+					"stdout": ""
+				}
+			]
+		},
+		{
+			"id": "8bf1d1ee-0a5a-4cc6-91f6-ceaa93c29b59",
+			"note": "<div><br></div><div>(Reduced) Row Echelon Form -- a canonical form that we can transform a matrix into, which is incredibly useful for solving numerous problems.</div><div><br></div><div>Definitions:&nbsp;</div><div>A matrix is in *row echelon form* if:</div><div>&nbsp; &nbsp; (1) all zero rows are at the bottom (rows consisting of all zeros)</div><div>&nbsp; &nbsp; (2) the first nonzero entry in each row (the leading entry) is in a column to the left of any leading entries below it. &nbsp; &nbsp;(ugh)</div><div><br></div><div>Show several examples to understand what this means.</div><div><br></div><div>A matrix is in REDUCED row echelon form if:</div><div>&nbsp; &nbsp;(1) its in row echelon form</div><div>&nbsp; &nbsp;(2) each leading entry is a 1</div><div>&nbsp; &nbsp;(3) all other entries in each column with a leading 1 are 0.</div><div><br></div>"
+		},
+		{
+			"id": "e78d8963-2852-445f-9414-8cf5f81964a5",
+			"note": "<div><br></div>WHY? &nbsp;<div><br></div><div>1. There are (fast) algorithms to \"transform\" a matrix into echelon form.</div><div><br></div><div>2. If you rewrite a system of linear equations in terms of matrices, and \"tranform\" to echelon form (for some definition of \"transform\"), then consider the equations corresponding to the result, the solution is easy to read off.... and is exactly the same as the set of solutions to the original problem.</div>"
+		},
+		{
+			"id": "7b7d5f87-ea66-4acf-b051-c2116ee42bd7",
+			"note": "HOW?<div><br></div><div>Here are the allowed operations, i.e., definition of \"transform\":</div><div><br></div><div>1. Interchange two rows &nbsp; &nbsp; &nbsp;</div><div>2. Multiply a row by a nonzero constant</div><div>3. Add a multiple of a row to another row</div><div><br></div><div>NOTICE: -- this is *exactly* what you do when you solve a system of linear equations directly by hand. &nbsp; So it should be really easy to remember. &nbsp;These are exactly the operations that preserve the set of solutions (convince yourself of this).&nbsp;</div><div><br></div><div><br></div><div>FACT: Using the above 3 operations, you can transform any matrix into reduced row echelon form. &nbsp; &nbsp;One straightforward way to do this, is the following:</div><div><br></div><div>1. Choose any nonzero entry in the first column (or skip that column if it is zero and move to the next one).</div><div>2. Rescale the corresponding row so that leading entry is 1.</div><div>3. Add multiples of that row to all the the rows so that their leading entry is 0.</div><div>4. Swap that row with the first row.</div><div>5. Do exactly the same thing again, but with the next column.</div><div><br></div><div>That's it. &nbsp;</div><div><br></div><div><br></div><div>The really, really shocking thing is that it doesn't matter how you make the choice in step 1, you'll always end up with the same answer in the end. This is a kind of like how integers factor uniquely as a product of prime numbers.&nbsp;</div><div><br></div><div><br></div><div>NOTE: for the purpose of solving linear equations, you might reduce to just echelon form (not reduced echelon form), which is of course not unique.</div><div><br></div><div><br></div>"
+		},
+		{
+			"id": "abb1872c-7887-45f2-8ae6-479eb17fda7a",
+			"note": "Let's try this on some matrices, despite it being tedious.<div><br></div><div>Do this example form the book, where I guess the numbers don't get too big:</div><div><br></div><div>$2x_2 + 3x_3 = 8$</div><div>$2x_1 + 3x_2 + x_3 = 5$</div><div>$x_1 - x_2 - 2x_3 = -5$</div><div><br></div><div>Write down corresponding matrix equation. &nbsp;Reduce to echelon form. Read off solution. Check it works (or doesn't -- be more careful if necessary).</div><div><br></div><div><br></div>"
+		},
+		{
+			"id": "2dd817fd-3b96-4996-aecd-2d18767bdebe"
+		},
+		{
+			"id": "de8cc64b-e775-406e-b08b-3c89fa64529c"
+		}
+	]
+}
