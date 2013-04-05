@@ -1,5 +1,5 @@
 {
-	"session_uuid": "f2c28291-37db-4f55-a6f5-e76aadadc96e",
+	"session_uuid": "a6dc958b-7a96-4ef9-8b24-69f2fcfabe0f",
 	"title": "Math 308<div>Lecture 3: U<span style=\"color: inherit; font-family: inherit;\">sing echelon form to solve systems of linear equations&nbsp;</span></div>",
 	"description": "<br>",
 	"content": [
@@ -21,15 +21,14 @@
 			"input": "%md\n## GOAL: Understand how to use echelon form of matrices to solve systems of linear equations in general.\n\n### Example 1:\n<div>\n$x_1 + 2x_2 = 3$<br>\n$4x_1 + 5x_2 = 6$\n</div>\n\n<br>\n\n### Example 2:\n\n<div>\n$x_1 + 2x_2 + 3x_3 = 2 $<br>\n$3x_1 + 4x_2 + 5x_3 = 4 $<br>\n$6x_1 + 7x_2 + 8x_3 = 7 $<br>\n</div>\n\n<br>\nIncidentally, here is one way to solve each of these systems using Sage (see http://sagemath.org)...",
 			"output": [
 				{
-					"html": "<h2>GOAL: Understand how to use echelon form of matrices to solve systems of linear equations in general.</h2>\n\n<h3>Example 1:</h3>\n\n<div>\n$x_1 + 2x_2 = 3$<br>\n$4x_1 + 5x_2 = 6$\n</div>\n\n<p><br></p>\n\n<h3>Example 2:</h3>\n\n<div>\n$x_1 + 2x_2 + 3x_3 = 2 $<br>\n$3x_1 + 4x_2 + 5x_3 = 4 $<br>\n$6x_1 + 7x_2 + 8x_3 = 7 $<br>\n</div>\n\n<p><br>\nIncidentally, here is how to solve each of these systems using Sage (see http://sagemath.org)...</p>\n"
+					"html": "<h2>GOAL: Understand how to use echelon form of matrices to solve systems of linear equations in general.</h2>\n\n<h3>Example 1:</h3>\n\n<div>\n$x_1 + 2x_2 = 3$<br>\n$4x_1 + 5x_2 = 6$\n</div>\n\n<p><br></p>\n\n<h3>Example 2:</h3>\n\n<div>\n$x_1 + 2x_2 + 3x_3 = 2 $<br>\n$3x_1 + 4x_2 + 5x_3 = 4 $<br>\n$6x_1 + 7x_2 + 8x_3 = 7 $<br>\n</div>\n\n<p><br>\nIncidentally, here is one way to solve each of these systems using Sage (see http://sagemath.org)...</p>\n"
 				},
 				{
 					"stdout": ""
 				}
 			],
 			"hide": [
-				"note",
-				"editor"
+				"note"
 			]
 		},
 		{
