@@ -1,11 +1,569 @@
 {
-	"session_uuid": "c35cea69-6fbd-4f27-8e4f-33c13af5be64",
-	"title": "Math 308",
-	"description": "Lecture 3: using echelon form to solve systems of linear equations",
+	"session_uuid": "f2c28291-37db-4f55-a6f5-e76aadadc96e",
+	"title": "Math 308<div>Lecture 3: U<span style=\"color: inherit; font-family: inherit;\">sing echelon form to solve systems of linear equations&nbsp;</span></div>",
+	"description": "<br>",
 	"content": [
 		{
+			"id": "351748d5-7d6a-486b-a91f-96269f205e57",
+			"input": "%auto\n%hide\ndef md(s):\n    import markdown2\n    html(markdown2.markdown(s))",
+			"output": [
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note",
+				"editor"
+			]
+		},
+		{
+			"id": "83daaf41-747c-4167-930c-a6b529ff38c5",
+			"input": "%md\n## GOAL: Understand how to use echelon form of matrices to solve systems of linear equations in general.\n\n### Example 1:\n<div>\n$x_1 + 2x_2 = 3$<br>\n$4x_1 + 5x_2 = 6$\n</div>\n\n<br>\n\n### Example 2:\n\n<div>\n$x_1 + 2x_2 + 3x_3 = 2 $<br>\n$3x_1 + 4x_2 + 5x_3 = 4 $<br>\n$6x_1 + 7x_2 + 8x_3 = 7 $<br>\n</div>\n\n<br>\nIncidentally, here is one way to solve each of these systems using Sage (see http://sagemath.org)...",
+			"output": [
+				{
+					"html": "<h2>GOAL: Understand how to use echelon form of matrices to solve systems of linear equations in general.</h2>\n\n<h3>Example 1:</h3>\n\n<div>\n$x_1 + 2x_2 = 3$<br>\n$4x_1 + 5x_2 = 6$\n</div>\n\n<p><br></p>\n\n<h3>Example 2:</h3>\n\n<div>\n$x_1 + 2x_2 + 3x_3 = 2 $<br>\n$3x_1 + 4x_2 + 5x_3 = 4 $<br>\n$6x_1 + 7x_2 + 8x_3 = 7 $<br>\n</div>\n\n<p><br>\nIncidentally, here is how to solve each of these systems using Sage (see http://sagemath.org)...</p>\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note",
+				"editor"
+			]
+		},
+		{
 			"id": "6d765428-9efc-46bd-b9d8-08bc303f4326",
-			"note": "<div>GOAL: Understand how to use echelon form of matrices to solve systems of linear equations in general.</div>"
+			"input": "var('x1,x2')\nsolve([x1+2*x2==3, 4*x1+5*x2==6], [x1,x2])",
+			"output": [
+				{
+					"stdout": "(x1, x2)"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": "[[x1 == -1, x2 == 2]]"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "ba358907-bf31-4108-9af0-b671aab42a52",
+			"input": "var('x1,x2,x3')\nsolve([x1+2*x2+3*x3==2, 3*x1+4*x2+5*x3==4, 6*x1+7*x2+8*x3==7], [x1,x2,x3])",
+			"output": [
+				{
+					"stdout": "(x1, x2, x3)"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": "[[x1 == r1, x2 == -2*r1 + 1, x3 == r1]]"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "b16be157-3c63-483f-b5bf-6ccddbd73995",
+			"note": "<div><br></div><div><br></div><div>How to solve a linear system of equations:</div><div><br></div><div>(1) Write down the corresponding \"augmented\" matrix</div><div>(2) Use row operations to put it in echelon form (or even reduced row echelon form if you want)</div><div>(3) Write down description of the solutions</div><div><br></div><div><br></div><div><br><br><br><br></div>",
+			"input": "%md\n\n##  Step 1 -- corresponding augmented matrix.\n\n\n### System\n<div>\n$x_1 + 2x_2 = 3$<br>\n$4x_1 + 5x_2 = 6$\n</div>\n### Corresponding Matrix equation \n<div>\n$ \\left(\\begin{matrix} 1&2 \\\\ 4&5 \\end{matrix}\\right) \\cdot \n      \\left(\\begin{matrix} x_1 \\\\ x_2 \\end{matrix}\\right)\n  = \n \\left(\\begin{matrix} 3 \\\\ 6 \\end{matrix}\\right)\n$\n</div>\n\n### Augmented matrix\nThis is what we will put in echelon form.  \n<div>\n$ \\left(\\begin{matrix} 1&2&3 \\\\ 4&5&6 \\end{matrix}\\right) \\cdot \n$\n</div>",
+			"output": [
+				{
+					"html": "<h2>Step 1 -- corresponding augmented matrix.</h2>\n\n<h3>System</h3>\n\n<div>\n$x_1 + 2x_2 = 3$<br>\n$4x_1 + 5x_2 = 6$\n</div>\n\n<h3>Corresponding Matrix equation</h3>\n\n<div>\n$ \\left(\\begin{matrix} 1&2 \\\\ 4&5 \\end{matrix}\\right) \\cdot \n      \\left(\\begin{matrix} x_1 \\\\ x_2 \\end{matrix}\\right)\n  = \n \\left(\\begin{matrix} 3 \\\\ 6 \\end{matrix}\\right)\n$\n</div>\n\n<h3>Augmented matrix</h3>\n\n<p>This is what we will put in echelon form.  </p>\n\n<div>\n$ \\left(\\begin{matrix} 1&2&3 \\\\ 4&5&6 \\end{matrix}\\right) \\cdot \n$\n</div>\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note",
+				"editor"
+			]
+		},
+		{
+			"id": "56e73537-e03f-4177-9a46-9a5fc5e3fa74",
+			"note": "<div><br></div><div><br></div>",
+			"input": "%md\n## Step 2 -- put in echelon form\n\n- no need to rescale first row since it already starts with a 1\n- add -4 times first row to second row and get",
+			"output": [
+				{
+					"html": "<h2>Step 2 -- put in echelon form</h2>\n\n<ul>\n<li>no need to rescale first row since it already starts with a 1</li>\n<li>add -4 times first row to second row and get</li>\n</ul>\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note",
+				"editor"
+			]
+		},
+		{
+			"id": "14b37f71-d5d6-4eaf-8b0a-fa87847b7c49",
+			"note": "<div></div><br>",
+			"input": "a = matrix(2,3,[1,2,3, 4,5,6])\nshow(a)",
+			"output": [
+				{
+					"tex": {
+						"tex": "\\left(\\begin{array}{rrr}\n1 & 2 & 3 \\\\\n4 & 5 & 6\n\\end{array}\\right)",
+						"display": true
+					}
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "8bcbd55b-e2b4-4c6c-9ba3-bf90fc6f6289",
+			"input": "a[1] = -4*a[0] + a[1]   # NOTE: In Sage, matrix indexing is 0 based.\nshow(a)",
+			"output": [
+				{
+					"tex": {
+						"tex": "\\left(\\begin{array}{rrr}\n1 & 2 & 3 \\\\\n0 & -3 & -6\n\\end{array}\\right)",
+						"display": true
+					}
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "36a4866b-4f1d-4151-9725-2b8917081cc5",
+			"input": "%md\n- rescale second row by dividing by -3",
+			"output": [
+				{
+					"html": "<ul>\n<li>rescale second row by dividing by -3</li>\n</ul>\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note",
+				"editor"
+			]
+		},
+		{
+			"id": "4e10e56b-64af-4666-8547-edc0cf78cc30",
+			"input": "a[1] = a[1] / (-3)\nshow(a)",
+			"output": [
+				{
+					"tex": {
+						"tex": "\\left(\\begin{array}{rrr}\n1 & 2 & 3 \\\\\n0 & 1 & 2\n\\end{array}\\right)",
+						"display": true
+					}
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "a9711612-9299-4c33-8d3f-8c021ff00279",
+			"input": "%md\n- add -2 times second row to first row",
+			"output": [
+				{
+					"html": "<ul>\n<li>add -2 times second row to first row</li>\n</ul>\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note",
+				"editor"
+			]
+		},
+		{
+			"id": "46869319-92de-48c6-a646-4215cf99124c",
+			"input": "a[0] += -2*a[1]\nshow(a)",
+			"output": [
+				{
+					"tex": {
+						"tex": "\\left(\\begin{array}{rrr}\n1 & 0 & -1 \\\\\n0 & 1 & 2\n\\end{array}\\right)",
+						"display": true
+					}
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "ac49eba6-0aaf-4a3a-b4c4-dcaae3e600d3",
+			"input": "%md\n\n## Now the interesting part: read off the solution (this one is ridiculously easy).\n\nCorresponding system is:\n<div>\n$x_1 = -1$<br>\n$x_2 = 2$\n</div>\n<br>\nThe set of solutions... $\\{(-1,2)\\}$ is clear.",
+			"output": [
+				{
+					"html": "<h2>Now the interesting part: read off the solution (this one is ridiculously easy).</h2>\n\n<p>Corresponding system is:</p>\n\n<div>\n$x_1 = -1$<br>\n$x_2 = 2$\n</div>\n\n<p><br>\nThe set of solutions... ${(-1,2)}$ is clear.</p>\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note",
+				"editor"
+			]
+		},
+		{
+			"id": "53a267b9-c192-477b-9fdd-ab28353172c0",
+			"input": "%md\n\n## Next, let's do everything for the second example matrix:\n<div>\n$x_1 + 2x_2 + 3x_3 = 2 $<br>\n$3x_1 + 4x_2 + 5x_3 = 4 $<br>\n$6x_1 + 7x_2 + 8x_3 = 7 $<br>\n</div>",
+			"output": [
+				{
+					"html": "<h2>Next, let's do everything for the second example matrix:</h2>\n\n<div>\n$x_1 + 2x_2 + 3x_3 = 2 $<br>\n$3x_1 + 4x_2 + 5x_3 = 4 $<br>\n$6x_1 + 7x_2 + 8x_3 = 7 $<br>\n</div>\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note",
+				"editor"
+			]
+		},
+		{
+			"id": "8d67c24f-5848-4ae0-a808-d15b472bface",
+			"input": "a = matrix([[1,2,3,2], [3,4,5,4], [6,7,8,7]]); show(a)",
+			"output": [
+				{
+					"tex": {
+						"tex": "\\left(\\begin{array}{rrrr}\n1 & 2 & 3 & 2 \\\\\n3 & 4 & 5 & 4 \\\\\n6 & 7 & 8 & 7\n\\end{array}\\right)",
+						"display": true
+					}
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "816f83c5-6a76-428f-b9c1-3e0979226fc6",
+			"input": "md(\"## Tediously (maybe with mistakes) get the following by hand in class:\")\nshow(a.rref())",
+			"output": [
+				{
+					"html": "<h2>Tediously (maybe with mistakes) get the following by hand in class:</h2>\n"
+				},
+				{
+					"tex": {
+						"tex": "\\left(\\begin{array}{rrrr}\n1 & 0 & -1 & 0 \\\\\n0 & 1 & 2 & 1 \\\\\n0 & 0 & 0 & 0\n\\end{array}\\right)",
+						"display": true
+					}
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note",
+				"editor"
+			]
+		},
+		{
+			"id": "117a055d-34bc-4b3b-9082-6a7bc98d869f",
+			"input": "%md\n## Corresponding system\n\n<div>\n$x_1 - x_3 = 0$<br>\n$x_2 + 2x_3 = 1$<br>\n</div>\n<br><br>\n\n### Pivot columns\nA *pivot column* is a column of the matrix with a leading 1.  The pivot columns of our matrix are 1 and 2.  The non pivot columns are called \"free variables\", and we write the set of solutions in terms of the corresponding variables.\n\n<br>\n### Our system above\n<div>\nIt has non-pivot column 3, so we write $x_1$ and $x_2$ in terms of $x_3=t$ (say):\n    <br><br>\n$x_1 = x_3$<br>\n$x_2 = 1-2x_3$\n</div>\n<br>\n\nThe set of solutions is\n<div>\n$$\n \\{(t, 1-2t, t) : t \\text{ is any number }\\}\n$$\n</div>\n\n(Evidently some people won't know about set notation, so explain the above notation.)",
+			"output": [
+				{
+					"html": "<h2>Corresponding system</h2>\n\n<div>\n$x_1 - x_3 = 0$<br>\n$x_2 + 2x_3 = 1$<br>\n</div>\n\n<p><br><br></p>\n\n<h3>Pivot columns</h3>\n\n<p>A <em>pivot column</em> is a column of the matrix with a leading 1.  The pivot columns of our matrix are 1 and 2.  The non pivot columns are called \"free variables\", and we write the set of solutions in terms of the corresponding variables.\n<br></p>\n\n<h3>Our system above</h3>\n\n<div>\nIt has non-pivot column 3, so we write $x_1$ and $x_2$ in terms of $x_3=t$ (say):\n    <br><br>\n$x_1 = x_3$<br>\n$x_2 = 1-2x_3$\n</div>\n\n<p><br>\nThe set of solutions is</p>\n\n<div>\n$$\n \\{(t, 1-2t, t) : t \\text{ is any number }\\}\n$$\n</div>\n\n<p>(Evidently some people won't know about set notation, so explain the above notation.)</p>\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note",
+				"editor"
+			]
+		},
+		{
+			"id": "4dcaf52b-832f-4cb5-9df5-3d04cc8ac839",
+			"input": "%md\n\n## Note\n\n### There are numerous possibilities for the set of solutions to a system of linear equations    \n\n* no solutions\n* a unique solution\n* infinitely many: parametrized by one variable (when you have a non-pivot column) -- solutions form a *line*\n* infinitely many: parametrized by two variable (when you have a non-pivot column) -- solutions form a *plane*\n* infinitely many: parametrized by three variable (when you have a non-pivot column)\n* ...",
+			"output": [
+				{
+					"html": "<h2>Note</h2>\n\n<h3>There are numerous possibilities for the set of solutions to a system of linear equations</h3>\n\n<ul>\n<li>no solutions</li>\n<li>a unique solution</li>\n<li>infinitely many: parametrized by one variable (when you have a non-pivot column) -- solutions form a <em>line</em></li>\n<li>infinitely many: parametrized by two variable (when you have a non-pivot column) -- solutions form a <em>plane</em></li>\n<li>infinitely many: parametrized by three variable (when you have a non-pivot column)</li>\n<li>...</li>\n</ul>\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note",
+				"editor"
+			]
+		},
+		{
+			"id": "3b380575-f183-47a5-9e47-0ec67b8c3cb5",
+			"input": "%md\n## More examples\n\nThis looks much like our last example (the lower right number is different):\n<div>\n$x_1 + 2x_2 + 3x_3 = 2 $<br>\n$3x_1 + 4x_2 + 5x_3 = 4 $<br>\n$6x_1 + 7x_2 + 8x_3 = 8 $<br>\n</div>",
+			"output": [
+				{
+					"html": "<h2>More examples</h2>\n\n<p>This looks much like our last example (the lower right number is different):</p>\n\n<div>\n$x_1 + 2x_2 + 3x_3 = 2 $<br>\n$3x_1 + 4x_2 + 5x_3 = 4 $<br>\n$6x_1 + 7x_2 + 8x_3 = 8 $<br>\n</div>\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note",
+				"editor"
+			]
+		},
+		{
+			"id": "1aba8546-918b-4130-a0db-7f830f10222d",
+			"input": "a = matrix([[1,2,3,2], [3,4,5,4], [6,7,8,8]]); show(a)",
+			"output": [
+				{
+					"tex": {
+						"tex": "\\left(\\begin{array}{rrrr}\n1 & 2 & 3 & 2 \\\\\n3 & 4 & 5 & 4 \\\\\n6 & 7 & 8 & 8\n\\end{array}\\right)",
+						"display": true
+					}
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "2cf05d36-befc-40f9-b2fc-3ddd7e4ce986",
+			"input": "%md\nHere is the echelon form.  There are *no solutions*, since the last row corresponds to the equation $0=1$.",
+			"output": [
+				{
+					"html": "<p>Here is the echelon form.  There are <em>no solutions</em>, since the last row corresponds to the equation $0=1$.</p>\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note",
+				"editor"
+			]
+		},
+		{
+			"id": "a3479aba-a3b0-463b-b682-f5540a3786cd",
+			"input": "a.rref()",
+			"output": [
+				{
+					"stdout": "[ 1  0 -1  0]\n[ 0  1  2  0]\n[ 0  0  0  1]"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "6b4547e3-3af0-4c00-bba1-9de6d94c2b92",
+			"input": "%md\n\n### This also looks much like our last example (the lower left number is different):\n<div>\n$x_1 + 2x_2 + 3x_3 = 2 $<br>\n$3x_1 + 4x_2 + 5x_3 = 4 $<br>\n$17x_1 + 7x_2 + 8x_3 = 8 $<br>\n</div>",
+			"output": [
+				{
+					"html": "<h3>This also looks much like our last example (the lower left number is different):</h3>\n\n<div>\n$x_1 + 2x_2 + 3x_3 = 2 $<br>\n$3x_1 + 4x_2 + 5x_3 = 4 $<br>\n$17x_1 + 7x_2 + 8x_3 = 8 $<br>\n</div>\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note",
+				"editor"
+			]
+		},
+		{
+			"id": "69032b40-adbd-47f3-9c00-c012694248ca",
+			"input": "a = matrix([[1,2,3,2], [3,4,5,4], [17,7,8,8]]); show(a)",
+			"output": [
+				{
+					"tex": {
+						"tex": "\\left(\\begin{array}{rrrr}\n1 & 2 & 3 & 2 \\\\\n3 & 4 & 5 & 4 \\\\\n17 & 7 & 8 & 8\n\\end{array}\\right)",
+						"display": true
+					}
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "cbbcb6e9-feed-4a8c-8c2f-fd7e98eb9cac",
+			"input": "a.rref()",
+			"output": [
+				{
+					"stdout": "[   1    0    0 1/11]\n[   0    1    0 9/11]\n[   0    0    1 1/11]"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "c9fa1155-d8e5-4e9e-aed3-a18b8ee57e10",
+			"input": "%md\nIt is easy to read off the unique solution to the above...\n<div>\n$$(x_1,x_2,x_3) = (1/11, 9/11, 1/11)$$\n</div>",
+			"output": [
+				{
+					"html": "<p>It is easy to read off the unique solution to the above...</p>\n\n<div>\n$$(x_1,x_2,x_3) = (1/11, 9/11, 1/11)$$\n</div>\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note",
+				"editor"
+			]
+		},
+		{
+			"id": "bb08b37b-8923-498e-9ef2-02d011b0a957",
+			"input": "%md \n## Just for fun, let's try some bigger *random* matrices...",
+			"output": [
+				{
+					"html": "<h2>Just for fun, let's try some bigger <em>random</em> matrices...</h2>\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note",
+				"editor"
+			]
+		},
+		{
+			"id": "d89e26db-1a8a-49f3-89a4-f93c577ddddc",
+			"input": "a = random_matrix(ZZ, 10, 11); show(a)",
+			"output": [
+				{
+					"tex": {
+						"tex": "\\left(\\begin{array}{rrrrrrrrrrr}\n8 & -1 & -305 & 2 & 0 & -2 & 0 & 2 & 1 & 1 & -3 \\\\\n1 & -1 & -2 & -4 & 0 & -1 & -1 & -1 & -1 & 1 & -4 \\\\\n1 & 4 & -2 & 1 & 0 & 0 & 3 & 23 & -4 & 0 & 4 \\\\\n-1 & 0 & 1 & 24 & 4 & -2 & 2 & -1 & -5 & 1 & -5 \\\\\n0 & -1 & 25 & 1 & 1 & -1 & -1 & 3 & -151 & -3 & 1 \\\\\n-1 & -1 & -1 & -4 & -1 & -9 & 1 & 0 & -2 & -1 & -1 \\\\\n-1 & -1 & 1 & -3 & -3 & 1 & 4 & -3 & 1 & 1 & -1 \\\\\n204 & -1 & 3 & 1 & 0 & 1 & -1 & -9 & 0 & 1 & 0 \\\\\n3 & 1 & 0 & 16 & -2 & 2 & -1 & 1 & 0 & 0 & 1 \\\\\n0 & -1 & -3 & 3 & 0 & -1 & -1 & -257 & 7 & 0 & -1\n\\end{array}\\right)",
+						"display": true
+					}
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "5ae603d0-31e9-4aff-a41f-1f4aa47ee259",
+			"input": "show(a.rref())",
+			"output": [
+				{
+					"tex": {
+						"tex": "\\left(\\begin{array}{rrrrrrrrrrr}\n1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \\frac{707448906314}{41853103914523} \\\\\n0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \\frac{67818489191329}{83706207829046} \\\\\n0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & -\\frac{323990654993}{83706207829046} \\\\\n0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & -\\frac{3951118155533}{83706207829046} \\\\\n0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & -\\frac{9133034174901}{41853103914523} \\\\\n0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & \\frac{16268882798019}{41853103914523} \\\\\n0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & \\frac{13306608616089}{41853103914523} \\\\\n0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & -\\frac{12139542831}{7609655257186} \\\\\n0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & \\frac{1416154222063}{41853103914523} \\\\\n0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & -\\frac{111511968784200}{41853103914523}\n\\end{array}\\right)",
+						"display": true
+					}
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "44f0d549-8a57-4103-8f56-23ca48c5722e",
+			"input": "a = random_matrix(ZZ, 100, 101)\n%time b = a.rref()",
+			"output": [
+				{
+					"stdout": "CPU time: 0.04 s, Wall time: 0.04 s"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "586217c5-16fb-4dc3-ae42-59412f5a84b8",
+			"input": "b[0]",
+			"output": [
+				{
+					"stdout": "(1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 224390747735416336898801941312928639316995242023882073391478434337039392799796265029618350911854457027070373226803858515359644555914203238443920375736713924479264603315158106362346641512678648176122230/717231041557079173783211307142750647899359527468066384576113802905495854880847662382683790767324705348411904461088098885497576224222898975989556051850601348804902546248523640999415546571486722115895247)"
+				},
+				{
+					"stdout": "\n"
+				},
+				{
+					"stdout": ""
+				}
+			],
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "bebcedfb-1eab-49a2-b07a-742a9fed5614",
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "2e5b627f-45cf-4436-a439-29bc75880d8a",
+			"hide": [
+				"note"
+			]
+		},
+		{
+			"id": "6aa32d83-55d5-4ab7-9a3d-769179c50112",
+			"hide": [
+				"note"
+			]
 		}
 	]
 }
