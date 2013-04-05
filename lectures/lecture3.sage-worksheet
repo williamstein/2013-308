@@ -1,0 +1,11 @@
+{
+	"session_uuid": "c35cea69-6fbd-4f27-8e4f-33c13af5be64",
+	"title": "Math 308",
+	"description": "Lecture 3: using echelon form to solve systems of linear equations",
+	"content": [
+		{
+			"id": "6d765428-9efc-46bd-b9d8-08bc303f4326",
+			"note": "<div>GOAL: Understand how to use echelon form of matrices to solve systems of linear equations in general.</div>"
+		}
+	]
+}
