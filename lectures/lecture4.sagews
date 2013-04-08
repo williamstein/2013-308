@@ -11,6 +11,7 @@
 - next homework: assigned on Wednesday
 - midterm dates: April 24, May 15 (both Wednesdays).
 - screencast of lecture(s) at [https://github.com/williamstein/2013-308](https://github.com/williamstein/2013-308)
+- remind me to **start the screencast program** (!)
 """)
 
 
@@ -18,7 +19,8 @@
 
 
 
-︡f6f6e0ec-e30c-475d-b45f-e9ad3613d1e4︡{"done":false,"event":"output"}︡{"html":"<h1>Lecture 4: More Matrix Algebra</h1>\n\n<ol>\n<li>Algebraic Properties of Matrices (surprise: multiplication <em>not</em> commutative)</li>\n<li>Symmetric Matrices (surprise: $A^T \\cdot A$ is symmetric)</li>\n<li>Next time: the inverse of a Matrix (surprise: sometimes it does not exist)</li>\n</ol>\n\n<h3>REMINDERS</h3>\n\n<ul>\n<li>office hours 12 to 1:30 tomorrow (Tuesday) in Padelford C423.</li>\n<li>homework due Wednesday, which means send an email to 2013uw308@gmail.com once you do it.</li>\n<li>next homework: assigned on Wednesday</li>\n<li>midterm dates: ???</li>\n<li>screencast of lecture(s) at <a href=\"https://github.com/williamstein/2013-308\">https://github.com/williamstein/2013-308</a></li>\n</ul>\n","done":false,"event":"output"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"stdout":"","done":true,"event":"output"}︡
+
+︡791ff3c4-4c9a-4a11-8eaa-e7c6a1167b6a︡{"done":false,"event":"output"}︡{"html":"<h1>Lecture 4: More Matrix Algebra</h1>\n\n<ol>\n<li>Algebraic Properties of Matrices (surprise: multiplication <em>not</em> commutative)</li>\n<li>Symmetric Matrices (surprise: $A^T \\cdot A$ is symmetric)</li>\n<li>Next time: the inverse of a Matrix (surprise: sometimes it does not exist)</li>\n</ol>\n\n<h3>REMINDERS</h3>\n\n<ul>\n<li>office hours 12 to 1:30 tomorrow (Tuesday) in Padelford C423.</li>\n<li>homework due Wednesday, which means send an email to 2013uw308@gmail.com once you do it.</li>\n<li>next homework: assigned on Wednesday</li>\n<li>midterm dates: April 24, May 15 (both Wednesdays).</li>\n<li>screencast of lecture(s) at <a href=\"https://github.com/williamstein/2013-308\">https://github.com/williamstein/2013-308</a></li>\n<li>remind me to <strong>start the screencast program</strong> (!)</li>\n</ul>\n","done":false,"event":"output"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"stdout":"","done":true,"event":"output"}︡
 ︠60bc6749-5670-4e3a-8cf7-de20a70558cdr︠
 
 
@@ -75,13 +77,10 @@ First, a convincing example?
 A = random_matrix(ZZ,n); B = random_matrix(ZZ, n); C = random_matrix(ZZ,n)
 show([A,B,C])
 
-
-
-
-︡fc3a3e0c-5f07-4289-9174-0b921f10f479︡{"done":false,"event":"output"}︡
+︡ca1cd4d6-a0cb-4a49-9238-f2b4c9ea1e32︡{"done":false,"event":"output"}︡{"tex":{"tex":"\\left[\\left(\\begin{array}{rrrr}\n1 & -3 & 2 & 1 \\\\\n1 & -1 & 0 & -1 \\\\\n18 & 6 & 1 & 2 \\\\\n1 & -1 & 3 & 1\n\\end{array}\\right), \\left(\\begin{array}{rrrr}\n1 & 1 & 15 & 4 \\\\\n0 & 0 & -4 & -1 \\\\\n-1 & -2 & -4 & 0 \\\\\n0 & 2 & -1 & -1\n\\end{array}\\right), \\left(\\begin{array}{rrrr}\n1 & 0 & -1 & 1 \\\\\n0 & 5 & 1 & 5 \\\\\n0 & 1 & -45 & -4 \\\\\n0 & -4 & 1 & 2\n\\end{array}\\right)\\right]","display":true},"done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
 ︠0484357d-c6ce-4698-af9d-317dc4a394f4r︠show([A*(B*C), (A*B)*C])
 
-︡88f18b9c-f502-44bc-bc5b-b5e5b563bb05︡{"done":false,"event":"output"}︡{"tex":{"tex":"\\left[\\left(\\begin{array}{rrrr}\n0 & 0 & 0 & 0 \\\\\n305 & -2142 & -389 & -192 \\\\\n88 & -667 & -364 & -50 \\\\\n-53 & 351 & 80 & 31\n\\end{array}\\right), \\left(\\begin{array}{rrrr}\n0 & 0 & 0 & 0 \\\\\n305 & -2142 & -389 & -192 \\\\\n88 & -667 & -364 & -50 \\\\\n-53 & 351 & 80 & 31\n\\end{array}\\right)\\right]","display":true},"done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
+︡5d59a68c-b8a1-4c14-89cf-d3df9adef4e4︡{"done":false,"event":"output"}︡{"tex":{"tex":"\\left[\\left(\\begin{array}{rrrr}\n-1 & -11 & -804 & -66 \\\\\n1 & -9 & -896 & -72 \\\\\n17 & 84 & -10733 & -715 \\\\\n-2 & -25 & -267 & -33\n\\end{array}\\right), \\left(\\begin{array}{rrrr}\n-1 & -11 & -804 & -66 \\\\\n1 & -9 & -896 & -72 \\\\\n17 & 84 & -10733 & -715 \\\\\n-2 & -25 & -267 & -33\n\\end{array}\\right)\\right]","display":true},"done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
 ︠6b037042-5e23-49a4-a9e1-e3b248a7d746r︠
 
 
