@@ -10,10 +10,15 @@
 - homework due Wednesday, which means send an email to 2013uw308@gmail.com once you do it.
 - next homework: assigned on Wednesday
 - midterm dates: ???
+- screencast of lecture(s) at [https://github.com/williamstein/2013-308](https://github.com/williamstein/2013-308)
 """)
 
 
-︡69b1d765-4b2a-40cd-88fe-266a1c7162cb︡{"done":false,"event":"output"}︡{"html":"<h1>Lecture 4: More Matrix Algebra</h1>\n\n<ol>\n<li>Algebraic Properties of Matrices (surprise: multiplication <em>not</em> commutative)</li>\n<li>Symmetric Matrices (surprise: $A^T \\cdot A$ is symmetric)</li>\n<li>The Inverse of a Matrix (surprise: sometimes it does not exist)</li>\n</ol>\n\n<h3>REMINDERS</h3>\n\n<ul>\n<li>office hours 12 to 1:30 tomorrow (Tuesday) in Padelford C423.</li>\n<li>homework due Wednesday, which means send an email to 2013uw308@gmail.com once you do it.</li>\n<li>next homework: assigned on Wednesday</li>\n<li>midterm dates: ???</li>\n</ul>\n","done":false,"event":"output"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"stdout":"","done":true,"event":"output"}︡
+
+
+
+
+︡f6f6e0ec-e30c-475d-b45f-e9ad3613d1e4︡{"done":false,"event":"output"}︡{"html":"<h1>Lecture 4: More Matrix Algebra</h1>\n\n<ol>\n<li>Algebraic Properties of Matrices (surprise: multiplication <em>not</em> commutative)</li>\n<li>Symmetric Matrices (surprise: $A^T \\cdot A$ is symmetric)</li>\n<li>Next time: the inverse of a Matrix (surprise: sometimes it does not exist)</li>\n</ol>\n\n<h3>REMINDERS</h3>\n\n<ul>\n<li>office hours 12 to 1:30 tomorrow (Tuesday) in Padelford C423.</li>\n<li>homework due Wednesday, which means send an email to 2013uw308@gmail.com once you do it.</li>\n<li>next homework: assigned on Wednesday</li>\n<li>midterm dates: ???</li>\n<li>screencast of lecture(s) at <a href=\"https://github.com/williamstein/2013-308\">https://github.com/williamstein/2013-308</a></li>\n</ul>\n","done":false,"event":"output"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"stdout":"","done":true,"event":"output"}︡
 ︠60bc6749-5670-4e3a-8cf7-de20a70558cdr︠
 
 
@@ -148,15 +153,18 @@ If $A = (a\_{i,j})$ then $A^T = (a\_{j,i})$, for example.
 
 **Definition**: A matrix is *symmetric* if $A^T = A$.
 
-**Fact**: if $A$ and $B$ are matrices, then $(AB)^T = B^T A^T$.
+**Surprisingly Important Fact**: if $A$ and $B$ are matrices, then $(AB)^T = B^T A^T$.
 
 Let's *prove* this formula in a moment by writing it all out in detail.  This is perhaps the first such proof we've done so far.
 
 First note this corollary:
 
-**Corollary**: If $A$ is a square matrix, then $A A^T$ is symmetric.
+**Corollary**: If $A$ is a matrix, then $A A^T$ is symmetric. (Thus there is a symmetric matrix naturally associated to any matrix.)
 
 Proof: Note that $(A A^T)^T = (A^T)^T A^T = A A^T$.
+
+
+That was an easy proof.  But it relies on our formula for $(AB)^T$.
 """)
 
 
@@ -166,12 +174,37 @@ Proof: Note that $(A A^T)^T = (A^T)^T A^T = A A^T$.
 
 
 
-︡92b55601-79ad-4dc6-9c96-9e1c1ee298a5︡{"done":false,"event":"output"}︡{"html":"<h1>Symmetric Matrices</h1>\n\n<p>Recall that if $A$ is a matrix, we defined the <em>transpose</em> $A^T$ of $A$.</p>\n\n<p>If $A = (a_{i,j})$ then $A^T = (a_{j,i})$, for example.</p>\n\n<p><strong>Definition</strong>: A matrix is <em>symmetric</em> if $A^T = A$.</p>\n\n<p><strong>Fact</strong>: if $A$ and $B$ are matrices, then $(AB)^T = B^T A^T$.</p>\n\n<p>Let's <em>prove</em> this formula in a moment by writing it all out in detail.  This is perhaps the first such proof we've done so far.</p>\n\n<p>First note this corollary:</p>\n\n<p><strong>Corollary</strong>: If $A$ is a square matrix, then $A A^T$ is symmetric.</p>\n\n<p>Proof: Note that $(A A^T)^T = (A^T)^T A^T = A A^T$.</p>\n","done":false,"event":"output"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"stdout":"","done":true,"event":"output"}︡
-︠c3ce6771-995e-4db4-809e-058ab7768dcdr︠md("""
-That was an easy proof.
 
-"""
-︡c4203e22-c7b2-4791-8525-095b9f7baf4b︡{"done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
+
+︡06bffedd-3e5b-44b3-8a2a-56301c935481︡{"done":false,"event":"output"}︡{"html":"<h1>Symmetric Matrices</h1>\n\n<p>Recall that if $A$ is a matrix, we defined the <em>transpose</em> $A^T$ of $A$.</p>\n\n<p>If $A = (a_{i,j})$ then $A^T = (a_{j,i})$, for example.</p>\n\n<p><strong>Definition</strong>: A matrix is <em>symmetric</em> if $A^T = A$.</p>\n\n<p><strong>Surprisingly Important Fact</strong>: if $A$ and $B$ are matrices, then $(AB)^T = B^T A^T$.</p>\n\n<p>Let's <em>prove</em> this formula in a moment by writing it all out in detail.  This is perhaps the first such proof we've done so far.</p>\n\n<p>First note this corollary:</p>\n\n<p><strong>Corollary</strong>: If $A$ is a matrix, then $A A^T$ is symmetric. (Thus there is a symmetric matrix naturally associated to any matrix.)</p>\n\n<p>Proof: Note that $(A A^T)^T = (A^T)^T A^T = A A^T$.</p>\n\n<p>That was an easy proof.  But it relies on our formula for $(AB)^T$.</p>\n","done":false,"event":"output"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"stdout":"","done":true,"event":"output"}︡
+︠c3ce6771-995e-4db4-809e-058ab7768dcdr︠
+
+
+
+
+md(r"""
+Next, the more exciting fact...
+
+**Surprisingly Important Fact**: if $A$ and $B$ are matrices, then $(AB)^T = B^T A^T$.
+
+First, here is a formula for matrix multiplication, assuming that $A=(a\_{i,j})$ and $B=(b\_{j,k})$.
+
+The $i,k$ entry of $AB$ is $\sum_{j=1}^m a\_{i,j} b\_{j,k}$, where $m$ is the number of columns of $A$.
+
+Thus the $k,i$ entry of $(AB)^T$ is $\sum\_{j=1}^m a\_{i,j} b\_{j,k}$.
+
+Next, we consider the $k,i$ entry of $B^T A^T$.
+
+Thinking carefully, we see that it is $\sum\_{j=1}^{n} b\_{j,k} a\_{i,j}$.  But those are the same (multiplication of numbers commutes)!  Nice.
+
+""")
+
+
+
+
+
+
+︡cc3d7800-eac9-410c-b3cb-36dba426a607︡{"done":false,"event":"output"}︡{"html":"<p>Next, the more exciting fact...</p>\n\n<p><strong>Surprisingly Important Fact</strong>: if $A$ and $B$ are matrices, then $(AB)^T = B^T A^T$.</p>\n\n<p>First, here is a formula for matrix multiplication, assuming that $A=(a_{i,j})$ and $B=(b_{j,k})$.</p>\n\n<p>The $i,k$ entry of $AB$ is $\\sum_{j=1}^m a_{i,j} b_{j,k}$, where $m$ is the number of columns of $A$.</p>\n\n<p>Thus the $k,i$ entry of $(AB)^T$ is $\\sum_{j=1}^m a_{i,j} b_{j,k}$.</p>\n\n<p>Next, we consider the $k,i$ entry of $B^T A^T$.</p>\n\n<p>Thinking carefully, we see that it is $\\sum_{j=1}^{n} b_{j,k} a_{i,j}$.  But those are the same (multiplication of numbers commutes)!  Nice.</p>\n","done":false,"event":"output"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"stdout":"","done":true,"event":"output"}︡
 ︠7e55ba2a-094c-4e2a-b31f-24e55373161cr︠
 ︡5aaa9d2e-655b-4d39-87df-09622437883d︡{"done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
 ︠cac89ece-dbbc-48a5-beac-e7e82b51db10r︠
