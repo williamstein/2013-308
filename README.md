@@ -13,6 +13,7 @@ Office Hours: Tuesday 12:30 - 2
 
 # Screencasts of Lectures
 - [Lecture 3](http://youtu.be/ru6mCdcED-E)
+- [Lecture 4](http://youtu.be/swBQ-nWaCKg)
 
 
 # WebAssign
