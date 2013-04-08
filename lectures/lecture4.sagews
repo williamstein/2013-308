@@ -9,7 +9,7 @@
 - office hours 12 to 1:30 tomorrow (Tuesday) in Padelford C423.
 - homework due Wednesday, which means send an email to 2013uw308@gmail.com once you do it.
 - next homework: assigned on Wednesday
-- midterm dates: ???
+- midterm dates: April 24, May 15 (both Wednesdays).
 - screencast of lecture(s) at [https://github.com/williamstein/2013-308](https://github.com/williamstein/2013-308)
 """)
 

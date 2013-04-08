@@ -14,7 +14,10 @@ Course Website: [https://github.com/williamstein/2013-308/](https://github.com/w
 ## Homework and Exams
 - Homework: assigned weekly and will use WebAssign, which is online.  I will not accept any late homework, but will drop the lowest 2 homework grades. (Note: I'm using WebAssign because I would like to create a competing product that is better, so please let me know every idea you have about how to improve on it!)
 - Midterm and final exam: three in-class exams, which will consist of problems similar to those assigned as homework
+ - Midterm 1: April 24
+ - Midterm 2: May 15
 - Grade: Homework - 15%, Midterm 1 - 25%, Midterm 2 - 25%, and Final - 35%
+
 
 ## Lecture Plan
 (I reserve the right to adjust this during the quarter.)
