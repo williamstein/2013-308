@@ -25,6 +25,11 @@ That was an easy proof.  But it relies on our formula for $(AB)^T$.
 ︡142a0ce6-0a63-475d-8703-e7375e61adac︡{"done":false,"event":"output"}︡{"html":"<h1>Symmetric Matrices</h1>\n\n<p>Recall that if $A$ is a matrix, we defined the <em>transpose</em> $A^T$ of $A$.</p>\n\n<p>If $A = (a_{i,j})$ then $A^T = (a_{j,i})$, for example.</p>\n\n<p><strong>Definition</strong>: A matrix is <em>symmetric</em> if $A^T = A$.</p>\n\n<p><strong>Surprisingly Important Fact</strong>: if $A$ and $B$ are matrices, then $(AB)^T = B^T A^T$.</p>\n\n<p>Let's <em>prove</em> this formula in a moment by writing it all out in detail.  This is perhaps the first such proof we've done so far.</p>\n\n<p>First note this corollary:</p>\n\n<p><strong>Corollary</strong>: If $A$ is a matrix, then $A A^T$ is symmetric. (Thus there is a symmetric matrix naturally associated to any matrix.)</p>\n\n<p>Proof: Note that $(A A^T)^T = (A^T)^T A^T = A A^T$.</p>\n\n<p>That was an easy proof.  But it relies on our formula for $(AB)^T$.</p>\n","done":false,"event":"output"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"stdout":"","done":true,"event":"output"}︡
 ︠2490972c-6ebc-496f-9e91-2e58b1b53617r︠
 
+
+
+
+
+
 md(r"""
 **Surprisingly Important Fact**:
 
