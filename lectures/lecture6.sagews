@@ -41,7 +41,11 @@ An algorithm to compute $A^{-1}$ if it exists (or prove it doesn't exist):
 - If $A$ is invertible, then $[E|F] = [I|A^{-1}]$.
 """)
 
-︡666cc012-face-4ab0-bf6e-ce56345c4436︡{"done":false,"event":"output"}︡{"html":"<p>If $A$ is an invertible matrix, write $A^{-1}$ for <em>the</em> inverse of $A$, if it exists. </p>\n\n<ul>\n<li>Question I left you with last time: \n$$\nA=\n\\left(\\begin{array}{rrr}\n1 &amp; 2 &amp; 3 \\\\\n4 &amp; 5 &amp; 6 \\\\\n7 &amp; 8 &amp; 9\n\\end{array}\\right)\n$$</li>\n</ul>\n\n<h2>Here is <strong>one way</strong> to find the inverse of a matrix, in general.</h2>\n\n<p>Answer: we already know how!  It's exactly the same as solving $AX = I_n$, which we could solve for each column of $I_n$.  (Here, explain on the board how we can use the $AX = $ same as applying $A$ to the columns of $X$.)  We can do the work for all the columns at once.</p>\n\n<p>An algorithm to compute $A^{-1}$ if it exists (or prove it doesn't exist):</p>\n\n<ul>\n<li>Form the augmented matrix $[A|I]$</li>\n<li>Put it in reduced row echelon form, as written as $[E|F]$.</li>\n<li>If $A$ is invertible, then $[E|F] = [I|A^{-1}]$.   (This requires some thought to believe.)</li>\n</ul>\n","done":false,"event":"output"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"stdout":"","done":true,"event":"output"}︡
+︡37e7bd88-0c99-41ea-96dd-a377cd85f0f9︡{}︡{"html":"<p>If $A$ is an invertible matrix, write $A^{-1}$ for <em>the</em> inverse of $A$, if it exists.</p>\n\n<ul>\n<li>Question I left you with last time:\n$$\nA=\n\\left(\\begin{array}{rrr}\n1 &amp; 2 &amp; 3 \\\\\n4 &amp; 5 &amp; 6 \\\\\n7 &amp; 8 &amp; 9\n\\end{array}\\right)\n$$</li>\n</ul>\n\n<h2>Here is <strong>one way</strong> to find the inverse of a matrix, in general.</h2>\n\n<p>This problem is exactly the same as solving $AX = I_n$, which we can solve by solving for each column of $I_n$.  (Here, explain on the board how we can use the $AX = $ same as applying $A$ to the columns of $X$.)  We can do the work for all the columns at once.</p>\n\n<p>An algorithm to compute $A^{-1}$ if it exists (or prove it doesn't exist):</p>\n\n<ul>\n<li>Form the augmented matrix $[A|I]$</li>\n<li>Put $[A|I]$ in reduced row echelon form, which we write as $[E|F]$.</li>\n<li>If $A$ is invertible, then $[E|F] = [I|A^{-1}]$.</li>\n</ul>\n"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"once":true}︡{"stdout":"","done":true}︡
+︠50b4fc63-305f-4169-93f3-0b729603c0cdr︠
+AI = matrix(3,6,[1,2,3,1,0,0,  4,5,6,0,1,0,  7,8,13,0,0,1])
+AI.rref()
+︡43fb5e1e-56db-4a71-986b-a85aca1605f3︡{}︡{"stdout":"[     1      0      0 -17/12    1/6    1/4]\n[     0      1      0    5/6    2/3   -1/2]\n[     0      0      1    1/4   -1/2    1/4]"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
 ︠8828a3d2-3dfe-4886-a97d-1564ac3d1ccdr︠
 
 
@@ -100,6 +104,11 @@ md("## A random matrix and its inverse:")
 A = random_matrix(ZZ,4);
 show([A, A^(-1)])
 ︡7784daf2-72d7-4550-8a52-ce7819db1a85︡{"done":false,"event":"output"}︡{"html":"<h2>A random matrix and its inverse:</h2>\n","done":false,"event":"output"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"tex":{"tex":"\\left[\\left(\\begin{array}{rrrr}\n-5 & 0 & -1 & 1 \\\\\n-1 & -2 & -9 & -1 \\\\\n-401 & 0 & 6 & -1 \\\\\n0 & -4 & -1 & 1\n\\end{array}\\right), \\left(\\begin{array}{rrrr}\n-\\frac{7}{1641} & -\\frac{2}{1641} & -\\frac{4}{1641} & \\frac{1}{1641} \\\\\n\\frac{803}{3282} & -\\frac{5}{3282} & -\\frac{5}{1641} & -\\frac{409}{1641} \\\\\n-\\frac{1201}{8205} & -\\frac{812}{8205} & \\frac{17}{8205} & \\frac{406}{8205} \\\\\n\\frac{6829}{8205} & -\\frac{862}{8205} & -\\frac{83}{8205} & \\frac{431}{8205}\n\\end{array}\\right)\\right]","display":true},"done":false,"event":"output"}︡{"stdout":"","done":true,"event":"output"}︡
+︠ae211afe-2b66-414c-a558-99ef45818cebr︠
+%var a,b,c,d
+A = matrix(2,4,[a,b, 1,0,  c,d, 0,1])
+show(A.rref())
+︡ab635efc-5842-47c6-b6d0-8032b3f27480︡{}︡{"tex":{"tex":"\\left(\\begin{array}{rrrr}\n1 & 0 & -\\frac{b c}{{\\left(\\frac{b c}{a} - d\\right)} a^{2}} + \\frac{1}{a} & \\frac{b}{{\\left(\\frac{b c}{a} - d\\right)} a} \\\\\n0 & 1 & \\frac{c}{{\\left(\\frac{b c}{a} - d\\right)} a} & -\\frac{1}{\\frac{b c}{a} - d}\n\\end{array}\\right)","display":true}}︡{"stdout":"","done":true}︡
 ︠b3137098-e22f-49fa-9099-03fc1721fe9fr︠
 
 
