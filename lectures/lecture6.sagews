@@ -6,16 +6,8 @@
 ### William Stein
 ### Reminder: start screen recording!!!!
 
-︡39dc51f5-96ef-424d-b1ec-4e0520123f74︡{"done":false,"event":"output"}︡{"html":"<h1>Lecture 6 (Math 308):</h1>\n\n<h2>Matrix Inverses (part 2); start on Linear Independence</h2>\n\n<h3>William Stein</h3>\n\n<h3>Reminder: start screen recording!!!!</h3>\n","done":false,"event":"output"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"done":false,"event":"output","once":true}︡{"stdout":"","done":true,"event":"output"}︡
+︡c5955ce2-05df-46e3-8312-10d3f46d6147︡{}︡{"html":"<h1>Lecture 6 (Math 308):</h1>\n\n<h2>Matrix Inverses (part 2); start on Linear Independence</h2>\n\n<h3>William Stein</h3>\n\n<h3>Reminder: start screen recording!!!!</h3>\n"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"once":true}︡{"stdout":"","done":true}︡
 ︠d3168c05-a8ae-4cab-8eab-6b092ee8451br︠
-
-
-
-
-
-
-
-
 
 
 md(r"""
@@ -41,7 +33,7 @@ An algorithm to compute $A^{-1}$ if it exists (or prove it doesn't exist):
 - If $A$ is invertible, then $[E|F] = [I|A^{-1}]$.
 """)
 
-︡37e7bd88-0c99-41ea-96dd-a377cd85f0f9︡{}︡{"html":"<p>If $A$ is an invertible matrix, write $A^{-1}$ for <em>the</em> inverse of $A$, if it exists.</p>\n\n<ul>\n<li>Question I left you with last time:\n$$\nA=\n\\left(\\begin{array}{rrr}\n1 &amp; 2 &amp; 3 \\\\\n4 &amp; 5 &amp; 6 \\\\\n7 &amp; 8 &amp; 9\n\\end{array}\\right)\n$$</li>\n</ul>\n\n<h2>Here is <strong>one way</strong> to find the inverse of a matrix, in general.</h2>\n\n<p>This problem is exactly the same as solving $AX = I_n$, which we can solve by solving for each column of $I_n$.  (Here, explain on the board how we can use the $AX = $ same as applying $A$ to the columns of $X$.)  We can do the work for all the columns at once.</p>\n\n<p>An algorithm to compute $A^{-1}$ if it exists (or prove it doesn't exist):</p>\n\n<ul>\n<li>Form the augmented matrix $[A|I]$</li>\n<li>Put $[A|I]$ in reduced row echelon form, which we write as $[E|F]$.</li>\n<li>If $A$ is invertible, then $[E|F] = [I|A^{-1}]$.</li>\n</ul>\n"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"once":true}︡{"stdout":"","done":true}︡
+︡158cc2c1-d380-4d39-9654-7fccb48a529a︡{}︡{"stderr":"Error in lines 1-1\n"}︡{"stderr":"Traceback (most recent call last):\n"}︡{"stderr":"  File \"/home/wstein/.sagemathcloud/sage_server.py\", line 406, in execute\n"}︡{"stderr":"    exec compile(block, '', 'single') in namespace, locals\n"}︡{"stderr":"  File \"\", line 22, in <module>\n"}︡{"stderr":"  File \"/home/wstein/.sagemathcloud/sage_salvus.py\", line 2244, in md\n"}︡{"stderr":"    import markdown2\n"}︡{"stderr":"ImportError: No module named markdown2\n"}︡{"stdout":"","done":true}︡
 ︠50b4fc63-305f-4169-93f3-0b729603c0cdr︠
 AI = matrix(3,6,[1,2,3,1,0,0,  4,5,6,0,1,0,  7,8,13,0,0,1])
 AI.rref()
