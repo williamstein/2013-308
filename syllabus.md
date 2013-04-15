@@ -39,3 +39,4 @@ Course Website: [https://github.com/williamstein/2013-308/](https://github.com/w
 * Introduction to eigenvalues and determinants (2 lectures)
 * Eigenvalues, characteristic polynomial, eigenspaces. (2 lectures)
 * Applications (2 lectures)
+
