@@ -25,14 +25,14 @@ I left you hanging last time with this:
 
 **Question:** Are $v\_1 = (1,2,3)$, $v\_2=(4,5,6)$, and $v\_3=(7,8,9)$ linearly independent?
 
-**Answer:** ??
+**Answer:** NO. They are dependent. (1,-2,1).
 
 """)
 
 
 
 
-︡012073bc-cce2-4283-8b15-6d53e6120c00︡{}︡{"html":"<p>I left you hanging last time with this:</p>\n\n<p><strong>Question:</strong> Are $v_1 = (1,2,3)$, $v_2=(4,5,6)$, and $v_3=(7,8,9)$ linearly independent?</p>\n\n<p><strong>Answer:</strong> ??</p>\n"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"once":true}︡{"stdout":"","done":true}︡
+︡cd4f9654-62d8-46a4-b341-fa1d015f9b4e︡{}︡{"html":"<p>I left you hanging last time with this:</p>\n\n<p><strong>Question:</strong> Are $v_1 = (1,2,3)$, $v_2=(4,5,6)$, and $v_3=(7,8,9)$ linearly independent?</p>\n\n<p><strong>Answer:</strong> NO. They are dependent. (1,-2,1).</p>\n"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"once":true}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"once":true}︡{"stdout":"","done":true}︡
 ︠447bfe3b-a550-45a4-a378-84cfae54ac7b︠
 html(r"""
 <h1>Linear Independence of Matrices</h1>
