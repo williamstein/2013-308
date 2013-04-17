@@ -190,7 +190,11 @@ html(r"""
 
 """)
 ︡b1a5b1b9-ccfe-4264-b588-7ac71e747f86︡{}︡{"html":"\n<h1>The Span of a Set of Vectors: Let's Try it out</h1>\n\n<ol>\n<li> What is the span of $\\{(5)\\} \\subset \\mathbb{R}^1$? </li>\n<li> What is the span of $\\{(1,2)\\} \\subset \\mathbb{R}^2$? </li>\n<li> What is the span of $\\{(1,2), (2,4)\\} \\subset \\mathbb{R}^2$? </li>\n<li> What is the span of $\\{(1,2), (3,4)\\} \\subset \\mathbb{R}^2$? </li>\n<li> What is the span of $\\{(1,2,3)\\} \\subset \\mathbb{R}^3$? </li>\n<li> What is the span of $\\{(1,2,3), (4,5,6)\\} \\subset \\mathbb{R}^3$? </li>\n<li> What is the span of $\\{(1,0,0), (0,0,1), (0,0,1)\\} \\subset \\mathbb{R}^3$? </li>\n<li> What is the span of $\\{(1,2,3), (4,5,6), (7,8,9)\\} \\subset \\mathbb{R}^3$? </li>\n<br>\n<li> Do there always exist $n$ vectors that span $\\mathbb{R}^n$?  Are they linearly independent?</li>\n<br>\n<li> Can $\\mathbb{R}^n$ be spanned by less than $n$ vectors?  Rephrase this as a question about systems of lienar equations.</li>\n</ol>\n\n"}︡{"obj":"{}","javascript":{"coffeescript":false,"code":"cell.hide('editor')"},"once":true}︡{"stdout":"","done":true}︡
-︠c585f10d-4a6f-4ad3-b769-cbfb575c9a03︠
+︠c585f10d-4a6f-4ad3-b769-cbfb575c9a03r︠
+# This is all in Sage... but you'll have to master this class to understand what it means.
 
+span(QQ, [ [1,2,3], [4,5,6], [7,8,9] ])
+︡6b160ae2-da71-4ef7-9882-1dbfb06dd287︡{}︡{"stdout":"Vector space of degree 3 and dimension 2 over Rational Field\nBasis matrix:\n[ 1  0 -1]\n[ 0  1  2]"}︡{"stdout":"\n"}︡{"stdout":"","done":true}︡
+︠2fe696f6-96f8-4703-846c-9f2a115f61e7︠
 
 
