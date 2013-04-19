@@ -39,6 +39,8 @@ After the exam, we will start "eigenvectors" (chapter 4), yet another really sur
 ︠06e2134d-5b12-4178-99bf-094d00083a27︠
 span(QQ, [ [1,2,3], [4,5,6], [7,8,9] ])
 ︡543b7647-4465-4fcd-9d02-d41868bb6554︡{}︡{"stdout":"Vector space of degree 3 and dimension 2 over Rational Field\nBasis matrix:\n[ 1  0 -1]\n[ 0  1  2]"}︡{"stdout":"\n"}︡
+︠d03ce74e-69ba-4b02-a06c-aacf90bf008e︠
+
 ︠f128491b-42c7-448e-8980-53cc04861382︠
 span(QQ, [ [1,2,3,4], [18,23,2/3,43], [5,6,7,8] ])
 ︡be8e04c7-4c64-4ea6-8f0e-809d5d5d558b︡{}︡{"stdout":"Vector space of degree 4 and dimension 3 over Rational Field\nBasis matrix:\n[     1      0      0 -97/41]\n[     0      1      0 153/41]\n[     0      0      1 -15/41]"}︡{"stdout":"\n"}︡
@@ -46,7 +48,7 @@ span(QQ, [ [1,2,3,4], [18,23,2/3,43], [5,6,7,8] ])
 # Let's plot the span of [1,0,-1] and [0,1,2] in 3d -- it is a plane through origin.
 var('a,b')
 show(parametric_plot3d([a,b,-a+2*b], (a,-3,3), (b,-3,3)))
-︡f1e3abf9-d628-4569-8b14-dd3f7a15f77c︡{}︡{"stdout":"(a, b)"}︡{"stdout":"\n"}︡{"file":{"show":true,"uuid":"1faffacc-3892-427c-87cf-69fc6b012d5e","filename":"/home/wstein/.sage/temp/localhost/21560/tmp_k5ZI5K.png"}}︡
+︡eca8f4e9-c53b-4e34-a6af-0184364e3d9e︡{}︡{"stdout":"(a, b)"}︡{"stdout":"\n"}︡{"file":{"show":true,"uuid":"1faffacc-3892-427c-87cf-69fc6b012d5e","filename":"/home/wstein/.sage/temp/localhost/32093/tmp_PuB58X.png"}}︡
 ︠d6d02344-b3df-448d-b0cb-f2aa1565acf3︠
 
 md(r"""
