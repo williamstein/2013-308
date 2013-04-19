@@ -21,6 +21,6 @@ Office Hours: Tuesday 12:30 - 2
 
 # WebAssign
 
-- They say: "Your students’ best option is to purchase their text packaged with WebAssign at the U Bookstore but, if they want to buy standalone access to WebAssign, [this is the best value](http://www.cengagebrain.com/isbn/9781285181813).
+- They say: "Your students’ best option is to purchase their text packaged with WebAssign at the U Bookstore but, if they want to buy standalone access to WebAssign, [this is the best value](http://www.cengagebrain.com/isbn/9781285181813)."
 - [Student WebAssign resources](http://www.webassign.net/user_support/student/)
 - Aside from the online resources, you and your students can simply call WebAssign at 800-955-8275 for phone support.
