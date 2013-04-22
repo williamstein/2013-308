@@ -19,6 +19,7 @@ Office Hours: Tuesday 12:30 - 2
 - [Lecture 7](http://youtu.be/LZnYmZ0x1Vg)
 - [Lecture 8](http://youtu.be/dVU2vKRdpfo)
 - [Lecture 9](http://youtu.be/NzxbEx_Kpuk)
+- [Lecture 10 (April 22, 2013)](http://youtu.be/rbzfLIO3SBM)
 
 # WebAssign
 

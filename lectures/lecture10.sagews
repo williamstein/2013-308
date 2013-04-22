@@ -3,11 +3,12 @@
 <h1>Lecture 10: Review for Midterm 1</h1>
 <h2>Reminders</h2>
 <ul>
+    <li>To me: start Google+ Hangout!</li>
     <li>Midterm 1 is in class on Wednesday; you may bring a double-sided piece of paper (and a calculator if you want)<br><br></li>
     <li>I have office hours 12:30-2:00 tomorrow (Tuesday) in Padelford C423.<br><br></li>
     <li>Ask me questions right after class <em>today</em>.<br><br></li>
 </ul>
-︡eeb9e4c6-6e22-4c98-9516-dddce01eb2bb︡{"html":"<h1>Lecture 10: Review for Midterm 1</h1>\n<h2>Reminders</h2>\n<ul>\n    <li>Midterm 1 is in class on Wednesday; you may bring a double-sided piece of paper (and a calculator if you want)<br><br></li>\n    <li>I have office hours 12:30-2:00 tomorrow (Tuesday) in Padelford C423.<br><br></li>\n    <li>Ask me questions right after class <em>today</em>.<br><br></li>\n</ul>"}︡
+︡2cc1fa79-e01c-4f56-983c-31efd298ea26︡{"html":"<h1>Lecture 10: Review for Midterm 1</h1>\n<h2>Reminders</h2>\n<ul>\n    <li>To me: start Google+ Hangout!</li>\n    <li>Midterm 1 is in class on Wednesday; you may bring a double-sided piece of paper (and a calculator if you want)<br><br></li>\n    <li>I have office hours 12:30-2:00 tomorrow (Tuesday) in Padelford C423.<br><br></li>\n    <li>Ask me questions right after class <em>today</em>.<br><br></li>\n</ul>"}︡
 ︠def7a172-b17d-472d-ab13-78c1a98250bei︠
 
 %html
@@ -70,6 +71,7 @@ a = [matrix(QQ,2,[[1,2], [3,4]]), matrix(QQ,3,3,[1..9]), matrix(QQ,2,3,[1,2,3,4,
      matrix(QQ,2,3,[4,5,7,7,8,9])]
 for A in a:
     show([A, A.rref()])
+`
 ︡73ebb174-09b0-467e-9ea0-de2f662d232f︡{"html":"<p>Below you may use the following rref&#8217;s below (on exam I&#8217;ll \ngive a table like this of useful and useless rrefs).</p>\n"}︡{"tex":{"tex":"\\left[\\left(\\begin{array}{rr}\n1 & 2 \\\\\n3 & 4\n\\end{array}\\right), \\left(\\begin{array}{rr}\n1 & 0 \\\\\n0 & 1\n\\end{array}\\right)\\right]","display":true}}︡{"tex":{"tex":"\\left[\\left(\\begin{array}{rrr}\n1 & 2 & 3 \\\\\n4 & 5 & 6 \\\\\n7 & 8 & 9\n\\end{array}\\right), \\left(\\begin{array}{rrr}\n1 & 0 & -1 \\\\\n0 & 1 & 2 \\\\\n0 & 0 & 0\n\\end{array}\\right)\\right]","display":true}}︡{"tex":{"tex":"\\left[\\left(\\begin{array}{rrr}\n1 & 2 & 3 \\\\\n4 & 5 & 7\n\\end{array}\\right), \\left(\\begin{array}{rrr}\n1 & 0 & -\\frac{1}{3} \\\\\n0 & 1 & \\frac{5}{3}\n\\end{array}\\right)\\right]","display":true}}︡{"tex":{"tex":"\\left[\\left(\\begin{array}{rrr}\n4 & 5 & 7 \\\\\n7 & 8 & 9\n\\end{array}\\right), \\left(\\begin{array}{rrr}\n1 & 0 & -\\frac{11}{3} \\\\\n0 & 1 & \\frac{13}{3}\n\\end{array}\\right)\\right]","display":true}}︡
 ︠26e472b0-e33d-4521-8139-115fa9954c3bi︠
 %md
@@ -114,7 +116,7 @@ for A in a:
 ### Problem: Which of the following matrix multiplies is correct?
 
 ︡aaa4eb83-198c-4f77-b477-3d44dc46bed1︡{"html":"<h3>Problem: Which of the following matrix multiplies is correct?</h3>\n"}︡
-︠c392fb9b-faa5-4283-a163-d631874367a2i︠
+︠c392fb9b-faa5-4283-a163-d631874367a2︠
 for k in [2,3]:
     for i in [1..2]:
         B = 5-k
