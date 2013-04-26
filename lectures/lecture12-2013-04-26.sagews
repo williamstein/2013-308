@@ -6,17 +6,27 @@
 
 1. Turn on screen recorder
 2. There is a new homework assignment due Wednesday at midnight: purely computational about row/column spaces/nullspace, linear transformations.
-3. Hand back exam; make assertions about stats; grade course using 0-100 --> 0-4 mapping, which I've posted on the course website.
+3. Hand back exam; make assertions about stats; grade course using 0-100 --> 0-4 mapping, which I've posted on the course website; also answer key for exam on course website.
 4. Talk about row spaces, column spaces, and null spaces.
 
-︡71e87b44-ad9b-4166-8625-e6cd23223a58︡{"html":"<h1>Lecture 12</h1>\n\n<h3>Preliminaries</h3>\n\n<ol>\n<li>Turn on screen recorder</li>\n<li>There is a new homework assignment due Wednesday at midnight: purely computational about row/column spaces/nullspace, linear transformations.</li>\n<li>Hand back exam; make assertions about stats; grade course using 0-100 &#8211;> 0-4 mapping, which I&#8217;ve posted on the course website.</li>\n<li>Talk about row spaces, column spaces, and null spaces.</li>\n</ol>\n"}︡
+︡e0e23ac6-9d2a-425e-ac22-d2060cfa5238︡{"html":"<h1>Lecture 12</h1>\n\n<h3>Preliminaries</h3>\n\n<ol>\n<li>Turn on screen recorder</li>\n<li>There is a new homework assignment due Wednesday at midnight: purely computational about row/column spaces/nullspace, linear transformations.</li>\n<li>Hand back exam; make assertions about stats; grade course using 0-100 &#8211;> 0-4 mapping, which I&#8217;ve posted on the course website; also answer key for exam on course website.</li>\n<li>Talk about row spaces, column spaces, and null spaces.</li>\n</ol>\n"}︡
 ︠9ce56d24-a3a1-492a-a8cc-24e7f9847af0︠
 # Midterm 1 grades
 
 v = stats.TimeSeries([0.92, 0.8, 0.88, 1.0, 0.92, 0.92, 0.76, 0.8, 1.0, 0.88, 0.76, 0.92, 0.76, 0.72, 0.68, 0.88, 0.96, 0.8, 0.96, 0.68, 0.6, 0.92, 0.84, 1.0, 0.88, 1.0, 0.92, 0.88, 0.96, 0.72, 0.84, 0.88, 0.88, 0.96, 0.92, 0.84, 0.96, 0.72, 0.92, 0.72, 0.8, 0.96, 0.92, 0.92, 0.96, 0.88, 0.88, 0.8, 0.96]).scale(100)
 v.plot_histogram(bins=2*len(set(v)))
 v.mean(); v.standard_deviation()
-︡535e4019-1e3f-4fec-8554-9bfc775072ed︡{"file":{"show":true,"uuid":"105d5fba-6557-4690-b6f4-6b1d2e22460e","filename":"/home/wstein/.sage/temp/localhost/29658/tmp_3cpIN_.svg"}}︡{"stdout":"\n"}︡{"stdout":"86.61224489795919"}︡{"stdout":"\n"}︡{"stdout":"9.748539049798293"}︡{"stdout":"\n"}︡
+︡75939084-3d12-4b1d-811e-332a95169d7c︡{"file":{"show":true,"uuid":"105d5fba-6557-4690-b6f4-6b1d2e22460e","filename":"/home/wstein/.sage/temp/localhost/29658/tmp_ETmnkO.svg"}}︡{"stdout":"\n"}︡{"stdout":"86.61224489795919"}︡{"stdout":"\n"}︡{"stdout":"9.748539049798293"}︡{"stdout":"\n"}︡
+︠db84e357-15d6-4185-b2d5-80e9d651502d︠
+matrix(QQ,3,[1,2,3,4,5,6,9,8,7]).rref()
+︡b4de56b6-e511-46c3-b4b2-0abf62cb78f0︡{"stdout":"[ 1  0 -1]\n[ 0  1  2]\n[ 0  0  0]"}︡{"stdout":"\n"}︡
+︠7c65aba3-7279-495c-856d-4630177e21c6︠
+V = (QQ^3).span_of_basis([[1,2,3], [4,5,6]])
+V
+V.coordinates([9,8,7])
+︡5416c922-98ec-496f-a3c4-4c8c9a38bd01︡{"stdout":"Vector space of degree 3 and dimension 2 over Rational Field\nUser basis matrix:\n[1 2 3]\n[4 5 6]"}︡{"stdout":"\n"}︡{"stdout":"[-13/3, 10/3]"}︡{"stdout":"\n"}︡
+︠55819a90-4fb7-4db6-9675-3c25ba859e45︠
+
 ︠a728d40d-49b7-40a3-86bd-cecb4b979b6fi︠
 %md
 # Subspaces associated to matrices:
@@ -93,6 +103,9 @@ A = matrix(QQ, 2, 5, [1,2,3,4,5, 6,12,8,9,10]); show(A)
 show(A.rref())
 ︡ff1185ed-60ce-4d19-805f-2b62ea2d5886︡{"tex":{"tex":"\\left(\\begin{array}{rrrrr}\n1 & 2 & 0 & -\\frac{1}{2} & -1 \\\\\n0 & 0 & 1 & \\frac{3}{2} & 2\n\\end{array}\\right)","display":true}}︡
 
+︠b90ab59c-c2a8-4b03-bb81-1b25005d6f02︠
+show(random_matrix(QQ,2,3).rref())
+︡6be2373d-52a1-47b4-9ac2-f9a6a6bd2b1c︡{"tex":{"tex":"\\left(\\begin{array}{rrr}\n1 & 0 & 0 \\\\\n0 & 0 & 1\n\\end{array}\\right)","display":true}}︡
 ︠ea0f3ee6-a9d5-4fb3-9f32-def09fafda0ei︠
 %md
 
