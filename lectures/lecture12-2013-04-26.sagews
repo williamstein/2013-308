@@ -5,12 +5,18 @@
 ### Preliminaries
 
 1. Turn on screen recorder
-2. Hand back exam; make assertions about stats; grade course using 0-100 --> 0-4 mapping, which I've posted on the course website.
-3. Talk about row spaces, column spaces, and null spaces.
+2. There is a new homework assignment due Wednesday at midnight: purely computational about row/column spaces/nullspace, linear transformations.
+3. Hand back exam; make assertions about stats; grade course using 0-100 --> 0-4 mapping, which I've posted on the course website.
+4. Talk about row spaces, column spaces, and null spaces.
 
-︡62426208-2d7a-4947-b6da-7f4e65e3a524︡{"html":"<h1>Lecture 12</h1>\n\n<h3>Preliminaries</h3>\n\n<ol>\n<li>Turn on screen recorder</li>\n<li>Hand back exam; make assertions about stats; grade course using 0-100 &#8211;> 0-4 mapping, which I&#8217;ve posted on the course website.</li>\n<li>Talk about row spaces, column spaces, and null spaces.</li>\n</ol>\n"}︡
+︡71e87b44-ad9b-4166-8625-e6cd23223a58︡{"html":"<h1>Lecture 12</h1>\n\n<h3>Preliminaries</h3>\n\n<ol>\n<li>Turn on screen recorder</li>\n<li>There is a new homework assignment due Wednesday at midnight: purely computational about row/column spaces/nullspace, linear transformations.</li>\n<li>Hand back exam; make assertions about stats; grade course using 0-100 &#8211;> 0-4 mapping, which I&#8217;ve posted on the course website.</li>\n<li>Talk about row spaces, column spaces, and null spaces.</li>\n</ol>\n"}︡
 ︠9ce56d24-a3a1-492a-a8cc-24e7f9847af0︠
+# Midterm 1 grades
 
+v = stats.TimeSeries([0.92, 0.8, 0.88, 1.0, 0.92, 0.92, 0.76, 0.8, 1.0, 0.88, 0.76, 0.92, 0.76, 0.72, 0.68, 0.88, 0.96, 0.8, 0.96, 0.68, 0.6, 0.92, 0.84, 1.0, 0.88, 1.0, 0.92, 0.88, 0.96, 0.72, 0.84, 0.88, 0.88, 0.96, 0.92, 0.84, 0.96, 0.72, 0.92, 0.72, 0.8, 0.96, 0.92, 0.92, 0.96, 0.88, 0.88, 0.8, 0.96]).scale(100)
+v.plot_histogram(bins=2*len(set(v)))
+v.mean(); v.standard_deviation()
+︡535e4019-1e3f-4fec-8554-9bfc775072ed︡{"file":{"show":true,"uuid":"105d5fba-6557-4690-b6f4-6b1d2e22460e","filename":"/home/wstein/.sage/temp/localhost/29658/tmp_3cpIN_.svg"}}︡{"stdout":"\n"}︡{"stdout":"86.61224489795919"}︡{"stdout":"\n"}︡{"stdout":"9.748539049798293"}︡{"stdout":"\n"}︡
 ︠a728d40d-49b7-40a3-86bd-cecb4b979b6fi︠
 %md
 # Subspaces associated to matrices:
@@ -35,13 +41,11 @@ Let $A$ be an $n\times m$ matrix.  There are a couple of subspaces naturally ass
 2. The nullspace is called the "kernel" of $A$ by most mathematicians.
 
 ︡93f243c0-4125-434d-bf81-ae25cbf30b16︡{"html":"<h1>Subspaces associated to matrices:</h1>\n\n<h2>The row space, column space and nullspace</h2>\n\n<p>Let $A$ be an $n\\times m$ matrix.  There are a couple of subspaces naturally associated  to $A$.</p>\n\n<p><span class=\"lighten\">NOTE: Next week, we&#8217;ll learn about even more subspaces associated to a matrix (eigenspaces!).</span></p>\n\n<p><strong>Definition:</strong> The <strong>row space</strong> is the span of the rows of $A$.</p>\n\n<p><strong>Definition:</strong> The <strong>columns space</strong> is the span of the columns of $A$.</p>\n\n<p><strong>Definition:</strong> The <strong>nullspace</strong> is subspace of vectors $x$ such that $Ax = 0$.</p>\n\n<p><strong>Proposition:</strong> <em>The nullspace actually is a subspace.</em></p>\n\n<p><strong>Remarks:</strong></p>\n\n<ol>\n<li><p>The nullspace plays a critical role in solving linear systems of equations!  If the system corresponds to $Ax=b$, then the set of solutions is $v+S$, where $S$ is the nullspace of $A$ and $v$ is <em>any</em> solution.</p></li>\n<li><p>The nullspace is called the &#8220;kernel&#8221; of $A$ by most mathematicians.</p></li>\n</ol>\n"}︡
-︠c302c700-2595-4567-a5c4-e520e64dcc5c︠
-
-
-
+︠c302c700-2595-4567-a5c4-e520e64dcc5ci︠
+%hide
 %html <img width="50%" src="http://www.tabiv.net/wp-content/uploads/2010/09/null_space_box.jpg">
 
-︡8d7573a6-540c-4b14-a8f2-c56fed6cb64c︡{"html":"<img width=\"50%\" src=\"http://www.tabiv.net/wp-content/uploads/2010/09/null_space_box.jpg\">"}︡
+︡918f9a03-ad51-4dcd-97d0-a4733efb4961︡{"html":"<img width=\"50%\" src=\"http://www.tabiv.net/wp-content/uploads/2010/09/null_space_box.jpg\">"}︡
 ︠c6298534-c66d-4171-9c48-1e2640aec3ffi︠
 %md
 # Computing the nullspace

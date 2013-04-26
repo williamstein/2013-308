@@ -1,0 +1,125 @@
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage{color}
+\usepackage{amssymb}
+\title{\color{blue}\bf Math 308: Midterm 1}
+\date{Wednesday, April 24, 2013}
+\author{by William Stein}
+\newcommand{\tf}[1]{\item {\bf {\color{blue}\hspace{1em}T\hspace{1em}F}}\hspace{1em} #1}
+\begin{document}
+\maketitle
+{\noindent\bf\color{red} Instructions:}
+\begin{itemize}
+\item {\color{blue} Your Name: \underline{\hspace{20em}}   ID Number: \underline{\hspace{10em}}}
+\item You may have one piece of paper on which you put notes, plus scratch paper.
+\item You may use a calculator, though it will likely be of no use, since there is a table of reduced row echelon forms at the end of the exam.
+\item In every question, assume that you are working over the real numbers (no complex numbers, no numbers modulo $p$).
+\item Be careful.  If you can think of any possible way to double check your work do so.  Try to get a perfect score!
+\item All questions are true or false and worth 4 points (for a total of 100).
+\end{itemize}
+
+{\noindent\bf \color{red} Questions (circle T or F):}
+\begin{enumerate}
+
+\tf{There is a system of linear equations that has exactly one solution.}
+
+\tf{There is a system of linear equations that has exactly two solutions.}
+
+\tf{There is a system of linear equations that has infinitely many solutions.}
+
+\tf{The vector $(\pi,e)$ is a linear combination of the vectors $(1,2)$ and $(3,4)$ in $\mathbb{R}^2$.}
+
+\tf{The vector $(9,8,7)$ is a linear combination of the vectors $(1,2,3)$ and $(4,5,6)$.}
+
+\tf{The vectors $(9,10,11,12)$, $(1,2,3,4)$ and $(5,6,7,8)$ in $\mathbb{R}^4$ are linearly independent.}
+
+\tf{We have ${\rm span}((10,20),(20,10)) = {\rm span}((1,2))$.}
+
+\tf{We have ${\rm span}((1,2,3,4)) = {\rm span}((4,3,2,1))$.}
+
+\tf{We have ${\rm span}((1,2),(3,4)) = {\rm span}((0,1),(1,0))$.}
+
+\tf{Let $A=\left(\begin{array}{rrr}1 & 2 & 3 \\4 & 5 & 6 \\7 & 8 & 9\end{array}\right)$.  Then $\{ x : Ax=0 \} = {\rm span}((1,2,1)).$}
+
+\tf{Any two vectors in $\mathbb{R}^{4}$ are linearly independent.}
+
+\tf{Any four vectors in $\mathbb{R}^3$ are linearly dependent.}
+
+\tf{There are exactly three subspaces of $\mathbb{R}^2$.}
+
+\tf{If $A$ is a square $n\times n$ matrix, is $A + A^T$ necessarily symmetric?}
+
+\tf{If $A$ and $B$ are $2\times 2$ matrices, is $(A+B)(B+A)^T$ necessarily symmetric?}
+
+\tf{If $A$ is symmetric, is $A^T$ necessarily also symmetric?}
+
+\tf{Suppose $A$ is an $n\times r$ matrix (i.e., has $n$ rows and $r$ columns), that $B$ is an $r\times m$ matrix, and that $C$ is an $m\times s$ matrix.  Then $ABC$ is defined and is an $s\times n$ matrix.}
+
+\tf{Suppose $A,B,C$ are all $3\times 3$ matrices. Then  $AB + (B + C) = C + (B + AB)$?}
+
+\tf{If $A+I=\left(\begin{array}{rr}
+2 & 2 \\\\
+2 & 5
+\end{array}\right)$, then there is exactly one $x$ that such that $Ax = \left(\begin{array}{r}2013 \\\\2014\end{array}\right)$.}
+
+\tf{The empty set is a subspace of $\mathbb{R}^2$.}
+
+\tf{The set of points on the line defined by $y = 2x$ is a subspace of $\mathbb{R}^2$.}
+
+\tf{The set of points on the line defined by $y = 2x + 1$ is a subspace of $\mathbb{R}^2$.}
+
+\tf{The set of solutions to the equation $x^2 + y^2 = 1$ (a circle) is a subspace of $\mathbb{R}^2$.}
+
+\tf{The set of pairs $\{(x,y): x\geq 0, y\geq 0\}$, where both $x$ and $y$ are nonnegative (i.e., the first quadrant), is a subset of $\mathbb{R}^2$.}
+
+\tf{If $S_1, S_2, S_3$ are subspaces of $\mathbb{R}^4$, then the intersection $S_1\cap S_2 \cap S_3$ is also a subspace of $\mathbb{R}^4$.}
+
+\end{enumerate}
+
+{\noindent\bf\color{red} Some Echelon Forms:}
+$$\left(\begin{array}{rr}
+1 & 2 \\
+3 & 4
+\end{array}\right) \longrightarrow \left(\begin{array}{rr}
+1 & 0 \\
+0 & 1
+\end{array}\right)$$
+$$\left(\begin{array}{rr}
+10 & 20 \\
+20 & 10 \\
+1 & 2
+\end{array}\right) \longrightarrow \left(\begin{array}{rr}
+1 & 0 \\
+0 & 1 \\
+0 & 0
+\end{array}\right)$$
+$$\left(\begin{array}{rrr}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+7 & 8 & 9
+\end{array}\right) \longrightarrow \left(\begin{array}{rrr}
+1 & 0 & -1 \\
+0 & 1 & 2 \\
+0 & 0 & 0
+\end{array}\right)$$
+$$\left(\begin{array}{rrr}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+9 & 8 & 7
+\end{array}\right) \longrightarrow \left(\begin{array}{rrr}
+1 & 0 & -1 \\
+0 & 1 & 2 \\
+0 & 0 & 0
+\end{array}\right)$$
+$$\left(\begin{array}{rrrr}
+1 & 2 & 3 & 4 \\
+5 & 6 & 7 & 8 \\
+9 & 10 & 11 & 12
+\end{array}\right) \longrightarrow \left(\begin{array}{rrrr}
+1 & 0 & -1 & -2 \\
+0 & 1 & 2 & 3 \\
+0 & 0 & 0 & 0
+\end{array}\right)$$
+
+
+\end{document}
