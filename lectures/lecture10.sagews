@@ -54,7 +54,7 @@
 - The span of $v_1, \ldots, v_k$ is exactly the same as the span of the vectors that are the rows of the reduced row echelon form of the matrix with rows $v_1,\ldots, v_k$.  Thus *you* can tell whether or not two spans are equal.
 
 ︡d802d5bb-f143-4915-8d73-c3696b46f9a5︡{"html":"<h3>Key Ideas</h3>\n\n<ul>\n<li><p>A <strong>linear combination</strong> of vectors $v_1, \\ldots, v_k$ is any sum of the form $c_1 v_1 + \\cdots + c_k v_k$, with $c_i$ numbers.</p></li>\n<li><p>The <strong>span</strong> of vectors $v_1, \\ldots, v_k$ is the set of all linear combinations of the $v_i$.  We denote this $${\\rm span}(v_1, \\ldots, v_k).$$</p></li>\n<li><p>The span of $v_1, \\ldots, v_k$ is exactly the same as the span of the vectors that are the rows of the reduced row echelon form of the matrix with rows $v_1,\\ldots, v_k$.  Thus <em>you</em> can tell whether or not two spans are equal.</p></li>\n</ul>\n"}︡
-︠ff04a4b8-4d3a-4173-8119-1a0dc0968099i︠
+︠ff04a4b8-4d3a-4173-8119-1a0dc0968099︠
 %hide
 %md
 ### Problem
@@ -73,7 +73,7 @@ for A in a:
     show([A, A.rref()])
 `
 ︡73ebb174-09b0-467e-9ea0-de2f662d232f︡{"html":"<p>Below you may use the following rref&#8217;s below (on exam I&#8217;ll \ngive a table like this of useful and useless rrefs).</p>\n"}︡{"tex":{"tex":"\\left[\\left(\\begin{array}{rr}\n1 & 2 \\\\\n3 & 4\n\\end{array}\\right), \\left(\\begin{array}{rr}\n1 & 0 \\\\\n0 & 1\n\\end{array}\\right)\\right]","display":true}}︡{"tex":{"tex":"\\left[\\left(\\begin{array}{rrr}\n1 & 2 & 3 \\\\\n4 & 5 & 6 \\\\\n7 & 8 & 9\n\\end{array}\\right), \\left(\\begin{array}{rrr}\n1 & 0 & -1 \\\\\n0 & 1 & 2 \\\\\n0 & 0 & 0\n\\end{array}\\right)\\right]","display":true}}︡{"tex":{"tex":"\\left[\\left(\\begin{array}{rrr}\n1 & 2 & 3 \\\\\n4 & 5 & 7\n\\end{array}\\right), \\left(\\begin{array}{rrr}\n1 & 0 & -\\frac{1}{3} \\\\\n0 & 1 & \\frac{5}{3}\n\\end{array}\\right)\\right]","display":true}}︡{"tex":{"tex":"\\left[\\left(\\begin{array}{rrr}\n4 & 5 & 7 \\\\\n7 & 8 & 9\n\\end{array}\\right), \\left(\\begin{array}{rrr}\n1 & 0 & -\\frac{11}{3} \\\\\n0 & 1 & \\frac{13}{3}\n\\end{array}\\right)\\right]","display":true}}︡
-︠26e472b0-e33d-4521-8139-115fa9954c3bi︠
+︠26e472b0-e33d-4521-8139-115fa9954c3b︠
 %md
 ### Problem: which assertions are true?
 
@@ -83,7 +83,7 @@ for A in a:
 4. We have ${\rm span}((1,2,3),(4,5,7)) = {\rm span}((4,5,7), (7,8,9))$.
 
 ︡e20d0363-4aca-42c5-a4ec-14d03b751ce1︡{"html":"<h3>Problem: which assertions are true?</h3>\n\n<ol>\n<li>We have ${\\rm span}((1,2),(3,4)) = {\\rm span}((1,0), (0,1))$.</li>\n<li>We have ${\\rm span}((1,2,3),(4,5,6)) = {\\rm span}((4,5,6), (7,8,9))$.</li>\n<li>We have ${\\rm span}((1,2,3),(4,5,6),(7,8,9)) = {\\rm span}((1,0,-1),(1,1,1))$.</li>\n<li>We have ${\\rm span}((1,2,3),(4,5,7)) = {\\rm span}((4,5,7), (7,8,9))$.</li>\n</ol>\n"}︡
-︠d268cab3-966b-4faf-8da9-63909cd3174ci︠
+︠d268cab3-966b-4faf-8da9-63909cd3174c︠
 %md
 ### Problem: which assertions are true?
 
@@ -205,7 +205,7 @@ for k in [2,3]:
 %hide
 latex(matrix(ZZ,2,2,[1..4]))
 ︡e664ebad-e56f-4094-adad-642717871585︡{"stdout":"\\left(\\begin{array}{rr}\n1 & 2 \\\\\n3 & 4\n\\end{array}\\right)"}︡{"stdout":"\n"}︡
-︠ae8aef8d-c6d6-4faf-b4c2-a0275976058ei︠
+︠ae8aef8d-c6d6-4faf-b4c2-a0275976058e︠
 %md
 ### Problems
 1. Consider the equation $Ax = \left(\begin{array}{r}-2 \\\\1\end{array}\right)$
