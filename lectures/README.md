@@ -1,11 +1,14 @@
 
 # Lectures
 
-- Lecture  1: Systems of Linear Equations and Matrices
-- Lecture  2: Matrices and Row Echelon Form
-- Lecture  3: Solving Systems of Equations Using Echelon Form
-- Lecture  4: Algebraic Properties of Matrices; Transpose
-- Lecture  5: More about Transpose; Symmetric Matrices; Identity Matrix; Inverses (1 of 2)
-- Lecture  6: Matrix Inverses
-- Lecture  7: Linear Independence
-- Lecture  8: Subspaces, Basis, Dimension, Rank...
+You can view these by:
+
+  1. Get an account at the [SageMath Cloud](https://cloud.sagemath.com) and login in, then create a new terminal.
+
+  2. Clone the course repo:
+
+             git clone https://github.com/williamstein/2013-308
+
+  3. Navigate to the resulting 2013-308/lectures directory and click on anything ending in ".sagews".  (The old ".sage-worksheet" format is no longer readable.)
+
+  4. You can update your notes by typing "git pull" in the 2013-308 directory.
