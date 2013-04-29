@@ -6,7 +6,11 @@
 #### Definitions today: Nullspace, rowspace, column space, elementary matrices, linear transformations
 
 After this: eigenvalues and eigenvectors.
-︡c5ec8414-b2bb-4dcf-91f4-ccbe21ae7257︡{"html":"<h1>Lecture 13 (2013-04-29)</h1>\n\n<h4>Definitions today: Nullspace, rowspace, column space, elementary matrices, linear transformations</h4>\n\n<p>After this: eigenvalues and eigenvectors.</p>\n"}︡
+
+- Questions?
+- Start Google+ Hangout!
+- Announce new cloud.sagemath.com...
+︡1ba6637b-1451-4406-82e9-456b617356a7︡{"html":"<h1>Lecture 13 (2013-04-29)</h1>\n\n<h4>Definitions today: Nullspace, rowspace, column space, elementary matrices, linear transformations</h4>\n\n<p>After this: eigenvalues and eigenvectors.</p>\n\n<ul>\n<li>Questions?</li>\n<li>Start Google+ Hangout!</li>\n<li>Announce new cloud.sagemath.com&#8230;</li>\n</ul>\n"}︡
 ︠e3e160e7-a246-4253-a0b3-e5d6a75f2feei︠
 %md
 
@@ -65,7 +69,7 @@ Suppose $A$ has $n$ rows. Let $I=I\_n$ be the $n\times n$ identity matrix.  Defi
 
 
 ︡7d375c05-a938-43fc-bfee-61b7ee23b1cc︡{"html":"<h3>Let&#8217;s PROVE that $A$ and ${\\rm rref}(A)$ have the same nullspace:</h3>\n\n<ul>\n<li><p>Each of the three types of elementary matrices $E$ above is an <em>invertible</em> $n\\times n$ matrix &#8211; swap again, rescale by the inverse, or add negative multiple of row.</p></li>\n<li><p>Putting $A$ in reduced row echelon form is exactly the same as finding a sequence of elementary matrices $E_1, E_2, \\ldots, E_k$ of matrices such that $$E_k E_{k-1} \\cdots E_1 A = {\\rm rref}(A).$$</p></li>\n<li><p>Let $E=E_k E_{k-1} \\cdots E_1$.  Then since $E$ is invertible, $$\\{x : Ax = 0\\} = \\{x : EAx = 0\\}.$$</p></li>\n</ul>\n"}︡
-︠16d47947-b79b-49d6-acdf-308d0d2df4fcoi︠
+︠16d47947-b79b-49d6-acdf-308d0d2df4fco︠
 latex(matrix(2,2,[1..4]))
 ︡905b417e-357a-4a0a-8cb6-0efbcf495970︡{"stdout":"\\left(\\begin{array}{rr}\n1 & 2 \\\\\n3 & 4\n\\end{array}\\right)"}︡{"stdout":"\n"}︡
 ︠9d23bd0c-4f9a-4439-a7c0-832749524866i︠

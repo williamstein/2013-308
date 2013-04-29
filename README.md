@@ -23,6 +23,7 @@ Office Hours: Tuesday 12:30 - 2
 - [Lecture 10 (April 22, 2013)](http://youtu.be/rbzfLIO3SBM)
 - Lecture 11 was a midterm
 - [Lecture 12 (April 24, 2013)](http://youtu.be/PILea1jXrUU)
+- [Lecture 13 (April 29, 2013)](http://youtu.be/ggNyJBpOuH4)
 
 # WebAssign
 
