@@ -139,60 +139,6 @@ span(QQ, [v2, v4, v5])
 ︠8d680b41-57a3-473d-bb56-51e62a8b8e97︠
 A.right_kernel()
 ︡e9b9f469-1045-458f-964d-cab174b950e5︡{"stdout":"Vector space of degree 5 and dimension 3 over Rational Field\nBasis matrix:\n[ 1  0  0 -4  3]\n[ 0  1  0 -8  6]\n[ 0  0  1 -2  1]"}︡{"stdout":"\n"}︡
-︠290fcc15-5efc-47f1-831f-ce55b714bf08i︠
-%md
-
-# Theoretical Observation
-
-### Proposition: The nullspace of a matrix $A$ and of its reduced row echelon form are the same.
-
-Conceptually this says: the linear relations among the columns of $A$ are the same as the linear relations among the columns of the rref of $A$.
-
-
-
-**But Why?** This is because the nullspace is the set of vectors $x$ such that $Ax=0$.  "Applying row operations doesn't change the set of solutions to the corresponding linear system." Or so I keep saying.  But let's understand this *algebraically*.   Here's another better way to see this...
-
-︡9e467330-4c1e-47c3-9a3d-0f930db4a08b︡{"html":"<h1>Theoretical Observation</h1>\n\n<h3>Proposition: The nullspace of a matrix $A$ and of its reduced row echelon form are the same.</h3>\n\n<p>Conceptually this says: the linear relations among the columns of $A$ are the same as the linear relations among the columns of the rref of $A$.</p>\n\n<p><strong>But Why?</strong> This is because the nullspace is the set of vectors $x$ such that $Ax=0$.  &#8220;Applying row operations doesn&#8217;t change the set of solutions to the corresponding linear system.&#8221; Or so I keep saying.  But let&#8217;s understand this <em>algebraically</em>.   Here&#8217;s another better way to see this&#8230;</p>\n"}︡
-︠ca54b5b3-b053-4f1d-a7e8-e8794c51df23i︠
-%md
-
-## Elementary Matrices
-
-Suppose $A$ has $n$ rows. Let $I=I\_n$ be the $n\times n$ identity matrix.  Define three types of **elementary matrices**:
-
-  1. **Swap two rows:** Let $E$ be the matrix got from $I$ by swaping two rows of $I$.  Notice that $EA$ is the matrix got by swapping those two rows of $A$.  (Explain this on whiteboard with example.)
-
-  2. **Rescale a row:** Let $E$ be the matrix got from $I$ by rescaling a row of $I$ (by a nonzero scalar).  Notice that $EA$ is the matrix got by rescaling the same row of $A$.  (Explain this on whiteboard with example.)
-
-  3. **Add a multiple of one row to another:** Let $E$ be the matrix got from $I$ by adding a multiple of one row of $I$ to another.  Notice that $EA$ is the matrix got by adding that same row of $A$ to another row.  (Explain this on whiteboard with example.)
-︡f246531a-6c58-40b4-b70d-3b46d3f81086︡{"html":"<h2>Elementary Matrices</h2>\n\n<p>Suppose $A$ has $n$ rows. Let $I=I_n$ be the $n\\times n$ identity matrix.  Define three types of <strong>elementary matrices</strong>:</p>\n\n<ol>\n<li><p><strong>Swap two rows:</strong> Let $E$ be the matrix got from $I$ by swaping two rows of $I$.  Notice that $EA$ is the matrix got by swapping those two rows of $A$.  (Explain this on whiteboard with example.)</p></li>\n<li><p><strong>Rescale a row:</strong> Let $E$ be the matrix got from $I$ by rescaling a row of $I$ (by a nonzero scalar).  Notice that $EA$ is the matrix got by rescaling the same row of $A$.  (Explain this on whiteboard with example.)</p></li>\n<li><p><strong>Add a multiple of one row to another:</strong> Let $E$ be the matrix got from $I$ by adding a multiple of one row of $I$ to another.  Notice that $EA$ is the matrix got by adding that same row of $A$ to another row.  (Explain this on whiteboard with example.)</p></li>\n</ol>\n"}︡
-︠bd3c51d1-f145-4bd9-8c67-bd350c13b7cei︠
-
-%md
-### Let's PROVE that $A$ and ${\rm rref}(A)$ have the same nullspace:
-
- - Each of the three types of elementary matrices $E$ above is an *invertible* $n\times n$ matrix -- swap again, rescale by the inverse, or add negative multiple of row.
-
- - Putting $A$ in reduced row echelon form is exactly the same as finding a sequence of elementary matrices $E_1, E_2, \ldots, E_k$ of matrices such that $$E_k E_{k-1} \cdots E_1 A = {\rm rref}(A).$$
-
- - Let $E=E_k E_{k-1} \cdots E_1$.  Then since $E$ is invertible, $$\\{x : Ax = 0\\} = \\{x : EAx = 0\\}.$$
-
-
-
-︡7d375c05-a938-43fc-bfee-61b7ee23b1cc︡{"html":"<h3>Let&#8217;s PROVE that $A$ and ${\\rm rref}(A)$ have the same nullspace:</h3>\n\n<ul>\n<li><p>Each of the three types of elementary matrices $E$ above is an <em>invertible</em> $n\\times n$ matrix &#8211; swap again, rescale by the inverse, or add negative multiple of row.</p></li>\n<li><p>Putting $A$ in reduced row echelon form is exactly the same as finding a sequence of elementary matrices $E_1, E_2, \\ldots, E_k$ of matrices such that $$E_k E_{k-1} \\cdots E_1 A = {\\rm rref}(A).$$</p></li>\n<li><p>Let $E=E_k E_{k-1} \\cdots E_1$.  Then since $E$ is invertible, $$\\{x : Ax = 0\\} = \\{x : EAx = 0\\}.$$</p></li>\n</ul>\n"}︡
-︠f8c450a0-20c2-4d30-ad0a-8ef19d25766ci︠
-%md
-
-# Next week:
-
- - Define the *row space* and *column space* of $A$.
-
- - Study the **linear transformation** $\mathbb{R}^m \to \mathbb{R}^n$ defined by $A$ and see how its kernel and image are related to the null and column spaces.
-
- - When $A$ is square, study the linear transformation $\mathbb{R}^n \to \mathbb{R}^n$ (and $\mathbb{C}^n \to \mathbb{C}^n$) determined by $A$.  In particular, study the vectors $v$ such that $Av = cv$, for some constant $c$.  These are called **eigenvectors**, and they reveal (almost) all the secrets of a linear transformation.
-︡0bb0d05d-bfba-423e-9aa3-959b002e961f︡{"html":"<h1>Next week:</h1>\n\n<ul>\n<li><p>Define the <em>row space</em> and <em>column space</em> of $A$.</p></li>\n<li><p>Study the <strong>linear transformation</strong> $\\mathbb{R}^m \\to \\mathbb{R}^n$ defined by $A$ and see how its kernel and image are related to the null and column spaces.</p></li>\n<li><p>When $A$ is square, study the linear transformation $\\mathbb{R}^n \\to \\mathbb{R}^n$ (and $\\mathbb{C}^n \\to \\mathbb{C}^n$) determined by $A$.  In particular, study the vectors $v$ such that $Av = cv$, for some constant $c$.  These are called <strong>eigenvectors</strong>, and they reveal (almost) all the secrets of a linear transformation.</p></li>\n</ul>\n"}︡
-︠330386ab-4b81-4ebf-a76a-bb5d3391dda6︠
-
 
 
 
