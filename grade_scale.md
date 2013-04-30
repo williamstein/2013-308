@@ -1,6 +1,8 @@
 # Grading Scale
 
 Example of how to read the table below: "If you percentage is at least 92, then you get at least 3.6."
+In particular, I may give everybody a *better* score than what is indicated below.  This is just meant
+to give you a guaranteed lower bound.
 
     to_grade_table = [
         (98,4),
