@@ -10,8 +10,7 @@
 2. Questions?
 3. Today: Finish linear transformations; start eigenvalues and eigenvectors
 ︡8b7571a3-b3c7-42d4-8885-e569a00d6cc2︡{"html":"<h1>Lecture 15 (May 3, 2013): Linear Transformations, part 2</h1>\n\n<h3>Goals today:</h3>\n\n<ol>\n<li>Remember to turn on G+ screencast!</li>\n<li>Questions?</li>\n<li>Today: Finish linear transformations; start eigenvalues and eigenvectors</li>\n</ol>\n"}︡
-︠12fdd93c-3fc6-4e94-93c4-e901b45c39bd︠
-
+︠d5778c59-ec8d-43e3-a76c-01366d75491f︠
 ︠d3f2a119-01cc-40e5-ac13-fab2a2b68a95i︠
 %md
 
@@ -119,9 +118,11 @@ A1 = matrix(2,[0,-1,1,0])
 A2 = matrix(2,[2,0,0,-3])
 A3 = matrix(2,[sqrt(2)/2,sqrt(2)/2,-sqrt(2)/2,sqrt(2)/2])
 show(A3*A2*A1)
-︡19259808-04b6-4d60-b933-813384781182︡{"tex":{"tex":"\\left(\\begin{array}{rr}\n-\\frac{3}{2} \\, \\sqrt{2} & -\\sqrt{2} \\\\\n-\\frac{3}{2} \\, \\sqrt{2} & \\sqrt{2}\n\\end{array}\\right)","display":true}}︡
+︡f9f5b24c-e375-4b91-bbfa-2525aa8c6030︡{"tex":{"tex":"\\left(\\begin{array}{rr}\n-\\frac{3}{2} \\, \\sqrt{2} & -\\sqrt{2} \\\\\n-\\frac{3}{2} \\, \\sqrt{2} & \\sqrt{2}\n\\end{array}\\right)","display":true}}︡
+︠009b5750-4f91-4d1a-a3f8-6f2e4e0ac476︠
+show(A1*A2*A3)
+︡90b754a5-f4b8-401a-a8a6-c079889c4f2e︡{"tex":{"tex":"\\left(\\begin{array}{rr}\n-\\frac{3}{2} \\, \\sqrt{2} & \\frac{3}{2} \\, \\sqrt{2} \\\\\n\\sqrt{2} & \\sqrt{2}\n\\end{array}\\right)","display":true}}︡
 ︠4ffed78a-0693-46a5-a9c2-07498804ba03i︠
-
 %hide
 %md
 #### Strategy (2): transform $e_1$ and $e_2$.
@@ -139,8 +140,8 @@ Then same for $e_2$:
  - rotate clockwise by 45 degrees: ugh. $(-\sqrt{2}, \sqrt{2})$.
 
 Somehow, this is less tedious but requires *more thought*.
-︡eb41085b-b278-4f3f-a9f9-372f78a74266︡{"html":"<h4>Strategy (2): transform $e_1$ and $e_2$.</h4>\n\n<p>First transform $e_1$:</p>\n\n<ul>\n<li>rotate left by 90 degrees: (0,1)</li>\n<li>scale $x$ by $2$ and $y$ by $-3$:  (0, -3)</li>\n<li>rotate clockwise by 45 degrees: ugh.  $(-3\\sqrt{2}/2, -3\\sqrt{2}/2)$.</li>\n</ul>\n\n<p>Then same for $e_2$:</p>\n\n<ul>\n<li>rotate left by 90 degrees: (-1,0)</li>\n<li>scale $x$ by $2$ and $y$ by $-3$: (-2,0)</li>\n<li>rotate clockwise by 45 degrees: ugh. $(-\\sqrt{2}, \\sqrt{2})$.</li>\n</ul>\n\n<p>Somehow, this is less tedious but requires <em>more thought</em>.</p>\n"}︡
-︠d4e3960d-e171-4dba-a0d9-76b3affad82d︠
+︡972f8700-cf30-4b85-b3c0-34d028db458a︡{"html":"<h4>Strategy (2): transform $e_1$ and $e_2$.</h4>\n\n<p>First transform $e_1$:</p>\n\n<ul>\n<li>rotate left by 90 degrees: (0,1)</li>\n<li>scale $x$ by $2$ and $y$ by $-3$:  (0, -3)</li>\n<li>rotate clockwise by 45 degrees: ugh.  $(-3\\sqrt{2}/2, -3\\sqrt{2}/2)$.</li>\n</ul>\n\n<p>Then same for $e_2$:</p>\n\n<ul>\n<li>rotate left by 90 degrees: (-1,0)</li>\n<li>scale $x$ by $2$ and $y$ by $-3$: (-2,0)</li>\n<li>rotate clockwise by 45 degrees: ugh. $(-\\sqrt{2}, \\sqrt{2})$.</li>\n</ul>\n\n<p>Somehow, this is less tedious but requires <em>more thought</em>.</p>\n"}︡
+︠d4e3960d-e171-4dba-a0d9-76b3affad82di︠
 %md
 
 ## Eigenvalues and Eigenvectors
@@ -167,7 +168,8 @@ Yes, you heard me right, over the complex numbers, almost every matrix is really
 
 
 ︡e00db820-9dd6-44c4-92cc-d0427de0cd50︡{"html":"<h2>Eigenvalues and Eigenvectors</h2>\n\n<div class=\"lighten pull-right\" style=\"background-color:#FFCCBE; border-radius:5px; border:1px solid grey; padding:5px; box-shadow:3px 3px 3px;\">\"Eigen\" means \"own\", \"special\", \"unique.\"</div>\n\n<p>Everything we just did for $\\mathbb{R}^n$ works in exactly the same way for $\\mathbb{C}^n$.</p>\n\n<p>Let $T:\\mathbb{C}^n\\to\\mathbb{C}^n$ be a linear transformation from a space back to itself.</p>\n\n<p>An <strong>eigenvector</strong> is a nonzero vector $v$ such that $T(v) = c v$, for some scalar $c$. I.e.,\nit is a vector that is simply rescaled by $T$.  It&#8217;s somehow &#8220;special&#8221; (and easy to deal with).</p>\n\n<p><strong>Amazing observation:</strong> For <em>most</em> (but not all!) linear transformations $T=T_A$, there is a basis for $\\mathbb{C}^n$ of eigenvectors.   When this is the case, there is a matrix $B$ such that\n$$\n   B^{-1} A B = D\n$$\nis a diagonal matrix.</p>\n\n<p>Yes, you heard me right, over the complex numbers, almost every matrix is really a diagonal matrix in disguise.</p>\n\n<h4>Diagonal matrices are DEAD EASY.</h4>\n"}︡
-︠0ec7dd64-ed0f-4422-a25c-783706881c6b︠
+︠0ec7dd64-ed0f-4422-a25c-783706881c6bi︠
+%hide
 %md
 
 ## One Example Application.
@@ -210,7 +212,7 @@ $$
  = I_2
 $$
 
-︡acd9c0ad-87ec-43d5-aa5e-8010706c4fc8︡{"html":"<h2>One Example Application.</h2>\n\n<p>Let $A=\\left(\\begin{array}{rr}\n-\\frac{3}{2} &amp; -\\frac{1}{2} \\\\\n\\frac{5}{2} &amp; \\frac{3}{2}\n\\end{array}\\right)$.  What is $A^{100}$?</p>\n\n<h4>Solution:</h4>\n\n<p>By a process we&#8217;ll learn starting Monday, we find that:\n$$\n  A = \\left(\\begin{array}{rr}\n-5 &amp; -1 \\\\\n1 &amp; 1\n\\end{array}\\right)^{-1} \\cdot\n\\left(\\begin{array}{rr}\n-1 &amp; 0 \\\\\n0 &amp; 1\n\\end{array}\\right)\\cdot\n\\left(\\begin{array}{rr}\n-5 &amp; -1 \\\\\n1 &amp; 1\n\\end{array}\\right)\n$$\nThus\n$$\n  A^{100} = \\left(\\begin{array}{rr}\n-5 &amp; -1 \\\\\n1 &amp; 1\n\\end{array}\\right)^{-1} \\cdot\n\\left(\\begin{array}{rr}\n-1 &amp; 0 \\\\\n0 &amp; 1\n\\end{array}\\right)^{100}\\cdot\n\\left(\\begin{array}{rr}\n-5 &amp; -1 \\\\\n1 &amp; 1\n\\end{array}\\right)\n = I_2\n$$</p>\n"}︡
+︡8b09295d-e86c-47f4-96ae-cdf3230df667︡{"html":"<h2>One Example Application.</h2>\n\n<p>Let $A=\\left(\\begin{array}{rr}\n-\\frac{3}{2} &amp; -\\frac{1}{2} \\\\\n\\frac{5}{2} &amp; \\frac{3}{2}\n\\end{array}\\right)$.  What is $A^{100}$?</p>\n\n<h4>Solution:</h4>\n\n<p>By a process we&#8217;ll learn starting Monday, we find that:\n$$\n  A = \\left(\\begin{array}{rr}\n-5 &amp; -1 \\\\\n1 &amp; 1\n\\end{array}\\right)^{-1} \\cdot\n\\left(\\begin{array}{rr}\n-1 &amp; 0 \\\\\n0 &amp; 1\n\\end{array}\\right)\\cdot\n\\left(\\begin{array}{rr}\n-5 &amp; -1 \\\\\n1 &amp; 1\n\\end{array}\\right)\n$$\nThus\n$$\n  A^{100} = \\left(\\begin{array}{rr}\n-5 &amp; -1 \\\\\n1 &amp; 1\n\\end{array}\\right)^{-1} \\cdot\n\\left(\\begin{array}{rr}\n-1 &amp; 0 \\\\\n0 &amp; 1\n\\end{array}\\right)^{100}\\cdot\n\\left(\\begin{array}{rr}\n-5 &amp; -1 \\\\\n1 &amp; 1\n\\end{array}\\right)\n = I_2\n$$</p>\n"}︡
 ︠6e5cd67a-d367-4bea-af67-648fa3457841︠
 D = matrix(QQ,2,2,[-1,0,0,1]);
 S = random_matrix(ZZ,2,2)
