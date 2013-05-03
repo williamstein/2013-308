@@ -2,14 +2,14 @@
 %hide
 %md
 
-# Lecture 14 (May 1, 2013): Linear Transformations
+# Lecture 15 (May 3, 2013): Linear Transformations, part 2
 
 ### Goals today:
 
 1. Remember to turn on G+ screencast!
 2. Questions?
 3. Today: Finish linear transformations; start eigenvalues and eigenvectors
-︡287dcf3f-d572-49e9-9795-1821aba1276a︡{"html":"<h1>Lecture 14 (May 1, 2013): Linear Transformations</h1>\n\n<h3>Goals today:</h3>\n\n<ol>\n<li>Remember to turn on G+ screencast!</li>\n<li>Questions?</li>\n<li>Today: Finish linear transformations; start eigenvalues and eigenvectors</li>\n</ol>\n"}︡
+︡8b7571a3-b3c7-42d4-8885-e569a00d6cc2︡{"html":"<h1>Lecture 15 (May 3, 2013): Linear Transformations, part 2</h1>\n\n<h3>Goals today:</h3>\n\n<ol>\n<li>Remember to turn on G+ screencast!</li>\n<li>Questions?</li>\n<li>Today: Finish linear transformations; start eigenvalues and eigenvectors</li>\n</ol>\n"}︡
 ︠12fdd93c-3fc6-4e94-93c4-e901b45c39bd︠
 
 ︠d3f2a119-01cc-40e5-ac13-fab2a2b68a95i︠
