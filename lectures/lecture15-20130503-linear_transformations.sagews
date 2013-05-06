@@ -141,7 +141,7 @@ Then same for $e_2$:
 
 Somehow, this is less tedious but requires *more thought*.
 ︡972f8700-cf30-4b85-b3c0-34d028db458a︡{"html":"<h4>Strategy (2): transform $e_1$ and $e_2$.</h4>\n\n<p>First transform $e_1$:</p>\n\n<ul>\n<li>rotate left by 90 degrees: (0,1)</li>\n<li>scale $x$ by $2$ and $y$ by $-3$:  (0, -3)</li>\n<li>rotate clockwise by 45 degrees: ugh.  $(-3\\sqrt{2}/2, -3\\sqrt{2}/2)$.</li>\n</ul>\n\n<p>Then same for $e_2$:</p>\n\n<ul>\n<li>rotate left by 90 degrees: (-1,0)</li>\n<li>scale $x$ by $2$ and $y$ by $-3$: (-2,0)</li>\n<li>rotate clockwise by 45 degrees: ugh. $(-\\sqrt{2}, \\sqrt{2})$.</li>\n</ul>\n\n<p>Somehow, this is less tedious but requires <em>more thought</em>.</p>\n"}︡
-︠d4e3960d-e171-4dba-a0d9-76b3affad82di︠
+︠d4e3960d-e171-4dba-a0d9-76b3affad82d︠
 %md
 
 ## Eigenvalues and Eigenvectors
