@@ -198,7 +198,7 @@ Let $A=(a_{i,j})$.
 
 **Definition (Minor):** The $i,j$ minor $A_{i,j}$ of $A$ is the matrix got from $A$ by deleting the $i$th row and $j$th column.
 
-**Definition (Determinant):** $$|A| = \sum_{j=1}^n (-1)^{1+j}a_{i,j}|A_{i,j}|$$
+**Definition (Determinant):** $$|A| = \sum_{j=1}^n (-1)^{1+j}a_{1,j}|A_{1,j}|$$
 
 Notes:
 
@@ -207,10 +207,9 @@ Notes:
  2. If $A$ has mostly 0 entries or at most 4 rows, this definition doesn't take too long to use...
 
  4. If $A$ has more random-looking entries and more than a few rows, this definition is **basically impossibly slow** to use for computation... but don't fear, there are many other algorithms that are much faster, even if $A$ has hundreds of rows.
-︡fe28584c-b8d9-486a-a718-4bd024bec9fd︡{"html":"<h3>The general definition of determinant</h3>\n\n<p>Let $A=(a_{i,j})$.</p>\n\n<p><strong>Definition (Minor):</strong> The $i,j$ minor $A_{i,j}$ of $A$ is the matrix got from $A$ by deleting the $i$th row and $j$th column.</p>\n\n<p><strong>Definition (Determinant):</strong> $$|A| = \\sum_{j=1}^n (-1)^{1+j}a_{i,j}|A_{i,j}|$$</p>\n\n<p>Notes:</p>\n\n<ol>\n<li><p>For computing eigenvalues, we use this definition with some of the entries $a_{i,j}$ being polynomials.</p></li>\n<li><p>If $A$ has mostly 0 entries or at most 4 rows, this definition doesn&#8217;t take too long to use&#8230;</p></li>\n<li><p>If $A$ has more random-looking entries and more than a few rows, this definition is <strong>basically impossibly slow</strong> to use for computation&#8230; but don&#8217;t fear, there are many other algorithms that are much faster, even if $A$ has hundreds of rows.</p></li>\n</ol>\n"}︡
-︠9b73c0c3-8278-4fdc-b302-543294b91526︠
+︡73521bfc-7a82-462f-a234-89d87641ba4b︡{"html":"<h3>The general definition of determinant</h3>\n\n<p>Let $A=(a_{i,j})$.</p>\n\n<p><strong>Definition (Minor):</strong> The $i,j$ minor $A_{i,j}$ of $A$ is the matrix got from $A$ by deleting the $i$th row and $j$th column.</p>\n\n<p><strong>Definition (Determinant):</strong> $$|A| = \\sum_{j=1}^n (-1)^{1+j}a_{1,j}|A_{1,j}|$$</p>\n\n<p>Notes:</p>\n\n<ol>\n<li><p>For computing eigenvalues, we use this definition with some of the entries $a_{i,j}$ being polynomials.</p></li>\n<li><p>If $A$ has mostly 0 entries or at most 4 rows, this definition doesn&#8217;t take too long to use&#8230;</p></li>\n<li><p>If $A$ has more random-looking entries and more than a few rows, this definition is <strong>basically impossibly slow</strong> to use for computation&#8230; but don&#8217;t fear, there are many other algorithms that are much faster, even if $A$ has hundreds of rows.</p></li>\n</ol>\n"}︡
 
-︠ce0c8745-ad12-431c-b621-b4135d001655︠
+︠ce0c8745-ad12-431c-b621-b4135d001655o︠
 @interact
 def f(n=[1..20], another=button("Another one...", classes="btn-info", label='')):
     A = random_matrix(ZZ,n)
@@ -218,7 +217,7 @@ def f(n=[1..20], another=button("Another one...", classes="btn-info", label=''))
     html("Determinant = $%s$"%A.det())
 ︡73323f53-b303-4dc5-8c54-b50d8f7b8e1f︡{"interact":{"style":"None","flicker":false,"layout":[[["n",12,null]],[["another",12,null]],[["",12,null]]],"id":"36d22d1a-1af9-45f9-ac6c-3b28834edebd","controls":[{"buttons":false,"control_type":"selector","ncols":null,"button_classes":null,"default":0,"lbls":["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],"label":"n","nrows":null,"width":null,"var":"n"},{"control_type":"button","default":"Another one...","label":"","width":null,"classes":"btn-info","var":"another","icon":null}]}}︡
 
-︠724fa060-a925-47ef-a0a2-257b0e59ce0e︠
+︠724fa060-a925-47ef-a0a2-257b0e59ce0eo︠
 @interact
 def f(n=(1..300)):
     A = random_matrix(ZZ,n)

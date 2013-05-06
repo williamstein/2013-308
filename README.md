@@ -26,6 +26,7 @@ Office Hours: Tuesday 12:30 - 2
 - [Lecture 13 (April 29, 2013)](http://youtu.be/ggNyJBpOuH4)
 - [Lecture 14 (May 1, 2013)](http://youtu.be/tUQ1EsSKfuI)
 - [Lecture 15 (May 3, 2013)](http://youtu.be/uh-u6bi8A8Y)
+- [Lectuer 16 (May 6, 2013)](http://youtu.be/coiAngfto5I)
 
 # WebAssign
 
