@@ -38,6 +38,12 @@ Given an $n\times n$ matrix $A$, we can compute all the eigenvalues and eigenvec
 
 Proof: We have $ABe_i = BDe_i$ for each standard basis vector $e_i$.
 ︡7c3d51d8-10d0-4395-b959-89bff426c23e︡{"html":"<h2>Review: Eigenvalues and Eigenvectors</h2>\n\n<p>Given an $n\\times n$ matrix $A$, we can compute all the eigenvalues and eigenvectors as follows.</p>\n\n<ol>\n<li><p>Compute the <strong>characteristic polynomial</strong> $f(x) = \\text{det}(x-A)$, which has degree $n$.</p></li>\n<li><p>Then the <strong>eigenvalues</strong> $\\lambda_i$ are the roots of $f$, i.e., the numbers such that $f(\\lambda_i)=0$.</p></li>\n<li><p>For each $\\lambda$, find a basis $v_i$ of <strong>eigenvectors</strong> for the nullspace of $A-\\lambda$.</p></li>\n</ol>\n\n<p><strong>Theorem:</strong> <em>Suppose the $v_i$ span $\\mathbb{C}^n$.  Let $B$ be the matrix with columns the $v_i$, and $D$ the diagonal matrix with entries $\\lambda_i$.  Then $ A = B D B^{-1}$.</em></p>\n\n<p>Proof: We have $ABe_i = BDe_i$ for each standard basis vector $e_i$.</p>\n"}︡
+︠d16de0c4-c3e0-4f1a-b48a-370ac8718926︠
+f = charpoly(matrix(2,2,[1,2,3,4])); f
+︡5765f019-e012-4b61-ab90-ee074e4ba6c3︡{"stdout":"x^2 - 5*x - 2\n"}︡
+︠aace58ea-29fa-46ee-8455-ec2cc323a15e︠
+solve(f(x)==0, x)
+︡205fcb52-f49b-45a4-9d40-b3e112a5fbe4︡{"stdout":"[x == -1/2*sqrt(33) + 5/2, x == 1/2*sqrt(33) + 5/2]\n"}︡
 ︠b5ebcfc4-c36a-425e-adb9-b9b04582ee30i︠
 %hide
 %md
