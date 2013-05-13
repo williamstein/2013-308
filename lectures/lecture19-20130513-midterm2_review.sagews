@@ -8,7 +8,7 @@
 
  1. Start Screencast
 
- 2. Midterm 2 on Wednesday. It will be similar to Midterm 1, except the content.  I have office hours TUESDAY 12:30-2:00 in Padelford C423. 
+ 2. Midterm 2 on Wednesday. It will be similar to Midterm 1, except the content.  I have office hours TUESDAY 12:30-2:00 in Padelford C423.
 
  3. Questions
 
@@ -84,13 +84,13 @@
 
 - Special case when $n=2$.
 
-- Properties: $|AB| = |A|\cdot |B|$,  $|A|=0$ if and only if $A$ is invertible, $|A^T|=|A|$.
+- Properties: $|AB| = |A|\cdot |B|$,  $|A|\neq 0$ if and only if $A$ is invertible, $|A^T|=|A|$.
 
 - Determinant of upper or lower triangular matrix is product of diagonal entries
 
 - Determinants of elementary matrices (way to compute det using row operations)
 
-︡bb27737d-309a-4659-b6ce-ab9175ef1747︡{"html":"<h3>2. Determinants (Sections 4.2)</h3>\n\n<h4>Key Ideas:</h4>\n\n<ul>\n<li><p>Definition involving expansion by cofactors</p></li>\n<li><p>Special case when $n=2$.</p></li>\n<li><p>Properties: $|AB| = |A|\\cdot |B|$,  $|A|=0$ if and only if $A$ is invertible, $|A^T|=|A|$.</p></li>\n<li><p>Determinant of upper or lower triangular matrix is product of diagonal entries</p></li>\n<li><p>Determinants of elementary matrices (way to compute det using row operations)</p></li>\n</ul>\n"}︡
+︡41329bdd-fbaa-4651-a114-76598a78e8ca︡{"html":"<h3>2. Determinants (Sections 4.2)</h3>\n\n<h4>Key Ideas:</h4>\n\n<ul>\n<li><p>Definition involving expansion by cofactors</p></li>\n<li><p>Special case when $n=2$.</p></li>\n<li><p>Properties: $|AB| = |A|\\cdot |B|$,  $|A|\\neq 0$ if and only if $A$ is invertible, $|A^T|=|A|$.</p></li>\n<li><p>Determinant of upper or lower triangular matrix is product of diagonal entries</p></li>\n<li><p>Determinants of elementary matrices (way to compute det using row operations)</p></li>\n</ul>\n"}︡
 ︠d1dca106-2522-4b28-b6a0-a088bccb2636i︠
 %hide
 %md
@@ -106,6 +106,10 @@
 
 
 ︡ddf2f2af-4541-41e3-9c68-e5f3d9b7c423︡{"html":"<h4>Sample Questions</h4>\n\n<ol>\n<li><p>Compute the determinant of $$A =\\left(\\begin{array}{rrr}\n-6 &amp; 0 &amp; 0 \\\\\n-1 &amp; -3 &amp; 1 \\\\\n-3 &amp; 0 &amp; 3\n\\end{array}\\right)$$ from the definition and using row operations.</p></li>\n<li><p>Compute $|A^{-1}|$, where $A$ is as above.  (Hint: use that $1 = |I| = |AA^{-1}| = |A|\\cdot |A^{-1}|$.)</p></li>\n</ol>\n"}︡
+︠67c076b8-ee83-4cf3-a37c-292dd56f6d4c︠
+a = matrix(QQ,3,[-6,0,0,-1,-3,1,-3,0,3])
+show(a^(-1))
+︡d6434cd9-894a-4222-aaa3-2e93396fc8f0︡{"tex":{"tex":"\\left(\\begin{array}{rrr}\n-\\frac{1}{6} & 0 & 0 \\\\\n0 & -\\frac{1}{3} & \\frac{1}{9} \\\\\n-\\frac{1}{6} & 0 & \\frac{1}{3}\n\\end{array}\\right)","display":true}}︡
 ︠5ae0701d-add8-4095-8e8c-99e98a83c6d5i︠
 %hide
 %md
