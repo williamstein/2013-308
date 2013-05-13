@@ -8,12 +8,12 @@
 
  1. Start Screencast
 
- 2. Midterm 2 on Wednesday. It will be similar to Midterm 1, except the content.
+ 2. Midterm 2 on Wednesday. It will be similar to Midterm 1, except the content.  I have office hours TUESDAY 12:30-2:00 in Padelford C423. 
 
  3. Questions
 
  4. Review
-︡851da1a1-942e-4e7a-9c58-0f0aba3cb40b︡{"html":"<h1>Lecture 19: Midterm 2 Review</h1>\n\n<h3>May 13, 2013</h3>\n\n<h4>Notes</h4>\n\n<ol>\n<li><p>Start Screencast</p></li>\n<li><p>Midterm 2 on Wednesday. It will be similar to Midterm 1, except the content.</p></li>\n<li><p>Questions</p></li>\n<li><p>Review</p></li>\n</ol>\n"}︡
+︡2bd33e99-fd74-473c-a8f2-1624491103d8︡{"html":"<h1>Lecture 19: Midterm 2 Review</h1>\n\n<h3>May 13, 2013</h3>\n\n<h4>Notes</h4>\n\n<ol>\n<li><p>Start Screencast</p></li>\n<li><p>Midterm 2 on Wednesday. It will be similar to Midterm 1, except the content.  I have office hours TUESDAY 12:30-2:00 in Padelford C423. </p></li>\n<li><p>Questions</p></li>\n<li><p>Review</p></li>\n</ol>\n"}︡
 ︠406c1b03-ca60-4fde-af0a-1cadc2739656i︠
 %hide
 %md
