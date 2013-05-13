@@ -1,5 +1,5 @@
 2013-308
-========https://cloud.sagemath.com/
+========
 
 Math 308e during Spring 2013 at University of Washington (MWF     11:30   THO 135)
 
@@ -28,6 +28,7 @@ Office Hours: Tuesday 12:30 - 2
 - [Lecture 15 (May 3, 2013)](http://youtu.be/uh-u6bi8A8Y)
 - [Lecture 16 (May 6, 2013)](http://youtu.be/coiAngfto5I)
 - [Lecture 17 (May 8, 2013)](http://youtu.be/Ko4ac1StEUo)
+- [Lectuer 18 (May 10, 2013)](http://youtu.be/IXGryuEvvJA)
 
 # WebAssign
 
