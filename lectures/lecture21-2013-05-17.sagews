@@ -21,7 +21,7 @@ scores = stats.TimeSeries([0.5789473684210527, 0.7368421052631579, 0.73684210526
 scores.plot_histogram(bins=len(scores)//2).show(frame=True, gridlines='minor')
 html("<h3>Mean = %s</h3>"%scores.mean())
 html("<h3>Standard Deviation = %s</h3>"%scores.standard_deviation())
-︡8e26039b-0884-48c5-b70e-94bff2d11f44︡{"file":{"show":true,"uuid":"9d1b3e65-29e4-4fb2-9f4b-04a877add3cf","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/15797/tmp_C2rXaC.png"}}︡{"html":"<h3>Mean = 0.898169336384</h3>"}︡{"html":"<h3>Standard Deviation = 0.0917677518111</h3>"}︡
+︡ae263f41-ea5b-4b5c-bd90-a305ea61ade1︡{"file":{"show":true,"uuid":"9d1b3e65-29e4-4fb2-9f4b-04a877add3cf","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/15797/tmp_J9fmDL.png"}}︡{"html":"<h3>Mean = 0.898169336384</h3>"}︡{"html":"<h3>Standard Deviation = 0.0917677518111</h3>"}︡
 ︠c07385f0-5baf-4cd4-b927-dd1f2e2d39ebi︠
 %md
 # Chapter 6: Vector Spaces
