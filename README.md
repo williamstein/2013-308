@@ -31,7 +31,8 @@ Office Hours: Tuesday 12:30 - 2
 - [Lecture 18 (May 10, 2013)](http://youtu.be/IXGryuEvvJA)
 - [Lecture 19 (May 13, 2013) - midterm 2 review](http://youtu.be/MpsPHMjTF3Y)
 - Lecture 20 was a midterm
-- [Lecture 21 (May 17, 2013) - "fields"](http://youtu.be/ofKnkDpqkaE)
+- [Lecture 21 (May 17, 2013) - Fields](http://youtu.be/ofKnkDpqkaE)
+- [Lecture 22 (May 20, 2013) - Vector Spaces](http://youtu.be/di_YhxQltIE)
 
 # WebAssign
 
