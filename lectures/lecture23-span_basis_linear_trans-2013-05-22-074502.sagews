@@ -1,9 +1,8 @@
-
 ︠687c9a70-9397-49ac-af9a-dce24b952731i︠
 %hide
 %md
 # Lecture 23:
-## Span, Basis, Dimension, Linear Transformation... in general
+### Span, Basis, Dimension, Linear Transformation... in general
 
 ### May 22, 2013
 
@@ -11,12 +10,14 @@
 
  1. Start Screencast
 
- 2. Questions; reminder: homework due tonight; new homework
+ 2. Questions
 
- 3. Chapter 6 "Vector Spaces".
+ 3. Homework: I'm making this one due Friday, because we didn't cover enough in class. New homework available again.
+
+ 4. Chapter 6 "Vector Spaces".
 
 
-︡6a796aaf-fa8d-4e0e-afd4-fabe0c0531f4︡{"html":"<h1>Lecture 23:</h1>\n\n<h2>Span, Basis, Dimension, Linear Transformation&#8230; in general</h2>\n\n<h3>May 22, 2013</h3>\n\n<h4>Plan</h4>\n\n<ol>\n<li><p>Start Screencast</p></li>\n<li><p>Questions; reminder: homework due tonight; new homework</p></li>\n<li><p>Chapter 6 &#8220;Vector Spaces&#8221;.</p></li>\n</ol>\n"}︡
+︡66631b5c-9255-433f-9392-b43f3a45443f︡{"html":"<h1>Lecture 23:</h1>\n\n<h3>Span, Basis, Dimension, Linear Transformation&#8230; in general</h3>\n\n<h3>May 22, 2013</h3>\n\n<h4>Plan</h4>\n\n<ol>\n<li><p>Start Screencast</p></li>\n<li><p>Questions</p></li>\n<li><p>Homework: I&#8217;m making this one due Friday, because we didn&#8217;t cover enough in class. New homework available again.</p></li>\n<li><p>Chapter 6 &#8220;Vector Spaces&#8221;.</p></li>\n</ol>\n"}︡
 ︠08da2708-de29-4d8c-a991-f9ab1e98e33fi︠
 %hide
 %md
