@@ -150,7 +150,7 @@ I hope you also think the above proof that $1, \sin^2(x), \sin(x)\cos(x)$ are li
 
 ︡6b15ff96-2fed-4267-8ecb-a268dff8b772︡{"html":"<p><strong>Example:</strong> We will show that $1, \\sin^2(x), \\sin(x)\\cos(x)$ are linearly independent.</p>\n\n<p>Let $V$ be the vector space of all functions $f:\\mathbb{R} \\to \\mathbb{R}$.  Define a linear transformation $T:V\\to \\mathbb{R}^3$ by\n\\[\n   T(f) = (f(0), f(\\pi/2), f(\\pi/4)).\n\\]\nAbove we wondered if ${\\rm span}(1, \\sin^2(x), \\sin(x)\\cos(x))$ could be written as a span of a smaller set.  Notice that\n\\begin{align*}\n  T(1) &= (1, 1, 1)\\\\\n  T(\\sin^2(x)) &= (0, 1, 1/2)\\\\\n  T(\\sin(x)\\cos(x)) &= (0, 0, 1/2)\n\\end{align*}</p>\n\n<p>If $1, \\sin^2(x), \\sin(x)\\cos(x)$ are linearly dependent, then there&#8217;s $c_1, c_2, c_3 \\in \\mathbb{R}$ not all $0$ with\n$$\n  c_1 \\cdot 1 + c_2 \\cdot \\sin^2(x) + c_3 \\cdot \\sin(x) \\cos(x) = 0.\n$$\nApplying $T$ to both sides of the above, we see that\n$$\n c_1 \\cdot (1,1,1) + c_2 \\cdot (0,1,1/2) + c_3 (0,0,1/2) = T(0) = 0,\n$$\nwhich is impossible, since the matrix\n\\[\n\\left(\\begin{array}{rrr}\n1 & 1 & 1 \\\\\n0 & 1 & \\frac{1}{2} \\\\\n0 & 0 & \\frac{1}{2}\n\\end{array}\\right)\n\\]\nhas nonzero determinant $1/2$.</p>\n\n<p>I hope you also think the above proof that $1, \\sin^2(x), \\sin(x)\\cos(x)$ are linearly independent is AWESOME.</p>\n"}︡
 ︠e7272411-22c4-4dcb-8f17-fb37e1d9446f︠
-sin(pi/4), cos(pi/4)
+sin(p i/4), cos(pi/4)
 ︡1a02c1be-3d98-40a0-8b0f-7a0a73c916e8︡{"stdout":"(1/2*sqrt(2), 1/2*sqrt(2))\n"}︡
 ︠e0b9e4e4-bce5-4ace-a4f2-4ad709ca4126i︠
 %hide
