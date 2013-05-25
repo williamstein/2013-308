@@ -17,7 +17,7 @@
  4. Linear transformations and friends.
 
 
-︡5eeff60e-5e8f-4bcf-8505-a28f3f951084︡{"html":"<h1>Lecture 24:</h1>\n\n<h3>Linear Transformations, Coordinate Vectors, Change of Basis</h3>\n\n<h3>May 24, 2013</h3>\n\n<h4>Plan</h4>\n\n<ol>\n<li><p>Start Screencast</p></li>\n<li><p>Questions</p></li>\n<li><p>Homework: Due tonight at 11:59pm</p></li>\n<li><p>Linear transformations and friends.</p></li>\n</ol>\n"}︡
+︡73e3254c-09f2-42f5-94eb-394463087118︡{"html":"<h1>Lecture 24:</h1>\n\n<h3>Linear Transformations, Coordinate Vectors, Change of Basis</h3>\n\n<h3>May 24, 2013</h3>\n\n<h4>Plan</h4>\n\n<ol>\n<li><p>Start Screencast</p></li>\n<li><p>Questions</p></li>\n<li><p>Homework: Due tonight at 11:59pm</p></li>\n<li><p>Linear transformations and friends.</p></li>\n</ol>\n"}︡
 ︠d0d4fc1b-48a8-4a33-b617-72e9d13e53adi︠
 %hide
 %md

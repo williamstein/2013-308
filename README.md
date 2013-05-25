@@ -34,6 +34,8 @@ Office Hours: Tuesday 12:30 - 2
 - [Lecture 21 (May 17, 2013) - Fields](http://youtu.be/ofKnkDpqkaE)
 - [Lecture 22 (May 20, 2013) - Vector Spaces](http://youtu.be/di_YhxQltIE)
 - [Lecture 23 (May 22, 2013) - span, basis, independence](http://youtu.be/vGfQRrc37U0)  -- audio is useful; video useless.
+- [Lecture 24 (May 24, 2013) - linear transformation, basis, coordinate vector](http://youtu.be/cuYoTUaYigk)
+
 
 # WebAssign
 
