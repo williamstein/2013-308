@@ -138,7 +138,7 @@ hence $c_1=\cdots = c_n=0$, as required.
 Suppose $V$ is a vector space with basis $B=\{b_1,\ldots, b_n\}$.
 For any  $v\in V$, there are unique numbers $s_1,\ldots, s_n \in F$ such that $v = s_1 b_1 + \cdots s_n b_n$.
 
-**Definition (coordinate vector):** The coordinate vector of $v$ is the vector $[v]_B = (s_1,\ldots, s_n) \in\mathbb{R}^n$.
+**Definition (coordinate vector):** The coordinate vector of $v$ is the vector $[v]_B = (s_1,\ldots, s_n) \in F^n$.
 
 
 Let $T:V\to W$ be a linear transformation of finite dimensional vector spaces over a field $F$.
@@ -157,7 +157,7 @@ $$
 i.e., again every linear transformation (of finite dimensional vector spaces) can be described by a matrix!
 Unfortunately, you *have* to choose a basis in order to do this, and there are a lot of ways to choose a basis
 for a vector space, which can be confusing.
-︡ed405162-9047-46d3-ac34-3bc9157233d7︡{"html":"<h2>The Matrix of a Linear Transformation</h2>\n\n<p><strong>DANGER:</strong> <span style=\"color:red\">The following may look easy but it gets surprisingly confusing!</span></p>\n\n<p>Suppose $V$ is a vector space with basis $B=\\{b_1,\\ldots, b_n\\}$.\nFor any  $v\\in V$, there are unique numbers $s_1,\\ldots, s_n \\in F$ such that $v = s_1 b_1 + \\cdots s_n b_n$.</p>\n\n<p><strong>Definition (coordinate vector):</strong> The coordinate vector of $v$ is the vector $[v]_B = (s_1,\\ldots, s_n) \\in\\mathbb{R}^n$.</p>\n\n<p>Let $T:V\\to W$ be a linear transformation of finite dimensional vector spaces over a field $F$.\nSuppose $B$ is a basis for $V$ and $C$ is a basis for $W$.</p>\n\n<p><strong>Definition (matrix of a linear transformation):</strong> The matrix of $T$ with respect to the bases $B$ and $C$ is\n\\[\n    [T]_{B,C} = \\{\\text{ matrix whose $i$th column is }[T(b_i)]_C \\}.\n\\]</p>\n\n<p>For $v\\in V$ we have\n$$\n    [T(v)]_C = [T]_{B,C} \\cdot [v]_B,\n$$\ni.e., again every linear transformation (of finite dimensional vector spaces) can be described by a matrix!\nUnfortunately, you <em>have</em> to choose a basis in order to do this, and there are a lot of ways to choose a basis\nfor a vector space, which can be confusing.</p>\n"}︡
+︡97eaba81-5baf-4c29-adca-47871e4ffa66︡{"html":"<h2>The Matrix of a Linear Transformation</h2>\n\n<p><strong>DANGER:</strong> <span style=\"color:red\">The following may look easy but it gets surprisingly confusing!</span></p>\n\n<p>Suppose $V$ is a vector space with basis $B=\\{b_1,\\ldots, b_n\\}$.\nFor any  $v\\in V$, there are unique numbers $s_1,\\ldots, s_n \\in F$ such that $v = s_1 b_1 + \\cdots s_n b_n$.</p>\n\n<p><strong>Definition (coordinate vector):</strong> The coordinate vector of $v$ is the vector $[v]_B = (s_1,\\ldots, s_n) \\in F^n$.</p>\n\n<p>Let $T:V\\to W$ be a linear transformation of finite dimensional vector spaces over a field $F$.\nSuppose $B$ is a basis for $V$ and $C$ is a basis for $W$.</p>\n\n<p><strong>Definition (matrix of a linear transformation):</strong> The matrix of $T$ with respect to the bases $B$ and $C$ is\n\\[\n    [T]_{B,C} = \\{\\text{ matrix whose $i$th column is }[T(b_i)]_C \\}.\n\\]</p>\n\n<p>For $v\\in V$ we have\n$$\n    [T(v)]_C = [T]_{B,C} \\cdot [v]_B,\n$$\ni.e., again every linear transformation (of finite dimensional vector spaces) can be described by a matrix!\nUnfortunately, you <em>have</em> to choose a basis in order to do this, and there are a lot of ways to choose a basis\nfor a vector space, which can be confusing.</p>\n"}︡
 ︠fc28fd8d-9989-40c5-b52f-659feca63f77i︠
 %hide
 %md
@@ -167,6 +167,7 @@ for a vector space, which can be confusing.
 1. Compute the matrix of the linear transformation ${\rm span}(1, \sin^2(x), \sin(x)\cos(x)) \to \mathbb{R}^3$ that we used above.   (Answer: the transpose of the matrix we gave above.)
 
 2. Test it out on some input.
+ 
 ︡91fdd86a-b806-4727-8eb9-e99923f07a82︡{"html":"<p><strong>Example:</strong></p>\n\n<ol>\n<li><p>Compute the matrix of the linear transformation ${\\rm span}(1, \\sin^2(x), \\sin(x)\\cos(x)) \\to \\mathbb{R}^3$ that we used above.   (Answer: the transpose of the matrix we gave above.)</p></li>\n<li><p>Test it out on some input.</p></li>\n</ol>\n"}︡
 ︠5415809e-a0c1-4662-985c-cf3ec31fa5e2︠
 

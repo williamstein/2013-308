@@ -247,7 +247,7 @@ looking matrix into a problem where $[T]_{B',C'}$ is diagonal, hence easy.
 
 ︡329ea0eb-448e-4391-baee-1873ad20aac8︡{"html":"<h3>Closing teaser remark</h3>\n\n<p>Eigenvalues, Eigenvectors anddiagonalization of matrices is really about\nchanging basis.  You convert a problem in which $[T]_{B,C}$ is some random\nlooking matrix into a problem where $[T]_{B',C'}$ is diagonal, hence easy.</p>\n"}︡
 ︠c89a72f7-f330-4607-99fb-c97a546fd597︠
- 
+
 
 
 
