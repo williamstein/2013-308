@@ -1,0 +1,120 @@
+\documentclass[10pt]{article}
+\usepackage{fullpage}
+\usepackage{color}
+\usepackage{amssymb}
+\title{\color{blue}\bf Math 308: Last Homework Assignment}
+\date{Wednesday, May 31, 2013}
+\author{by William Stein}
+\newcommand{\tf}[1]{\item {\bf {\color{blue}\hspace{1em}T\hspace{1em}F}}\hspace{1em} #1}
+\newcommand{\R}{\mathbf{R}}
+\newcommand{\C}{\mathbf{C}}
+\newcommand{\F}{\mathbf{F}}
+\renewcommand{\P}{\mathcal{P}}
+\begin{document}
+
+\maketitle
+{\noindent\bf\color{red} Instructions:}
+\begin{itemize}
+\item {\bf Due on midnight, Wednesday, June 5 via this page:} \url{http://goo.gl/rd8zi}
+\item The final exam will be similar to this, but longer.
+\end{itemize}
+
+{\noindent\bf \color{red} Questions (circle T or F):}
+\begin{enumerate}
+
+\tf{A system of linear equations over $\R$ has either no solutions or infinitely many solutions.}
+
+\tf{The span of the rows of the matrix $A=\left(\begin{array}{rrr}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+7 & 8 & 9
+\end{array}\right)$ has dimension 3.}
+
+\tf{There are 4 linearly independent vectors in $\R^5$.}
+
+\tf{The upper half plane, i.e., the set of points $(x,y) \in \R^2$ with $y\geq 0$, is a subspace of $\R^2$.}
+
+\tf{If $A$ and $B$ are any two square matrices (of the same size), then $\det(AB)=\det(BA)$ and $\det(A+B)=\det(B+A)$.}
+
+\tf{Let $\F_3$ be the finite field with $3$ elements and let $V$ be a $2$-dimensional
+    vector space over $\F_3$.  Then there are 81 linear transformations $V\to V$.}
+
+\tf{If $A$ is any $n\times n$ matrix and $B$ is the reduced row echelon form of $A$, then $\det(A)=\det(B^t)$, where
+$B^t$ is the transpose of $B$.}
+
+\tf{Suppose $A$ is a $3 \times 3$ matrix with eigenvalues $1,2,3$. Then $A$ must be diagonalizable.}
+
+\tf{Suppose $A$ is a $3 \times 3$ matrix with eigenvalues $1$ and $-1$.  Then $A^2=I_3$.}
+
+\tf{Let $\P$ be the vector space over $\R$ of polynomials of degree at most $3$ with real coefficients,
+and let $T:\P\to\P$ be the linear transformation $T(ax^2+bx+c)=a+b+c$.  Then there is a basis $\mathcal{B}$
+for $\P$ such that $[T]_{\P,\P}$ is diagonal.}
+
+\tf{Let $\P$ be the vector space over $\R$ of polynomials of degree at most $3$ with real coefficients,
+and let $T:\P\to\R^1$ be the linear transformation $T(ax^2+bx+c)=a+b+c$.
+Then the kernel of $T$ (i.e., the set of $v$ with $T(v)=0$) has dimension $1$.}
+
+\tf{Suppose $V$ and $W$ are vector spaces over $\R$ of dimensions $2$ and $3$, respectively.
+Then there is a linear transformation $T:V\to W$ such that $\ker(T)=0$.}
+
+\tf{Suppose $V$ and $W$ are vector spaces over $\R$ of dimensions $3$ and $2$, respectively.
+Then there is a linear transformation $T:V\to W$ such that $\ker(T)=0$.}
+
+\tf{Every $2\times 2$ matrix $A$ is diagonalizable (over the complex numbers $\C$).}
+
+\tf{The matrix $A=\left(\begin{array}{rr}
+1 & 2 \\
+3 & 4
+\end{array}\right)$ is diagonalizable over $\C$.}
+
+\tf{Let $V$ be the vector space of all differentiable functions $\R\to \R$.
+The function that send $f$ to its derivative is a linear transformation $V\to V$.}
+
+\tf{The dimension of the kernel of the derivative transformation (defined in the previous problem) is $1$.}
+
+\tf{Let $V$ be the set of all integrable functions $\R\to \R$, i.e., functions that
+have some antiderivative.  Then $V$ is a vector space.}
+
+\tf{Let $V$ be the set of all integrable functions $\R\to \R$.
+The function that $f$ to ``the antiderivative of $f$ that sends
+$0$ to $0$'' is a linear transformation of $V$.}
+
+\tf{Let $V$ be the set of all integrable functions $\R\to \R$.
+The function that $f$ to ``the antiderivative of $f$ that sends
+$0$ to $1$'' is a linear transformation of $V$.}
+
+\tf{The determinant of $A=\left(\begin{array}{rrrr}
+1 & 2 & 3 & 4 \\
+5 & 6 & 7 & 8 \\
+9 & 10 & 11 & 12 \\
+13 & 14 & 15 & 16
+\end{array}\right)$ is $0$.}
+
+\tf{If $B$ and $C$ are basis for a (finite dimensional) vector space $V$, then there must be some linear transformation
+$T:V\to V$ such that $[T]_{B,C}$ is the identity matrix.}
+
+\tf{Let $V$ be the set of functions $\R\to\R$.  Then the function $V\to \R^2$ that sends $f$ to $(f(1), f(\pi))$
+is a linear transformation.}
+
+\tf{Let $V$ be the vector space over $\R$ that is the span of $\sin(x)$, $\cos(x)$, and $\cos(3x)$.
+Let $T:V\to \R^1$ be the linear transformation that sends $f\in V$ to $f(0)$.
+Then the kernel of $T$ has dimension $1$.}
+
+\tf{Let $V$ be the vector space over $\R$ that is the span of $\sin(x)$, $\cos(x)$, and $\cos(3x)$.
+Let $T:V\to \R^1$ be the linear transformation that sends $f\in V$ to $f(0)$.
+Then $T$ is surjective, i.e., for every $a\in \R^1$ there is $v\in V$ such that $T(v)=a$.}
+
+\tf{Suppose $A$ is a matrix with characteristic polynomial $x(x-1)(x-2)(x-3)$. Then
+there is a basis $\mathcal{B}$ of $\R^4$ such that
+$[A]_{\mathcal{B},\mathcal{B}} = \left(\begin{array}{rrrr}
+3 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 2 & 0 \\
+0 & 0 & 0 & 0
+\end{array}\right).$}
+
+\tf{Suppose $A$ has characteristic polynomial $x^{7} + x^3 - 3$.  Then $\det(A)\neq 0$.}
+
+\end{enumerate}
+
+\end{document}
