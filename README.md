@@ -36,7 +36,7 @@ Office Hours: Tuesday 12:30 - 2
 - [Lecture 23 (May 22, 2013) - span, basis, independence](http://youtu.be/vGfQRrc37U0)  -- audio is useful; video useless.
 - [Lecture 24 (May 24, 2013) - linear transformation, basis, coordinate vector](http://youtu.be/cuYoTUaYigk)
 - [Lecture 25 (May 29, 2013) - matrix with respect to basis](http://youtu.be/Wcj4OqPSGYc)
-
+- [Lecture 26 (May 31, 2013) - more about matrices of linear transformations](http://youtu.be/zWOsGGkPEus)
 
 # WebAssign
 
