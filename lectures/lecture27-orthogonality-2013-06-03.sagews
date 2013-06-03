@@ -26,7 +26,7 @@
 
 
 
-︠f0d5a9ca-3fc0-4fa1-92ec-0bdfbe5b9fcf︠
+︠f0d5a9ca-3fc0-4fa1-92ec-0bdfbe5b9fcfi︠
 %md
 # Orthogonality: Overview
 
@@ -53,14 +53,14 @@ $[w]_B = (\frac{w \cdot v_1}{v_1 \cdot v_1},\frac{w \cdot v_2}{v_2 \cdot v_2},\l
 $W^{\perp} = \{v \in \mathbb{R}^n : v\cdot W = 0\},$
 where by $v\cdot W=0$, we mean $v\cdot w = 0$ for all $w\in W$.
 
-- *Gram-Schmidt:* You can transform any basis into an orthonormal basis.  Normalize first vector $v_1$ to have length $1$.  Use theorem above to to find a canonically defined vector that is orthogonal to $v_1$, and normalize it to have length $1$.  Repeat with all vectors to arrive at an orthogonal basis.
+- *Gram-Schmidt:* Algorithm to transform any basis into an orthonormal basis.  Normalize first vector $v_1$ to have length $1$.  Use theorem above to to find a canonically defined vector that is orthogonal to $v_1$, and normalize it to have length $1$.  Repeat with all vectors to arrive at an orthogonal basis.
 
 - *Theorem:* Let $W$ be a subspace.  For each $v\in\mathbb{R}^n$ there is a unique $w\in W$ and $w^{\perp} \in W^{\perp}$ such that $v=w+w^{\perp}$.  (In a more advanced course, we would write $\mathbb{R}^n = W \oplus W^{\perp}$ and say that $\mathbb{R}^n$ is the **direct sum** of $W$ and $W^{\perp}$.)  In fact, if $v_i$ is an orthonormal basis for $W$, then we can take  $w={\rm proj}_W(v) = (v\cdot v_1) v_1 + \cdots + (v\cdot v_k)  v_k$, and $w^{\perp} = v-w$.
 
 - *Corollary:* Let $A$ be any $m\times n$ matrix.  Then ${\rm rank}(A) + {\rm nullity}(A) = n$.
 
 
-︡17242c38-bd58-433d-8da1-cb4eecb83701︡{"html":"<h1>Orthogonality: Overview</h1>\n\n<ul>\n<li><p>This is Sections 5.1 and 5.2 of the textbook.</p></li>\n<li><p>Dot product: $(a_1,\\ldots,a_n) \\cdot (b_1,\\ldots,b_n) = a_1 b_1 + a_2 b_2 + \\cdots a_n b_n.$</p></li>\n<li><p><em>Definition:</em> Vectors $\\{v_1, \\ldots, v_k\\}$ are <strong>orthogonal</strong> if $v_i \\cdot v_j =0$ for all $i\\neq j$.</p></li>\n<li><p><em>Proposition:</em> Any set of nonzero orthogonal vectors are linearly independent.</p></li>\n<li><p><em>Definition:</em> An <strong>orthogonal basis</strong> is a basis consisting of orthogonal vectors.</p></li>\n<li><p><em>Proposition:</em> If $v_1, \\ldots, v_n$ an orthogonal basis $B$ for a subspace of $\\mathbb{R}^m$ containing a vector $w$, then\n$[w]_B = (\\frac{w \\cdot v_1}{v_1 \\cdot v_1},\\frac{w \\cdot v_2}{v_2 \\cdot v_2},\\ldots, \\frac{w \\cdot v_n}{v_n \\cdot v_n})$, so $w = \\sum \\frac{w \\cdot v_i}{v_i \\cdot v_i} v_i.$</p></li>\n<li><p><em>Definition:</em> An <strong>orthonormal basis</strong> is an orthogonal one where $v_i \\cdot v_i=1$ for each $i$, i.e., each vector has length $1$.</p></li>\n<li><p><em>Definition:</em> An <strong>orthogonal matrix</strong> is one whose columns are orthonormal.  (Yes, it <em>should</em> be &#8220;orthonormal matrix&#8221;, but isn&#8217;t.)</p></li>\n<li><p><em>Proposition:</em> A matrix $Q$ is orthogonal if and only if $Qv \\cdot Qw = v \\cdot w$ for all vectors $v,w$, i.e., it preserves the dot product.</p></li>\n<li><p><em>Definition:</em> The <strong>orthogonal complement</strong> of a subspace $W\\subset \\mathbb{R}^n$ is\n$W^{\\perp} = \\{v \\in \\mathbb{R}^n : v\\cdot W = 0\\},$\nwhere by $v\\cdot W=0$, we mean $v\\cdot w = 0$ for all $w\\in W$.</p></li>\n<li><p><em>Theorem:</em> Let $W$ be a subspace.  For each $v\\in\\mathbb{R}^n$ there is a unique $w\\in W$ and $w^{\\perp} \\in W^{\\perp}$ such that $v=w+w^{\\perp}$.  (In a more advanced course, we would write $\\mathbb{R}^n = W \\oplus W^{\\perp}$ and say that $\\mathbb{R}^n$ is the <strong>direct sum</strong> of $W$ and $W^{\\perp}$.)  In fact, if $v_i$ is an orthonormal basis for $W$, then we can take  $w={\\rm proj}_W(v) = (v\\cdot v_1) v_1 + \\cdots + (v\\cdot v_k)  v_k$, and $w^{\\perp} = v-w$.</p></li>\n<li><p><em>Corollary:</em> Let $A$ be any $m\\times n$ matrix.  Then ${\\rm rank}(A) + {\\rm nullity}(A) = n$.</p></li>\n<li><p><em>Gram-Schmidt:</em> An algorithm to transform any basis into an orthonormal basis.  Normalize first vector $v_1$ to have length $1$.  Use theorem above to to find a canonically defined vector that is orthogonal to $v_1$, and normalize it to have length $1$.  Repeat with all vectors to arrive at an orthogonal basis.</p></li>\n</ul>\n"}︡
+︡f9e2a717-741a-47b2-b15b-e088526585ba︡{"html":"<h1>Orthogonality: Overview</h1>\n\n<ul>\n<li><p>This is Sections 5.1 and 5.2 of the textbook.</p></li>\n<li><p>Dot product: $(a_1,\\ldots,a_n) \\cdot (b_1,\\ldots,b_n) = a_1 b_1 + a_2 b_2 + \\cdots a_n b_n.$</p></li>\n<li><p><em>Definition:</em> Vectors $\\{v_1, \\ldots, v_k\\}$ are <strong>orthogonal</strong> if $v_i \\cdot v_j =0$ for all $i\\neq j$.</p></li>\n<li><p><em>Proposition:</em> Any set of nonzero orthogonal vectors are linearly independent.</p></li>\n<li><p><em>Definition:</em> An <strong>orthogonal basis</strong> is a basis consisting of orthogonal vectors.</p></li>\n<li><p><em>Proposition:</em> If $v_1, \\ldots, v_n$ an orthogonal basis $B$ for a subspace of $\\mathbb{R}^m$ containing a vector $w$, then\n$[w]_B = (\\frac{w \\cdot v_1}{v_1 \\cdot v_1},\\frac{w \\cdot v_2}{v_2 \\cdot v_2},\\ldots, \\frac{w \\cdot v_n}{v_n \\cdot v_n})$, so $w = \\sum \\frac{w \\cdot v_i}{v_i \\cdot v_i} v_i.$</p></li>\n<li><p><em>Definition:</em> An <strong>orthonormal basis</strong> is an orthogonal one where $v_i \\cdot v_i=1$ for each $i$, i.e., each vector has length $1$.</p></li>\n<li><p><em>Definition:</em> An <strong>orthogonal matrix</strong> is one whose columns are orthonormal.  (Yes, it <em>should</em> be &#8220;orthonormal matrix&#8221;, but isn&#8217;t.)</p></li>\n<li><p><em>Proposition:</em> A matrix $Q$ is orthogonal if and only if $Qv \\cdot Qw = v \\cdot w$ for all vectors $v,w$, i.e., it preserves the dot product.</p></li>\n<li><p><em>Definition:</em> The <strong>orthogonal complement</strong> of a subspace $W\\subset \\mathbb{R}^n$ is\n$W^{\\perp} = \\{v \\in \\mathbb{R}^n : v\\cdot W = 0\\},$\nwhere by $v\\cdot W=0$, we mean $v\\cdot w = 0$ for all $w\\in W$.</p></li>\n<li><p><em>Gram-Schmidt:</em> Algorithm to transform any basis into an orthonormal basis.  Normalize first vector $v_1$ to have length $1$.  Use theorem above to to find a canonically defined vector that is orthogonal to $v_1$, and normalize it to have length $1$.  Repeat with all vectors to arrive at an orthogonal basis.</p></li>\n<li><p><em>Theorem:</em> Let $W$ be a subspace.  For each $v\\in\\mathbb{R}^n$ there is a unique $w\\in W$ and $w^{\\perp} \\in W^{\\perp}$ such that $v=w+w^{\\perp}$.  (In a more advanced course, we would write $\\mathbb{R}^n = W \\oplus W^{\\perp}$ and say that $\\mathbb{R}^n$ is the <strong>direct sum</strong> of $W$ and $W^{\\perp}$.)  In fact, if $v_i$ is an orthonormal basis for $W$, then we can take  $w={\\rm proj}_W(v) = (v\\cdot v_1) v_1 + \\cdots + (v\\cdot v_k)  v_k$, and $w^{\\perp} = v-w$.</p></li>\n<li><p><em>Corollary:</em> Let $A$ be any $m\\times n$ matrix.  Then ${\\rm rank}(A) + {\\rm nullity}(A) = n$.</p></li>\n</ul>\n"}︡
 ︠ee9b5e6a-f4ff-4284-8778-0bf3e82a0399i︠
 %md
 
@@ -80,7 +80,7 @@ show( arrow((0,0), (1,1)) + arrow((0,0),(1,-1)), aspect_ratio=1, svg=True)
 ︠5250d56c-a110-48ee-9ba6-efd80355f8f8︠
 g = arrow3d((0,0,0), (2,1,-1)) + arrow3d((0,0,0),(0,1,1)) + arrow3d((0,0,0),(1,-1,1), aspect_ratio=1)
 show(g)
-︡f1c13b16-797d-488e-a1ee-0c7449706a34︡{"file":{"show":true,"uuid":"11097612-de3e-430c-bb54-154c0bff9be0","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/22459/tmp_sgc4ZI.png"}}︡
+︡065a94e0-f033-4859-b0a2-225d6ab1876b︡{"file":{"show":true,"uuid":"11097612-de3e-430c-bb54-154c0bff9be0","filename":"/mnt/home/D6VXKxGo/.sage/temp/compute1a/2980/tmp_Jv9Ri9.png"}}︡
 ︠362fa241-023e-4cb4-9b99-30b7b01a495bi︠
 
 %md
@@ -116,10 +116,10 @@ We conclude that all $c_i=0$, hence the $v_i$ are independent.
 
 **Proof.**
 
-Note that $Q$ being orthogonal implies that $Q Q^t = Q^t Q = I_n$.
+Note that $Q$ being orthogonal implies that $Q^t Q = I_n$.
 
 We have \[ Qv \cdot Qw = (Qv)^t Qw = v^t Q^t Q w = v^t I_n w = v \cdot w.\]
-︡f6f50f94-b8ac-4f1b-9344-48b1965fcb57︡{"html":"<p><strong>Proposition:</strong> A matrix $Q$ is orthogonal if and only if $Qv \\cdot Qw = v \\cdot w$ for all vectors $v,w$.</p>\n\n<p><strong>Proof.</strong></p>\n\n<p>Note that $Q$ being orthogonal implies that $Q Q^t = Q^t Q = I_n$.</p>\n\n<p>We have \\[ Qv \\cdot Qw = (Qv)^t Qw = v^t Q^t Q w = v^t I_n w = v \\cdot w.\\]</p>\n"}︡
+︡1c494a96-8d93-42c0-931b-624935d7a449︡{"html":"<p><strong>Proposition:</strong> A matrix $Q$ is orthogonal if and only if $Qv \\cdot Qw = v \\cdot w$ for all vectors $v,w$.</p>\n\n<p><strong>Proof.</strong></p>\n\n<p>Note that $Q$ being orthogonal implies that $Q^t Q = I_n$.</p>\n\n<p>We have \\[ Qv \\cdot Qw = (Qv)^t Qw = v^t Q^t Q w = v^t I_n w = v \\cdot w.\\]</p>\n"}︡
 ︠709c5092-9f55-40e5-9ba8-672784f57694︠
 
 
