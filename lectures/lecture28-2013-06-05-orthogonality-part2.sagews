@@ -20,7 +20,25 @@
 
 
 ︡54564e71-00e7-4901-a92e-21b7f18c7d83︡{"html":"<h1>Lecture 28: Orthogonal vectors in $\\mathbb{R}^n$, part 2</h1>\n\n<h3>June 5, 2013</h3>\n\n<h4>Plan</h4>\n\n<ol>\n<li><p>Start Screencast</p></li>\n<li><p>Questions</p></li>\n<li><p>Homework:</p>\n\n<ul>\n<li>Mock Final Homework: Due <strong>Tonight</strong>.</li>\n<li>Friday: review lecture &#8211; I will go over homework for the Friday lecture, and also answer other questions you might have.  That&#8217;s it. </li>\n</ul></li>\n<li><p>Today: Finish Orthogonality</p></li>\n</ol>\n"}︡
+︠2bd60557-8d3a-4521-9ea1-deae00ec3314i︠
+%md
+## An Email I received
+
+> Hello Math 308 Professors,
+
+> I will be presenting a supplementary final exam review on behalf of CLUE for Math 308 on Monday, 10 June, from 8 to 10 pm in MGH234. Please alert your students that this additional resource is available to them in lecture or on your websites if you have not already done so.
+
+> I have set up an email account at cluemath308mail@gmail.com if you or your students would like to see particular concepts or exercises worked out in the review.
+
+> Thank you so much for listening,
+
+> Matt Caine
+
+> CLUE is a free resource open 7PM-12AM Sunday-Thursday in the Mary Gates Hall
+︡e5034b06-8d40-468f-8769-077752516ba4︡{"html":"<h2>An Email I received</h2>\n\n<blockquote>\n  <p>Hello Math 308 Professors,</p>\n  \n  <p>I will be presenting a supplementary final exam review on behalf of CLUE for Math 308 on Monday, 10 June, from 8 to 10 pm in MGH234. Please alert your students that this additional resource is available to them in lecture or on your websites if you have not already done so.</p>\n  \n  <p>I have set up an email account at cluemath308mail@gmail.com if you or your students would like to see particular concepts or exercises worked out in the review.</p>\n  \n  <p>Thank you so much for listening,</p>\n  \n  <p>Matt Caine</p>\n  \n  <p>CLUE is a free resource open 7PM-12AM Sunday-Thursday in the Mary Gates Hall</p>\n</blockquote>\n"}︡
 ︠398b6e41-95e3-40ed-a85f-23e6913f08ba︠
+
+
 
 
 
