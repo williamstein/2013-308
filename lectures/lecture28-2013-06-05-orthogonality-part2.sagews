@@ -9,17 +9,18 @@
 
  1. Start Screencast
 
- 2. Questions
+ 2. Question
+  - the final is "Wednesday, June 12, 2013, 2:30-4:20 p.m."<br><br>
 
  3. Homework:
   - Mock Final Homework: Due **Tonight**.
-  - Friday: review lecture -- I will go over homework for the Friday lecture, and also answer other questions you might have.  That's it.
+  - Friday: review lecture -- I will go over homework for the Friday lecture, and also answer other questions you might have.  That's it.<br><br>
 
  4. Today: Finish Orthogonality
 
 
 
-︡54564e71-00e7-4901-a92e-21b7f18c7d83︡{"html":"<h1>Lecture 28: Orthogonal vectors in $\\mathbb{R}^n$, part 2</h1>\n\n<h3>June 5, 2013</h3>\n\n<h4>Plan</h4>\n\n<ol>\n<li><p>Start Screencast</p></li>\n<li><p>Questions</p></li>\n<li><p>Homework:</p>\n\n<ul>\n<li>Mock Final Homework: Due <strong>Tonight</strong>.</li>\n<li>Friday: review lecture &#8211; I will go over homework for the Friday lecture, and also answer other questions you might have.  That&#8217;s it. </li>\n</ul></li>\n<li><p>Today: Finish Orthogonality</p></li>\n</ol>\n"}︡
+︡59025321-fa0a-4e8e-8529-33748500e386︡{"html":"<h1>Lecture 28: Orthogonal vectors in $\\mathbb{R}^n$, part 2</h1>\n\n<h3>June 5, 2013</h3>\n\n<h4>Plan</h4>\n\n<ol>\n<li><p>Start Screencast</p></li>\n<li><p>Question</p>\n\n<ul>\n<li>the final is &#8220;Wednesday, June 12, 2013, 2:30-4:20 p.m.\"<br><br></li>\n</ul></li>\n<li><p>Homework:</p>\n\n<ul>\n<li>Mock Final Homework: Due <strong>Tonight</strong>.</li>\n<li>Friday: review lecture &#8211; I will go over homework for the Friday lecture, and also answer other questions you might have.  That&#8217;s it.<br><br></li>\n</ul></li>\n<li><p>Today: Finish Orthogonality</p></li>\n</ol>\n"}︡
 ︠2bd60557-8d3a-4521-9ea1-deae00ec3314i︠
 %md
 ## An Email I received
@@ -175,7 +176,9 @@ a = matrix(QQ,3,4,[1,2,2,1,  1,0,1,1,  1,1,0,1])
 a.gram_schmidt()[0]   # just orthogonal, not orthonormal
 ︡ff43c0e5-0ad2-458c-9d0c-b6ba4d2fe18f︡{"stdout":"[   1    2    2    1]\n[ 3/5 -4/5  1/5  3/5]\n[ 3/7  3/7 -6/7  3/7]\n"}︡
 ︠b7008f4f-ab34-4a95-8494-bb20e2bbccc8︠
-
+matrix(QQ,2,4,[1,-1,0,1, 1,2,3,0]).gram_schmidt()[0]
+︡af94f9d2-9859-4b97-a1f2-593488203903︡{"stdout":"[  1  -1   0   1]\n[4/3 5/3   3 1/3]\n"}︡
+︠db442c3d-3e78-4722-b6bd-b942aaea9a8b︠
 
 
 
