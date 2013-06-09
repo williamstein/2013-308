@@ -38,6 +38,8 @@ Office Hours: Tuesday 12:30 - 2
 - [Lecture 25 (May 29, 2013) - matrix with respect to basis](http://youtu.be/Wcj4OqPSGYc)
 - [Lecture 26 (May 31, 2013) - more about matrices of linear transformations](http://youtu.be/zWOsGGkPEus)
 - [Lecture 27 (June 3, 2013) - orthogonality (part 1 of 2)](http://youtu.be/lC3gU_2wjd0)
+- [Lecture 28 (June 5, 2013) - orthogonality (part 2 of 2)](http://youtu.be/3DFdTm5t5a0)
+- [Lecture 29 (June 7, 2013) - going over mock final questions](http://youtu.be/MFSYxLPIclk)
 
 # WebAssign
 
