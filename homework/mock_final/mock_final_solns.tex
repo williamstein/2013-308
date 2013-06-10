@@ -5,7 +5,7 @@
 \title{\color{blue}\bf Math 308: Last Homework Assignment -- SOLUTIONS}
 \date{Wednesday, May 31, 2013}
 \author{by William Stein}
-\newcommand{\tf}[2]{\item {\bf {\color{blue}\hspace{1em}#1}}\hspace{1em} #2}
+\newcommand{\tf}[3]{\item {\bf {\color{blue}\hspace{1em}#1}}\hspace{1em} #2 [Hint: #3]}
 \newcommand{\R}{\mathbf{R}}
 \newcommand{\C}{\mathbf{C}}
 \newcommand{\F}{\mathbf{F}}
@@ -17,87 +17,141 @@
 {\noindent\bf \color{red} True or False:}
 \begin{enumerate}
 
-\tf{F}{A system of linear equations over $\R$ has either no solutions or infinitely many solutions.}
+\tf{F}{A system of linear equations over $\R$ has either no solutions or infinitely many solutions.}{The possibilities for a system
+of linear equations with coefficients real numbers are: no solutions, a unique solution, infinitely many solutions.}
 
 \tf{F}{The span of the rows of the matrix $A=\left(\begin{array}{rrr}
 1 & 2 & 3 \\
 4 & 5 & 6 \\
 7 & 8 & 9
-\end{array}\right)$ has dimension 3.}
+\end{array}\right)$ has dimension 3.}{False, because when you put this matrix in echelon form, the last row consists of 0's.}
 
-\tf{T}{There are 4 linearly independent vectors in $\R^5$.}
+\tf{T}{There are 4 linearly independent vectors in $\R^5$.}{Yes, for example, the first four standard basis vectors
+$e_1, e_2, e_3, e_4$.}
 
-\tf{F}{The upper half plane, i.e., the set of points $(x,y) \in \R^2$ with $y\geq 0$, is a subspace of $\R^2$.}
+\tf{F}{The upper half plane, i.e., the set of points $(x,y) \in \R^2$ with $y\geq 0$, is a subspace of $\R^2$.}{No the
+upper half plane is not a subspace, because $(1,0)$ is in the upper half plane, but $-1 \cdot (1,0) = (-1,0)$ is not,
+and subspaces are closed under scalar multiplication.}
 
-\tf{T}{If $A$ and $B$ are any two square matrices (of the same size), then $\det(AB)=\det(BA)$ and $\det(A+B)=\det(B+A)$.}
+\tf{T}{If $A$ and $B$ are any two square matrices (of the same size), then $\det(AB)=\det(BA)$ and $\det(A+B)=\det(B+A)$.}{This
+is true; the first fact follows from $\det(AB)=\det(A)\det(B)$, which is a somewhat difficult theorem.  The second fact just
+follows from commutativity of matrix addition.}
 
 \tf{T}{Let $\F_3$ be the finite field with $3$ elements and let $V$ be a $2$-dimensional
-    vector space over $\F_3$.  Then there are 81 linear transformations $V\to V$.}
+    vector space over $\F_3$.  Then there are 81 linear transformations $V\to V$.}{Yes, the linear
+    transformations correspond to $2\times 2$ matrices with entries in $\F_3=\{0,1,2\}$.  The
+    number of such matrices is $3\cdot 3 \cdot 3 \cdot 3= 81$, since there are three choices
+    for each entry.}
 
 \tf{F}{If $A$ is any $n\times n$ matrix and $B$ is the reduced row echelon form of $A$, then $\det(A)=\det(B^t)$, where
-$B^t$ is the transpose of $B$.}
+$B^t$ is the transpose of $B$.}{This is false, with the transpose being a red herring.  Replacing a matrix by its reduced
+row echelon form dramatically changes the determinant; in fact, the determinant of a matrix in reduced row echelon form
+is either $0$ or $1$!}
 
-\tf{T}{Suppose $A$ is a $3 \times 3$ matrix with eigenvalues $1,2,3$. Then $A$ must be diagonalizable.}
+\tf{T}{Suppose $A$ is a $3 \times 3$ matrix with eigenvalues $1,2,3$. Then $A$ must be diagonalizable.}{Yes, because
+each eigenspace has dimension at least $1$, and there are three of them, so their dimensions must add up to $3$.  That is,
+there is a basis of eigenvectors.}
 
-\tf{F}{Suppose $A$ is a $3 \times 3$ matrix with eigenvalues $1$ and $-1$.  Then $A^2=I_3$.}
+\tf{F}{Suppose $A$ is a $3 \times 3$ matrix with eigenvalues $1$ and $-1$.  Then $A^2=I_3$.}{This is false. A counterexample
+is the matrix $\left(\begin{array}{rrr}
+1 & 1 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & -1
+\end{array}\right)$.}
 
 \tf{T}{Let $\P$ be the vector space over $\R$ of polynomials of degree at most $3$ with real coefficients,
 and let $T:\P\to\P$ be the linear transformation $T(ax^2+bx+c)=a+b+c$.  Then there is a basis $\mathcal{B}$
-for $\P$ such that $[T]_{\P,\P}$ is diagonal.}
+for $\P$ such that $[T]_{\P,\P}$ is diagonal.}{This is true, as we can see by first writing down the
+matrix $[T]_{\mathcal{C}}$ for {\em some} choice of basis, then computing the characteristic polynomial
+and eigenvectors.  We make the arbitrary choice of basis $\mathcal{C}$ to be $1,x,x^2$, and find that
+$A=[T]_{\mathcal{C}} = \left(\begin{array}{rrr}
+1 & 1 & 1 \\
+0 & 0 & 0 \\
+0 & 0 & 0
+\end{array}\right)$.
+The characteristic polynomial is $(x-1)x^2$, the nullspace of $A-1$ has dimension $1$, and the nullspace
+of $A-0$ has dimension $2$, so $A$ is diagonalizable, hence $T$ is as well.
+}
 
 \tf{F}{Let $\P$ be the vector space over $\R$ of polynomials of degree at most $3$ with real coefficients,
 and let $T:\P\to\R^1$ be the linear transformation $T(ax^2+bx+c)=a+b+c$.
 Then the kernel of $T$ (i.e., the set of $v$ with $T(v)=0$) has dimension $1$.}
+{Choose a basis for both vector spaces, then compute the matrix of $T$ with respect to this
+choice of bases.  For $\P$ choose $1,x,x^2$, and for $\R^1$ choose $(1)$.  Then the
+corresponding matrix is $A=[1,1,1]$.  The nullspace of $A$ has dimension $2$, since
+the rank is $1$ and rank + nullity = number of columns = 3; or, just compute the nullspace
+and get dimension $2$.  Since $2\neq 1$, this is false.
+}
 
 \tf{T}{Suppose $V$ and $W$ are vector spaces over $\R$ of dimensions $2$ and $3$, respectively.
-Then there is a linear transformation $T:V\to W$ such that $\ker(T)=0$.}
+Then there is a linear transformation $T:V\to W$ such that $\ker(T)=0$.}{Yes, since $2\leq 3$,
+you can find such a linear transformation.}
 
 \tf{F}{Suppose $V$ and $W$ are vector spaces over $\R$ of dimensions $3$ and $2$, respectively.
-Then there is a linear transformation $T:V\to W$ such that $\ker(T)=0$.}
+Then there is a linear transformation $T:V\to W$ such that $\ker(T)=0$.}{No, this isn't possible,
+since any $2\times 3$ matrix will have a nonzero nullspace.}
 
 \tf{F}{Every $2\times 2$ matrix $A$ is diagonalizable (over the complex numbers $\C$).}
+{No, for example $\left(\begin{array}{rr}
+1 & 1 \\
+0 & 1
+\end{array}\right)$ is not diagonalizable.}
 
 \tf{T}{The matrix $A=\left(\begin{array}{rr}
 1 & 2 \\
 3 & 4
-\end{array}\right)$ is diagonalizable over $\C$.}
+\end{array}\right)$ is diagonalizable over $\C$.}{Yes, as you can see by computing
+the characteristic polynomial and verifying that it has two distinct roots.
+The roots happen to be in $\R$, but that's fine, since $\R$ is a subset of $\C$.}
 
 \tf{T}{Let $V$ be the vector space of all differentiable functions $\R\to \R$.
 The function that send $f$ to its derivative is a linear transformation $V\to V$.}
+{Yes, this is a basic fact you know from Calculus, namely that $(af+bg)' = af' + bg'$.}
 
-\tf{T}{The dimension of the kernel of the derivative transformation (defined in the previous problem) is $1$.}
+\tf{T}{The dimension of the kernel of the derivative
+transformation (defined in the previous problem) is $1$.}{True, since $f'=0$ if and only if $f$ is a constant, and
+the constant functions are a space of dimension $1$, with basis the function $f(x)=1$.}
 
 \tf{T}{Let $V$ be the set of all integrable functions $\R\to \R$, i.e., functions that
-have some antiderivative.  Then $V$ is a vector space.}
+have some antiderivative.  Then $V$ is a vector space.}{Yes, since the sum and scalar multiples of a function
+with an antiderivative also has an antiderivative.}
 
 \tf{T}{Let $V$ be the set of all integrable functions $\R\to \R$.
-The function that $f$ to ``the antiderivative of $f$ that sends
+The function that send $f$ to ``the antiderivative of $f$ that sends
 $0$ to $0$'' is a linear transformation of $V$.}
+{Yes, it satisfies the properties.  The key is that we make the choice of constant so that $0$ goes to $0$.}
 
 \tf{F}{Let $V$ be the set of all integrable functions $\R\to \R$.
 The function that $f$ to ``the antiderivative of $f$ that sends
-$0$ to $1$'' is a linear transformation of $V$.}
+$0$ to $1$'' is a linear transformation of $V$.}{This is definitely
+not a linear transformation, since it sends the $0$ function to the constant
+function $1$, which is not $0$, and linear transformations send $0$ to $0$.}
 
 \tf{T}{The determinant of $A=\left(\begin{array}{rrrr}
 1 & 2 & 3 & 4 \\
 5 & 6 & 7 & 8 \\
 9 & 10 & 11 & 12 \\
 13 & 14 & 15 & 16
-\end{array}\right)$ is $0$.}
+\end{array}\right)$ is $0$.}{Yes, since the last two rows are linear combinations of the first two.}
 
 \tf{T}{If $B$ and $C$ are basis for a (finite dimensional) vector space $V$, then there must be some linear transformation
-$T:V\to V$ such that $[T]_{B,C}$ is the identity matrix.}
+$T:V\to V$ such that $[T]_{B,C}$ is the identity matrix.}{Yes, just take $T$ to be the transformation
+that sends $b_i$ to $c_i$.}
 
 \tf{T}{Let $V$ be the set of functions $\R\to\R$.  Then the function $V\to \R^2$ that sends $f$ to $(f(1), f(\pi))$
-is a linear transformation.}
+is a linear transformation.}{Yes, it is, as you can check from the definitions.}
 
 \tf{F}{Let $V$ be the vector space over $\R$ that is the span of $\sin(x)$, $\cos(x)$, and $\cos(3x)$.
 Let $T:V\to \R^1$ be the linear transformation that sends $f\in V$ to $f(0)$.
-Then the kernel of $T$ has dimension $1$.}
+Then the kernel of $T$ has dimension $1$.}{Simply compute the matrix of $T$ with respect to the basis
+$\sin(x), \cos(x), \cos(3x)$ for the domain and $(1)$ for the codomain.  That matrix
+is $A = [0,1,1]$, which has nullspace of dimension $2$, sincek there are two nonpivot
+columns, namely the first and third. Thus the kernel has dimension $2$.}
 
 \tf{T}{Let $V$ be the vector space over $\R$ that is the span of $\sin(x)$, $\cos(x)$, and $\cos(3x)$.
 Let $T:V\to \R^1$ be the linear transformation that sends $f\in V$ to $f(0)$.
 Then $T$ is surjective, i.e., for every $a\in \R^1$ there is $v\in V$ such that $T(v)=a$.}
+{This is true, since $aT(\cos(x))=(a)$.}
 
 \tf{T}{Suppose $A$ is a matrix with characteristic polynomial $x(x-1)(x-2)(x-3)$. Then
 there is a basis $\mathcal{B}$ of $\R^4$ such that
@@ -106,9 +160,12 @@ $[A]_{\mathcal{B},\mathcal{B}} = \left(\begin{array}{rrrr}
 0 & 1 & 0 & 0 \\
 0 & 0 & 2 & 0 \\
 0 & 0 & 0 & 0
-\end{array}\right).$}
+\end{array}\right).$}{Yes, since the roots of the characteristic polynomial all
+have algebraic multiplicity $1$.}
 
 \tf{T}{Suppose $A$ has characteristic polynomial $x^{7} + x^3 - 3$.  Then $\det(A)\neq 0$.}
+{Yes. The idea is to notice that $\det(xI-A) = x^7+x^3 -3$, then substitute $x=0$ into both
+sides, so get $\det(-A) = -3$.  Since $\det(-A)=\pm \det(A)$, we see that $\det(A)\neq 0$.}
 
 \end{enumerate}
 
