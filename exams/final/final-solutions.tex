@@ -1,0 +1,190 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{color}
+\usepackage{url}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\title{\color{blue}\bf Math 308: Final Examination}
+\date{Wednesday, June 12, 2013, 2:30--4:20 p.m.}
+\author{by William Stein}
+\newcommand{\tf}[2]{\item {\bf {\color{blue}\hspace{1em}#1}}\hspace{1em} #2}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\F}{\mathbb{F}}
+\renewcommand{\P}{\mathcal{P}}
+\begin{document}
+
+\maketitle
+{\noindent\bf\color{red} Instructions:}
+\begin{itemize}
+\item {\color{blue} Your Name: \underline{\hspace{20em}}\\ID Number: \underline{\hspace{15em}}}
+
+\item Exactly as with the midterms, you may use one sheet of paper with notes on it, and you may use a calculator.
+\item Turn in your exam at 4:20pm, so you have 1:50 to complete this exam.  Answer every question.  Triple check your work!  $\square\quad\square\quad\square$
+\end{itemize}
+
+{\noindent\bf \color{red} Questions (circle T or F):}
+\begin{enumerate}
+
+\tf{T}{The following $2\times 5$ matrix is in reduced row echelon form:
+$$\left(\begin{array}{rrrrr}
+0 & 1 & 2 & 0 & 0\\
+0 & 0 & 0 & 1 & 2
+\end{array}\right)
+$$
+}
+
+\tf{T}{The following $1\times 6$ matrix is in reduced row echelon form:
+$$\left(\begin{array}{rrrrrr}
+0 & 1 & 2 & 3 & 4 & 5\\
+\end{array}\right)
+$$
+}
+
+\tf{T}{The span of the rows of the matrix $A=\left(\begin{array}{rrr}
+1 & 0 & 3 \\
+4 & 0 & 6 \\
+7 & 0 & 9
+\end{array}\right)$ has dimension 2.}
+
+\tf{F}{The span of the rows of the matrix $A=\left(\begin{array}{rrr}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+7 & 8 & 9
+\end{array}\right)$ has dimension 3.}
+
+\tf{F}{The set of $\left(\begin{array}{c}
+x \\
+y\\
+z
+\end{array}\right)\in \R^3$ such that
+\begin{align*}
+x + 2 \, y + 3 \, z &= 1 \\
+4 \, x + 5 \, y + 6 \, z &= 2\\
+7 \, x + 8 \, y + 9 \, z &= 3
+\end{align*}
+is a vector space of dimension $1$.}
+
+\tf{F}{The set of $\left(\begin{array}{c}
+x \\
+y\\
+z
+\end{array}\right)\in \R^3$ such that
+\begin{align*}
+x + 2 \, y + 3 \, z &= 0 \\
+4 \, x + 5 \, y + 6 \, z &= 0\\
+7 \, x + 8 \, y + 9 \, z &= 0
+\end{align*}
+is a vector space of dimension $2$.}
+
+\tf{T}{The lower half plane, i.e., the set of points $(x,y) \in \R^2$ with $y\leq 0$, is not a subspace of $\R^2$.}
+
+\tf{T}{If $A$ and $B$ are any two square matrices (of the same size), then $(AB)^T=B^T A^T$ and $(A+B)^T= B^T + A^T$.}
+
+\tf{F}{If $A$ and $B$ are any two invertible square matrices (of the same size) such that $A+B$ is also invertible,
+then $(AB)^{-1}=B^{-1} A^{-1}$ and $(A+B)^{-1}= B^{-1} + A^{-1}$.}
+
+\tf{T}{Let $\F_2$ be the finite field with $2$ elements and let $V$ be a $2$-dimensional
+    vector space over $\F_2$. (In the book $\F_2$ is denoted $\mathbb{Z}_2$.)   Then there are exactly 16 distinct linear transformations $V\to V$.}
+
+
+\tf{T}{If $A$ is any $n\times n$ matrix and $B$ is the reduced row echelon form of $A$, then $\det(A)=0$ if and only if $\det(B)=0$.}
+
+\tf{F}{If $A$ is any $n\times n$ matrix and $B$ is the reduced row echelon form of $A$, then $\det(A)=1$ if and only if $\det(B)=1$.}
+
+\tf{T}{Let $\P_3$ be the vector space over $\R$ of polynomials of degree at most $3$ with real coefficients,
+and let $T:\P_3\to\P_3$ be the linear transformation $T(ax^2+bx+c)=cx + b-a$.  Then there is a basis $\mathcal{B}$ for $\P_3$ such that $[T]_{\mathcal{B},\mathcal{B}}$ is diagonal.}
+
+\tf{T}{Let $\P_3$ be the vector space over $\R$ of polynomials of degree at most $3$ with real coefficients,
+and let $T:\P_3\to\P_3$ be the linear transformation $T(ax^2+bx+c)=cx+b-a$.
+Then the kernel of $T$ (i.e., the set of $v$ with $T(v)=0$) has dimension $1$.}
+
+\tf{F}{Let $\P_2$ be the vector space over $\R$ of polynomials of degree at most $2$ with real coefficients,
+and let $T:\P_2\to\P_2$ be the linear transformation $T(bx+c)=cx-b$.  Then the matrix $[T]_B$ of $T$
+with respect to the basis $1,x$ is $\left(\begin{array}{rr}
+0 & 1 \\
+-1 & 0
+\end{array}\right)$.
+}
+
+
+\tf{F}{The matrix $A=\left(\begin{array}{rr}
+1 & 2013 \\
+0 & 1
+\end{array}\right)$ is diagonalizable over $\C$.}
+
+\tf{F}{The subset ${\rm GL}_3(\C)$ of all invertible $3\times 3$ complex matrices is a vector subspace of
+the vector space $M_{3,3}(\C)$ of all $3\times 3$ complex matrices.}
+
+\tf{T}{The matrix $A=\left(\begin{array}{rr}
+1 & 2013 \\
+2013 & 1
+\end{array}\right)$ is diagonalizable over $\C$.}
+
+\tf{F}{Let $V$ be the vector space of all infinitely differentiable functions $\R\to \R$.
+The function that send $f$ to its third derivative is a linear transformation $V\to V$ whose
+kernel has dimension $2$.}
+
+\tf{T}{Let $V$ be the vector space of all infinitely differentiable functions $\R\to \R$.
+The kernel of the linear transformation that sends $f$ to its third derivative is
+the space $\mathcal{P}_{2}$ of polynomials of degree at most~$2$.}
+
+\tf{T}{The determinant of $A$ is $0$, where $$A=\left(\begin{array}{rrrr}
+-\frac{12825}{11504} & \frac{90625}{88467} & \frac{49455}{35626} & -\frac{6151}{38520}\vspace{1ex}\\
+\frac{48955}{10471} & \frac{60835}{89249} & \frac{17564}{97411} & -\frac{7103}{3700} \vspace{1ex}\\
+-\frac{12825}{11504} & \frac{90625}{88467} & \frac{49455}{35626} & -\frac{6151}{38520}\vspace{1ex}\\
+-\frac{2275}{7108} & \frac{49132}{79339} & -\frac{49791}{670} & \frac{6115}{4868}
+\end{array}\right).$$}
+
+\tf{T}{Let $V$ be the vector space of all functions $\R\to\R$.  Then the function $V\to \R^2$ that sends $f$ to $(0, f(0))$
+is a linear transformation.}
+
+\tf{T}{Let $V$ be the vector space of all functions $\R\to\R$.  Then the function $V\to \R^5$ that sends $f$ to $(f(-1),f(1),f(2),f(\pi),f(4))$
+is a linear transformation.}
+
+\tf{T}{There are infinitely many distinct orthonormal bases for~$\R^2$.}
+
+\tf{F}{There is exactly one orthonormal basis for $\R^1$.}
+
+\tf{F}{If $A$ is any orthogonal matrix, then $\det(A)=1$.}
+
+\tf{F}{If $A$ is any $2\times 2$ matrix with real entries such that $\det(A)=1$, then $A$ must be an orthogonal matrix.}
+
+\tf{F}{If $A$ is any $2\times 2$ matrix with real entries such that $A^2=I_2$, then $A$ must be an orthogonal matrix.}
+
+\tf{T}{Suppose $A$ is a $2\times 2$ matrix with  characteristic polynomial $x^{2} + 3x$.  Then $A$ is not invertible.}
+
+\tf{T}{The vectors $v_1=\left(\begin{array}{rrr}
+1 \\
+2  \\
+0\\
+-1
+\end{array}\right)$,
+$v_2=\left(\begin{array}{rrr}
+2\\
+1\\
+1\\
+4
+\end{array}\right)$  are an orthogonal basis for a subspace of $\R^4$.}
+
+\tf{T}{Suppose $A$ is a $3\times 5$ matrix of rank $2$ (with real entries).  Then the dimension of the nullspace of $A$ must be $3$.}
+
+\tf{F}{Suppose $A$ is a $3\times 5$ matrix with real entries that looks like this (where the entries marked with * can be absolutely anything): $A={\left(\begin{array}{rrrrr}
+1 & 2 & 1 & * & * \\
+-1 & 1 & 1 & * & * \\
+2 & 0 & 1 & * & *
+\end{array}\right)}$.  Then the dimension of the nullspace of $A$ must be $3$.}
+
+\tf{F}{Suppose $A$ is any orthogonal $3\times 3$ matrix.  Then $A$ must be in reduced row echelon form.}
+
+\tf{F}{Suppose $A$ is any orthogonal $3\times 3$ matrix.  Then $A=A^T$.}
+
+\tf{T}{Suppose $A$ is any diagonalizable $3\times 3$ matrix over the complex numbers with eigenvalues $a,b,c$ and corresponding eigenvectors $v_1, v_2, v_3$.  Let $B$ be the matrix with columns $v_1, v_2, v_3$ and $D$ the diagonal matrix with entries $a,b,c$.  Then $$D^{-1} = B^{-1} A^{-1} B.$$}
+
+\tf{T}{Let $V$ be a finite dimensional vector space, $b_1,\ldots, b_n$ a basis $B$ for $V$
+and $c_1,\ldots, c_n$ a basis $C$ for $V$.   Let $T$ be the unique linear transformation
+such that $T(b_i)=c_i$ for each $i$.  Then $[T]_{B,C} = I_n$ is the identity matrix.}
+
+\end{enumerate}
+
+\end{document}
